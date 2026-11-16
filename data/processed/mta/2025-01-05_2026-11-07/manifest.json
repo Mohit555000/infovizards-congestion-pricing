@@ -1,0 +1,629 @@
+{
+  "run_id": "mta-2025-01-05-2026-11-07-r1794512751-v1.1.0",
+  "execution_mode": "offline_replay",
+  "schema_version": "1.1.0",
+  "extraction_started_at": "2026-11-15T05:23:48.631Z",
+  "extraction_finished_at": "2026-11-15T05:23:52.462Z",
+  "source": "https://data.ny.gov/api/views/t6yz-b64h.json",
+  "source_revision": 1794512751,
+  "source_table_id": 19750817,
+  "source_live_range": {
+    "first_date": "2025-01-05T00:00:00.000",
+    "last_date": "2026-11-07T00:00:00.000",
+    "n_rows": "6967296"
+  },
+  "requested_start": "2025-01-05",
+  "fixed_cutoff": "2026-11-07",
+  "approved_maximum": "2026-11-07",
+  "timezone": "America/New_York",
+  "timezone_semantics": "publisher floating wall dates retained; NYC DST coverage checked; offsets/fold are not encoded by source",
+  "classes": [
+    "1 - Cars, Pickups and Vans",
+    "2 - Single-Unit Trucks",
+    "3 - Multi-Unit Trucks",
+    "4 - Buses",
+    "5 - Motorcycles",
+    "TLC Taxi/FHV"
+  ],
+  "crossings": [
+    {
+      "detection_group": "Brooklyn Bridge",
+      "detection_region": "Brooklyn"
+    },
+    {
+      "detection_group": "East 60th St",
+      "detection_region": "East 60th St"
+    },
+    {
+      "detection_group": "FDR Drive at 60th St",
+      "detection_region": "FDR Drive"
+    },
+    {
+      "detection_group": "Holland Tunnel",
+      "detection_region": "New Jersey"
+    },
+    {
+      "detection_group": "Hugh L. Carey Tunnel",
+      "detection_region": "Brooklyn"
+    },
+    {
+      "detection_group": "Lincoln Tunnel",
+      "detection_region": "New Jersey"
+    },
+    {
+      "detection_group": "Manhattan Bridge",
+      "detection_region": "Brooklyn"
+    },
+    {
+      "detection_group": "Queensboro Bridge",
+      "detection_region": "Queens"
+    },
+    {
+      "detection_group": "Queens Midtown Tunnel",
+      "detection_region": "Queens"
+    },
+    {
+      "detection_group": "West 60th St",
+      "detection_region": "West 60th St"
+    },
+    {
+      "detection_group": "West Side Highway at 60th St",
+      "detection_region": "West Side Highway"
+    },
+    {
+      "detection_group": "Williamsburg Bridge",
+      "detection_region": "Brooklyn"
+    }
+  ],
+  "coverage": {
+    "requested_dates": 672,
+    "source_dates": 672,
+    "complete_dates": 672,
+    "missing_or_partial_dates": [],
+    "partial_weeks": [
+      "2024-12-30",
+      "2026-11-02"
+    ],
+    "partial_months": [
+      "2025-01",
+      "2026-11"
+    ],
+    "baseline_complete_series": 144
+  },
+  "validation": {
+    "invalid_source_rows": 0,
+    "repeated_wall_keys": 864,
+    "official_daily_controls": 672,
+    "js_hourly_daily_reconciliation": "passed",
+    "independent_duckdb_daily_reconciliation": "passed",
+    "raw_hour_control_date": "2025-01-05",
+    "raw_hour_control_hour": 5,
+    "raw_hour_control_rows": 432,
+    "raw_hour_reconciliation": "passed",
+    "source_revision_stable": true
+  },
+  "files": [
+    {
+      "filename": "q1_mta_daily.json",
+      "rows": 672,
+      "bytes": 457181,
+      "sha256": "26a4fa6eb560309142012e28edb17e11d254a75d6d197667275f43f9d5fcf43e"
+    },
+    {
+      "filename": "q1_mta_daily.csv",
+      "rows": 672,
+      "bytes": 140279,
+      "sha256": "05e7d6e4f7ac7a97d4bfa236d7cad68383cbd1e894233f7ec19a0b1152d98a14"
+    },
+    {
+      "filename": "q2_mta_hour_weekday.json",
+      "rows": 3864,
+      "bytes": 2762575,
+      "sha256": "8bd438bad561ef5dca3230a96c21a51b1512e636debcb989685f5be699f3a5cc"
+    },
+    {
+      "filename": "q2_mta_hour_weekday.csv",
+      "rows": 3864,
+      "bytes": 790884,
+      "sha256": "be802d7a4d6bc87eb16f62d39780b7678c6070404d474963c2980af9a7574444"
+    },
+    {
+      "filename": "q3_mta_weekly_crossing_class.json",
+      "rows": 13968,
+      "bytes": 9333337,
+      "sha256": "5b32ac9e06310887d5f2c0ea0e098372b2ecad71ba468774457a972e07cacaca"
+    },
+    {
+      "filename": "q3_mta_weekly_crossing_class.csv",
+      "rows": 13968,
+      "bytes": 2844109,
+      "sha256": "c63d69f655f28660ffacddcf8ebca0197feebb556b1bbe68d3a8c3ac9f397ddb"
+    },
+    {
+      "filename": "q7_mta_region_month.json",
+      "rows": 322,
+      "bytes": 219147,
+      "sha256": "fbd9f82e4084f0b964ec0574171a8d185c8ad70972d60b45ee2e51033f8633da"
+    },
+    {
+      "filename": "q7_mta_region_month.csv",
+      "rows": 322,
+      "bytes": 67813,
+      "sha256": "7c334b8a8a3860f65158d4a08bd61d9e9f747ecf681e0af13d6c4387fd1df04c"
+    },
+    {
+      "filename": "mta_daily_crossing_class.json",
+      "rows": 48384,
+      "bytes": 17096059,
+      "sha256": "5ee56760901991e1357732f50ed642d4eacd77e7f4126352c46b12eb5aa5b983"
+    },
+    {
+      "filename": "mta_daily_crossing_class.csv",
+      "rows": 48384,
+      "bytes": 6274284,
+      "sha256": "3b9d999acc46abcda0af6ecbfb058fe2ac8b6d483a86d9a915abb6bfff79d0ee"
+    },
+    {
+      "filename": "mta_daily_hour.json",
+      "rows": 16128,
+      "bytes": 5486098,
+      "sha256": "e11f9efc7a126f3946b0723fb0235d0b2dbf6052619dcb326f1b37c42e6e0a74"
+    },
+    {
+      "filename": "mta_daily_hour.csv",
+      "rows": 16128,
+      "bytes": 1583233,
+      "sha256": "a0f7546c32b825ff414abc67e61659f7240ec6bc1a81cc87733e3417776936c6"
+    }
+  ],
+  "requests": [
+    {
+      "url": "https://data.ny.gov/api/views/t6yz-b64h.json",
+      "retrieved_at": "2026-11-15T05:18:56.263Z",
+      "bytes": 27540,
+      "sha256": "538f2477a1816f752a51d51096031bab3164c83613e09d9dfe8061894470e5a4",
+      "etag": null,
+      "cache_hit": true
+    },
+    {
+      "url": "https://data.ny.gov/resource/t6yz-b64h.json?%24select=min%28toll_date%29+as+first_date%2Cmax%28toll_date%29+as+last_date%2Ccount%28*%29+as+n_rows",
+      "retrieved_at": "2026-11-15T05:11:47.803Z",
+      "bytes": 100,
+      "sha256": "487c00a418a77e01faaed12d962ef833053c9752d9a4cbca73d107060ea7724c",
+      "etag": "\"aW5kaWEuNzM4NTFfMV8xMzBmeDNJVUhGMTV6U1lfSkxCeEE3cHVGRS1HeEk---gzip7rkmci77X1LNIOXqiGyFC8Whz8g--gzip--gzip\"",
+      "cache_hit": true
+    },
+    {
+      "url": "https://data.ny.gov/resource/t6yz-b64h.json?%24select=vehicle_class&%24group=vehicle_class&%24order=vehicle_class&%24where=toll_date+%3E%3D+%272025-01-05T00%3A00%3A00%27+and+toll_date+%3C+%272026-11-08T00%3A00%3A00%27",
+      "retrieved_at": "2026-11-15T05:15:19.438Z",
+      "bytes": 238,
+      "sha256": "71b990f18d1d6acef655886bb78505489ce49906b50c85e596b45bf1fcec140e",
+      "etag": "\"aW5kaWEuNzM4NTFfMV8xMzBkVlk0SGtGUk5neXdOSkFGMGhLd1BRd2RSMVE---gzirzmogBgoULIBtivdGpBumZkMpUQQ--gzip--gzip\"",
+      "cache_hit": true
+    },
+    {
+      "url": "https://data.ny.gov/resource/t6yz-b64h.json?%24select=detection_group%2Cdetection_region&%24group=detection_group%2Cdetection_region&%24order=detection_group%2Cdetection_region&%24where=toll_date+%3E%3D+%272025-01-05T00%3A00%3A00%27+and+toll_date+%3C+%272026-11-08T00%3A00%3A00%27",
+      "retrieved_at": "2026-11-15T05:15:20.059Z",
+      "bytes": 875,
+      "sha256": "f824c4e5cb7a010a36241f79a9bb9b8cf5677632f62830feb0d1e322a85e0c03",
+      "etag": "\"aW5kaWEuNzM4NTFfMV8xMzAwY2pESWxSdzhNU3otX1FSUFNzNjNDODAwekU---gziqQKMWNFZNyM7ZZ_xxAFi4pM9Ug9g--gzip--gzip\"",
+      "cache_hit": true
+    },
+    {
+      "url": "https://data.ny.gov/resource/t6yz-b64h.json?%24where=toll_date+%3E%3D+%272025-01-05T00%3A00%3A00%27+and+toll_date+%3C+%272026-11-08T00%3A00%3A00%27&%24order=toll_10_minute_block%2Cdetection_group%2Cvehicle_class&%24limit=10",
+      "retrieved_at": "2026-11-15T05:15:20.261Z",
+      "bytes": 4294,
+      "sha256": "afbe17cc91e563ed1b692a4d8b37e9a89282513f7fdf84b2301627d95fba579c",
+      "etag": "\"aW5kaWEuNzM4NTFfMV8xMzA0WEg5bV9VRFJDQ0JrRVlGSGVwd25NeU9wYU0---gziriF1GiBQAoYcZ57WQtcb_FWGp5pA--gzip--gzip\"",
+      "cache_hit": true
+    },
+    {
+      "url": "https://data.ny.gov/resource/t6yz-b64h.json?%24select=count%28*%29+as+n&%24where=%28toll_date+%3E%3D+%272025-01-05T00%3A00%3A00%27+and+toll_date+%3C+%272026-11-08T00%3A00%3A00%27%29+and+%28toll_date+is+null+or+toll_hour+is+null+or+toll_10_minute_block+is+null+or+minute_of_hour+is+null+or+hour_of_day+is+null+or+day_of_week_int+is+null+or+day_of_week+is+null+or+toll_week+is+null+or+time_period+is+null+or+vehicle_class+is+null+or+detection_group+is+null+or+detection_region+is+null+or+crz_entries+is+null+or+excluded_roadway_entries+is+null+or+crz_entries+%3C+0+or+excluded_roadway_entries+%3C+0+or+crz_entries+%21%3D+floor%28crz_entries%29+or+excluded_roadway_entries+%21%3D+floor%28excluded_roadway_entries%29+or+hour_of_day+%3C+0+or+hour_of_day+%3E+23+or+minute_of_hour+not+in+%280%2C10%2C20%2C30%2C40%2C50%29+or+date_trunc_ymd%28toll_10_minute_block%29+%21%3D+toll_date+or+date_extract_hh%28toll_10_minute_block%29+%21%3D+hour_of_day+or+date_extract_mm%28toll_10_minute_block%29+%21%3D+minute_of_hour+or+date_extract_ss%28toll_10_minute_block%29+%21%3D+0+or+date_trunc_ymd%28toll_hour%29+%21%3D+toll_date+or+date_extract_hh%28toll_hour%29+%21%3D+hour_of_day+or+date_extract_mm%28toll_hour%29+%21%3D+0+or+day_of_week_int+%21%3D+date_extract_dow%28toll_date%29+%2B+1%29",
+      "retrieved_at": "2026-11-15T05:15:23.621Z",
+      "bytes": 12,
+      "sha256": "3ab8834fb12e1fe27faa7685163dc93eb4e7a4da93d163848b19c1e372004fa7",
+      "etag": "\"aW5kaWEuNzM4NTFfMV8xMzBsQ05jY3dyQlhOQjZDY2lZM243dTlQaWk3RG8--gzisw3arW834jEZX96LUTWRO2fCTyA---gzip\"",
+      "cache_hit": true
+    },
+    {
+      "url": "https://data.ny.gov/resource/t6yz-b64h.json?%24select=toll_10_minute_block%2Cdetection_group%2Cvehicle_class%2Ccount%28*%29+as+n&%24where=toll_date+%3E%3D+%272025-01-05T00%3A00%3A00%27+and+toll_date+%3C+%272026-11-08T00%3A00%3A00%27&%24group=toll_10_minute_block%2Cdetection_group%2Cvehicle_class&%24having=count%28*%29+%3E+1&%24order=toll_10_minute_block%2Cdetection_group%2Cvehicle_class&%24limit=5000&%24offset=0",
+      "retrieved_at": "2026-11-15T05:15:39.885Z",
+      "bytes": 116497,
+      "sha256": "92f4e7b5e3f9d74808feb53f3eacf9c931f187f3f2fc307f5be491ba22270eff",
+      "etag": "\"aW5kaWEuNzM4NTFfMV8xMzBEd2xsVU9Tdy1aN2FHYS1Hd0RuVDZFNkpsajQ---gzip5YwxVlqpI4Zlvhsfn_Zn-GsNrew--gzip--gzip\"",
+      "cache_hit": true
+    },
+    {
+      "url": "https://data.ny.gov/resource/t6yz-b64h.json?%24select=toll_date%2Cdetection_group%2Cdetection_region%2Cvehicle_class%2Csum%28crz_entries%29+as+crz%2Csum%28excluded_roadway_entries%29+as+excluded%2Ccount%28*%29+as+n_rows%2Ccount%28distinct+toll_10_minute_block%29+as+n_blocks%2Ccount%28crz_entries%29+as+n_crz%2Ccount%28excluded_roadway_entries%29+as+n_excluded&%24where=toll_date+%3E%3D+%272025-01-05T00%3A00%3A00%27+and+toll_date+%3C+%272025-02-01T00%3A00%3A00%27&%24group=toll_date%2Cdetection_group%2Cdetection_region%2Cvehicle_class&%24order=toll_date%2Cdetection_group%2Cdetection_region%2Cvehicle_class&%24limit=5000&%24offset=0",
+      "retrieved_at": "2026-11-15T05:15:41.213Z",
+      "bytes": 467220,
+      "sha256": "6cf6715b57aa027cb006ef71107155eb6d12b6d05aa3a491c385b1316b3686fd",
+      "etag": "\"aW5kaWEuNzM4NTFfMV8xMzBHX0lzbWZoUzhwS0RISDktTnN6aVMxOThMcms---gzipty7_XbmpTb2IHG5Kpbe30Igslpw--gzip--gzip\"",
+      "cache_hit": true
+    },
+    {
+      "url": "https://data.ny.gov/resource/t6yz-b64h.json?%24select=toll_date%2Chour_of_day%2Ctime_period%2Csum%28crz_entries%29+as+crz%2Csum%28excluded_roadway_entries%29+as+excluded%2Ccount%28*%29+as+n_rows%2Ccount%28distinct+toll_10_minute_block%29+as+n_blocks%2Ccount%28crz_entries%29+as+n_crz%2Ccount%28excluded_roadway_entries%29+as+n_excluded&%24where=toll_date+%3E%3D+%272025-01-05T00%3A00%3A00%27+and+toll_date+%3C+%272025-02-01T00%3A00%3A00%27&%24group=toll_date%2Chour_of_day%2Ctime_period&%24order=toll_date%2Chour_of_day%2Ctime_period&%24limit=5000&%24offset=0",
+      "retrieved_at": "2026-11-15T05:15:41.696Z",
+      "bytes": 114771,
+      "sha256": "3574c287355c06b8299e410d11c681894b2ff624b34f2906a660172727ed4339",
+      "etag": "\"aW5kaWEuNzM4NTFfMV8xMzBaU1Jra3NBbTJ4b3M4YVNrdE8yU0lVbVc1OHM---gzirh4gc-sMFbhN7PiCtjSCSMEETxCw--gzip--gzip\"",
+      "cache_hit": true
+    },
+    {
+      "url": "https://data.ny.gov/resource/t6yz-b64h.json?%24select=toll_date%2Cdetection_group%2Cdetection_region%2Cvehicle_class%2Csum%28crz_entries%29+as+crz%2Csum%28excluded_roadway_entries%29+as+excluded%2Ccount%28*%29+as+n_rows%2Ccount%28distinct+toll_10_minute_block%29+as+n_blocks%2Ccount%28crz_entries%29+as+n_crz%2Ccount%28excluded_roadway_entries%29+as+n_excluded&%24where=toll_date+%3E%3D+%272025-02-01T00%3A00%3A00%27+and+toll_date+%3C+%272025-03-01T00%3A00%3A00%27&%24group=toll_date%2Cdetection_group%2Cdetection_region%2Cvehicle_class&%24order=toll_date%2Cdetection_group%2Cdetection_region%2Cvehicle_class&%24limit=5000&%24offset=0",
+      "retrieved_at": "2026-11-15T05:15:42.984Z",
+      "bytes": 484523,
+      "sha256": "132af80f4686d83c0f47e3f4bc76a26e64758cf39b0b2a6c4c8436ffe422425e",
+      "etag": "\"aW5kaWEuNzM4NTFfMV8xMzBDX0x4X1BjRk9La3dqQm5wR1JQNEp6NXM5VUk---gzioYo3KmHXaIyExSF6e6Nm29ckcfDA--gzip--gzip\"",
+      "cache_hit": true
+    },
+    {
+      "url": "https://data.ny.gov/resource/t6yz-b64h.json?%24select=toll_date%2Chour_of_day%2Ctime_period%2Csum%28crz_entries%29+as+crz%2Csum%28excluded_roadway_entries%29+as+excluded%2Ccount%28*%29+as+n_rows%2Ccount%28distinct+toll_10_minute_block%29+as+n_blocks%2Ccount%28crz_entries%29+as+n_crz%2Ccount%28excluded_roadway_entries%29+as+n_excluded&%24where=toll_date+%3E%3D+%272025-02-01T00%3A00%3A00%27+and+toll_date+%3C+%272025-03-01T00%3A00%3A00%27&%24group=toll_date%2Chour_of_day%2Ctime_period&%24order=toll_date%2Chour_of_day%2Ctime_period&%24limit=5000&%24offset=0",
+      "retrieved_at": "2026-11-15T05:15:43.745Z",
+      "bytes": 119038,
+      "sha256": "0ba5394aea8f783cc39ea9fce2bf9632c23478fefda4cbb4a9d734ff9f558988",
+      "etag": "\"aW5kaWEuNzM4NTFfMV8xMzB5d2R5ck5JMGJYV0Z3ZmIweXZxVWQzNWZFbjg---gziqNbWZvIiIjHPA6aO9DR2DIfLwDiQ--gzip--gzip\"",
+      "cache_hit": true
+    },
+    {
+      "url": "https://data.ny.gov/resource/t6yz-b64h.json?%24select=toll_date%2Cdetection_group%2Cdetection_region%2Cvehicle_class%2Csum%28crz_entries%29+as+crz%2Csum%28excluded_roadway_entries%29+as+excluded%2Ccount%28*%29+as+n_rows%2Ccount%28distinct+toll_10_minute_block%29+as+n_blocks%2Ccount%28crz_entries%29+as+n_crz%2Ccount%28excluded_roadway_entries%29+as+n_excluded&%24where=toll_date+%3E%3D+%272025-03-01T00%3A00%3A00%27+and+toll_date+%3C+%272025-04-01T00%3A00%3A00%27&%24group=toll_date%2Cdetection_group%2Cdetection_region%2Cvehicle_class&%24order=toll_date%2Cdetection_group%2Cdetection_region%2Cvehicle_class&%24limit=5000&%24offset=0",
+      "retrieved_at": "2026-11-15T05:15:45.441Z",
+      "bytes": 536455,
+      "sha256": "8f4f773c246b994743cee66dad9757ec7c879127bdbe127735746c2e90df7071",
+      "etag": "\"aW5kaWEuNzM4NTFfMV8xMzBseXUzZHkwMHJKbEZzTk9BeUlpNEc2R1BKZjA---gzirhTIOhOgAOr1P_lHzVqL04zsEl4w--gzip--gzip\"",
+      "cache_hit": true
+    },
+    {
+      "url": "https://data.ny.gov/resource/t6yz-b64h.json?%24select=toll_date%2Chour_of_day%2Ctime_period%2Csum%28crz_entries%29+as+crz%2Csum%28excluded_roadway_entries%29+as+excluded%2Ccount%28*%29+as+n_rows%2Ccount%28distinct+toll_10_minute_block%29+as+n_blocks%2Ccount%28crz_entries%29+as+n_crz%2Ccount%28excluded_roadway_entries%29+as+n_excluded&%24where=toll_date+%3E%3D+%272025-03-01T00%3A00%3A00%27+and+toll_date+%3C+%272025-04-01T00%3A00%3A00%27&%24group=toll_date%2Chour_of_day%2Ctime_period&%24order=toll_date%2Chour_of_day%2Ctime_period&%24limit=5000&%24offset=0",
+      "retrieved_at": "2026-11-15T05:15:45.997Z",
+      "bytes": 131654,
+      "sha256": "10acfa60b43fa6d6dfc59bc561fd0f02183a5446ec0980bfefad9cccf954c5eb",
+      "etag": "\"aW5kaWEuNzM4NTFfMV8xMzA5MllDM3RSQ0NZOGxseTZjNHROWkZMaHA4RFU---gzirgHnDT6we5NeW8YVpdDrtn0Xalkg--gzip--gzip\"",
+      "cache_hit": true
+    },
+    {
+      "url": "https://data.ny.gov/resource/t6yz-b64h.json?%24select=toll_date%2Cdetection_group%2Cdetection_region%2Cvehicle_class%2Csum%28crz_entries%29+as+crz%2Csum%28excluded_roadway_entries%29+as+excluded%2Ccount%28*%29+as+n_rows%2Ccount%28distinct+toll_10_minute_block%29+as+n_blocks%2Ccount%28crz_entries%29+as+n_crz%2Ccount%28excluded_roadway_entries%29+as+n_excluded&%24where=toll_date+%3E%3D+%272025-04-01T00%3A00%3A00%27+and+toll_date+%3C+%272025-05-01T00%3A00%3A00%27&%24group=toll_date%2Cdetection_group%2Cdetection_region%2Cvehicle_class&%24order=toll_date%2Cdetection_group%2Cdetection_region%2Cvehicle_class&%24limit=5000&%24offset=0",
+      "retrieved_at": "2026-11-15T05:15:47.670Z",
+      "bytes": 519240,
+      "sha256": "50f0fa09fe1e09f6828fc700848646866e4eefc122e6fc23cd1296c80a938814",
+      "etag": "\"aW5kaWEuNzM4NTFfMV8xMzBicHJ3c0ZNUE8zOVpDckdCMG5uZzE5WC1UaXc---gziod_WPpdUTmd0Ti7TlxPQ1iFQM8Nw--gzip--gzip\"",
+      "cache_hit": true
+    },
+    {
+      "url": "https://data.ny.gov/resource/t6yz-b64h.json?%24select=toll_date%2Chour_of_day%2Ctime_period%2Csum%28crz_entries%29+as+crz%2Csum%28excluded_roadway_entries%29+as+excluded%2Ccount%28*%29+as+n_rows%2Ccount%28distinct+toll_10_minute_block%29+as+n_blocks%2Ccount%28crz_entries%29+as+n_crz%2Ccount%28excluded_roadway_entries%29+as+n_excluded&%24where=toll_date+%3E%3D+%272025-04-01T00%3A00%3A00%27+and+toll_date+%3C+%272025-05-01T00%3A00%3A00%27&%24group=toll_date%2Chour_of_day%2Ctime_period&%24order=toll_date%2Chour_of_day%2Ctime_period&%24limit=5000&%24offset=0",
+      "retrieved_at": "2026-11-15T05:15:48.295Z",
+      "bytes": 127541,
+      "sha256": "5649aaa3ca490da228ea4a2bab261ed735b7c5396ec7395df4044c044b19017a",
+      "etag": "\"aW5kaWEuNzM4NTFfMV8xMzBRYTBMTnlYTjM5Ql9TbjdGOFhObkJRNUIyWWM---gziofMO1iatuSdWS1OCNRbHCAZ3CTUA--gzip--gzip\"",
+      "cache_hit": true
+    },
+    {
+      "url": "https://data.ny.gov/resource/t6yz-b64h.json?%24select=toll_date%2Cdetection_group%2Cdetection_region%2Cvehicle_class%2Csum%28crz_entries%29+as+crz%2Csum%28excluded_roadway_entries%29+as+excluded%2Ccount%28*%29+as+n_rows%2Ccount%28distinct+toll_10_minute_block%29+as+n_blocks%2Ccount%28crz_entries%29+as+n_crz%2Ccount%28excluded_roadway_entries%29+as+n_excluded&%24where=toll_date+%3E%3D+%272025-05-01T00%3A00%3A00%27+and+toll_date+%3C+%272025-06-01T00%3A00%3A00%27&%24group=toll_date%2Cdetection_group%2Cdetection_region%2Cvehicle_class&%24order=toll_date%2Cdetection_group%2Cdetection_region%2Cvehicle_class&%24limit=5000&%24offset=0",
+      "retrieved_at": "2026-11-15T05:15:49.907Z",
+      "bytes": 536546,
+      "sha256": "562ab754d005d03d4850cc7db25f875859602f49365b09ff5380a2026f03cb37",
+      "etag": "\"aW5kaWEuNzM4NTFfMV8xMzBDWENSS1JGWEZNbjY0Tk9zVWhYUWNLYjc1aE0---gzipAmEpyXFqghXfrr0gRTVNpO6QnPQ--gzip--gzip\"",
+      "cache_hit": true
+    },
+    {
+      "url": "https://data.ny.gov/resource/t6yz-b64h.json?%24select=toll_date%2Chour_of_day%2Ctime_period%2Csum%28crz_entries%29+as+crz%2Csum%28excluded_roadway_entries%29+as+excluded%2Ccount%28*%29+as+n_rows%2Ccount%28distinct+toll_10_minute_block%29+as+n_blocks%2Ccount%28crz_entries%29+as+n_crz%2Ccount%28excluded_roadway_entries%29+as+n_excluded&%24where=toll_date+%3E%3D+%272025-05-01T00%3A00%3A00%27+and+toll_date+%3C+%272025-06-01T00%3A00%3A00%27&%24group=toll_date%2Chour_of_day%2Ctime_period&%24order=toll_date%2Chour_of_day%2Ctime_period&%24limit=5000&%24offset=0",
+      "retrieved_at": "2026-11-15T05:15:50.375Z",
+      "bytes": 131830,
+      "sha256": "0715993290ac01aad8baf9b20fabde65900b637c5a9b166bcf48f94dc22b2af8",
+      "etag": "\"aW5kaWEuNzM4NTFfMV8xMzBfWHlCUGRxa3NIOFdORE1ibkI0eVQ1d0s5cjg---gziqAG16O5FZUtAxsKN0U7AIPTfkIaA--gzip--gzip\"",
+      "cache_hit": true
+    },
+    {
+      "url": "https://data.ny.gov/resource/t6yz-b64h.json?%24select=toll_date%2Cdetection_group%2Cdetection_region%2Cvehicle_class%2Csum%28crz_entries%29+as+crz%2Csum%28excluded_roadway_entries%29+as+excluded%2Ccount%28*%29+as+n_rows%2Ccount%28distinct+toll_10_minute_block%29+as+n_blocks%2Ccount%28crz_entries%29+as+n_crz%2Ccount%28excluded_roadway_entries%29+as+n_excluded&%24where=toll_date+%3E%3D+%272025-06-01T00%3A00%3A00%27+and+toll_date+%3C+%272025-07-01T00%3A00%3A00%27&%24group=toll_date%2Cdetection_group%2Cdetection_region%2Cvehicle_class&%24order=toll_date%2Cdetection_group%2Cdetection_region%2Cvehicle_class&%24limit=5000&%24offset=0",
+      "retrieved_at": "2026-11-15T05:15:52.296Z",
+      "bytes": 519245,
+      "sha256": "c29698cb4831ee16bd809c895a77ca03e6aed22a0977f8197332c7c97048186b",
+      "etag": "\"aW5kaWEuNzM4NTFfMV8xMzBMdlBxNlphWFNpUk5mUDV0Ylh3OTBtdi1SSUU---gzioYdxmXa-R-bSRIaYHwni9Tk1HSpg--gzip--gzip\"",
+      "cache_hit": true
+    },
+    {
+      "url": "https://data.ny.gov/resource/t6yz-b64h.json?%24select=toll_date%2Chour_of_day%2Ctime_period%2Csum%28crz_entries%29+as+crz%2Csum%28excluded_roadway_entries%29+as+excluded%2Ccount%28*%29+as+n_rows%2Ccount%28distinct+toll_10_minute_block%29+as+n_blocks%2Ccount%28crz_entries%29+as+n_crz%2Ccount%28excluded_roadway_entries%29+as+n_excluded&%24where=toll_date+%3E%3D+%272025-06-01T00%3A00%3A00%27+and+toll_date+%3C+%272025-07-01T00%3A00%3A00%27&%24group=toll_date%2Chour_of_day%2Ctime_period&%24order=toll_date%2Chour_of_day%2Ctime_period&%24limit=5000&%24offset=0",
+      "retrieved_at": "2026-11-15T05:15:52.755Z",
+      "bytes": 127594,
+      "sha256": "851702c0aa3f0cc05457d1bc423d695515c8ae2032cfee0b514b05f35e428a2f",
+      "etag": "\"aW5kaWEuNzM4NTFfMV8xMzBHT3owajFWbi1mV2FDdlk1U1ljNmhKVGtxT2c---gziqO2OKN8c3KExG4-LZXsDUmBTQYeA--gzip--gzip\"",
+      "cache_hit": true
+    },
+    {
+      "url": "https://data.ny.gov/resource/t6yz-b64h.json?%24select=toll_date%2Cdetection_group%2Cdetection_region%2Cvehicle_class%2Csum%28crz_entries%29+as+crz%2Csum%28excluded_roadway_entries%29+as+excluded%2Ccount%28*%29+as+n_rows%2Ccount%28distinct+toll_10_minute_block%29+as+n_blocks%2Ccount%28crz_entries%29+as+n_crz%2Ccount%28excluded_roadway_entries%29+as+n_excluded&%24where=toll_date+%3E%3D+%272025-07-01T00%3A00%3A00%27+and+toll_date+%3C+%272025-08-01T00%3A00%3A00%27&%24group=toll_date%2Cdetection_group%2Cdetection_region%2Cvehicle_class&%24order=toll_date%2Cdetection_group%2Cdetection_region%2Cvehicle_class&%24limit=5000&%24offset=0",
+      "retrieved_at": "2026-11-15T05:15:54.024Z",
+      "bytes": 536536,
+      "sha256": "c95c72e3f7fbdbe38852fb50cdec4262a2f80be00ab17adf5711a3bd624afcfa",
+      "etag": "\"aW5kaWEuNzM4NTFfMV8xMzAwYm9qQ1IzQnAyMDFNSkQ1YXlDXzE0elBYNDQ---gziogA9H8pRL8fiyQqId-oxl1WY8ALg--gzip--gzip\"",
+      "cache_hit": true
+    },
+    {
+      "url": "https://data.ny.gov/resource/t6yz-b64h.json?%24select=toll_date%2Chour_of_day%2Ctime_period%2Csum%28crz_entries%29+as+crz%2Csum%28excluded_roadway_entries%29+as+excluded%2Ccount%28*%29+as+n_rows%2Ccount%28distinct+toll_10_minute_block%29+as+n_blocks%2Ccount%28crz_entries%29+as+n_crz%2Ccount%28excluded_roadway_entries%29+as+n_excluded&%24where=toll_date+%3E%3D+%272025-07-01T00%3A00%3A00%27+and+toll_date+%3C+%272025-08-01T00%3A00%3A00%27&%24group=toll_date%2Chour_of_day%2Ctime_period&%24order=toll_date%2Chour_of_day%2Ctime_period&%24limit=5000&%24offset=0",
+      "retrieved_at": "2026-11-15T05:15:54.603Z",
+      "bytes": 131782,
+      "sha256": "18cbdb689dadc546525534baa351adcdeb97342c3247a1ccb03fd2857f811124",
+      "etag": "\"aW5kaWEuNzM4NTFfMV8xMzBPVGdQa0tnTVBvUTJld05rU3ptblVqU3pXSnM---gzirVufcXfvxD_dWs2X3C23ZBq5aFwA--gzip--gzip\"",
+      "cache_hit": true
+    },
+    {
+      "url": "https://data.ny.gov/resource/t6yz-b64h.json?%24select=toll_date%2Cdetection_group%2Cdetection_region%2Cvehicle_class%2Csum%28crz_entries%29+as+crz%2Csum%28excluded_roadway_entries%29+as+excluded%2Ccount%28*%29+as+n_rows%2Ccount%28distinct+toll_10_minute_block%29+as+n_blocks%2Ccount%28crz_entries%29+as+n_crz%2Ccount%28excluded_roadway_entries%29+as+n_excluded&%24where=toll_date+%3E%3D+%272025-08-01T00%3A00%3A00%27+and+toll_date+%3C+%272025-09-01T00%3A00%3A00%27&%24group=toll_date%2Cdetection_group%2Cdetection_region%2Cvehicle_class&%24order=toll_date%2Cdetection_group%2Cdetection_region%2Cvehicle_class&%24limit=5000&%24offset=0",
+      "retrieved_at": "2026-11-15T05:15:56.019Z",
+      "bytes": 536531,
+      "sha256": "274780b734a46370a64d70f71a193d19fda9c50b7117036d27d7c9d957746672",
+      "etag": "\"aW5kaWEuNzM4NTFfMV8xMzBWZmZCQzRuMGZ4ZFVhQS1lUEc5Q2FSY1VadnM---gziodPO96L59XLS3zNNeHl8o3Ycj0Fw--gzip--gzip\"",
+      "cache_hit": true
+    },
+    {
+      "url": "https://data.ny.gov/resource/t6yz-b64h.json?%24select=toll_date%2Chour_of_day%2Ctime_period%2Csum%28crz_entries%29+as+crz%2Csum%28excluded_roadway_entries%29+as+excluded%2Ccount%28*%29+as+n_rows%2Ccount%28distinct+toll_10_minute_block%29+as+n_blocks%2Ccount%28crz_entries%29+as+n_crz%2Ccount%28excluded_roadway_entries%29+as+n_excluded&%24where=toll_date+%3E%3D+%272025-08-01T00%3A00%3A00%27+and+toll_date+%3C+%272025-09-01T00%3A00%3A00%27&%24group=toll_date%2Chour_of_day%2Ctime_period&%24order=toll_date%2Chour_of_day%2Ctime_period&%24limit=5000&%24offset=0",
+      "retrieved_at": "2026-11-15T05:15:56.749Z",
+      "bytes": 131830,
+      "sha256": "964f32f0c1ccb9085241225ee27f9c2ae1f98409163a1723d518bb14ca04e75d",
+      "etag": "\"aW5kaWEuNzM4NTFfMV8xMzBWWkNwai1rR3EtVkEyaEk5S0lpc0V2ZW9OTU0---gzio75XZCMgEomLTue7nIgF-pcgndXA--gzip--gzip\"",
+      "cache_hit": true
+    },
+    {
+      "url": "https://data.ny.gov/resource/t6yz-b64h.json?%24select=toll_date%2Cdetection_group%2Cdetection_region%2Cvehicle_class%2Csum%28crz_entries%29+as+crz%2Csum%28excluded_roadway_entries%29+as+excluded%2Ccount%28*%29+as+n_rows%2Ccount%28distinct+toll_10_minute_block%29+as+n_blocks%2Ccount%28crz_entries%29+as+n_crz%2Ccount%28excluded_roadway_entries%29+as+n_excluded&%24where=toll_date+%3E%3D+%272025-09-01T00%3A00%3A00%27+and+toll_date+%3C+%272025-10-01T00%3A00%3A00%27&%24group=toll_date%2Cdetection_group%2Cdetection_region%2Cvehicle_class&%24order=toll_date%2Cdetection_group%2Cdetection_region%2Cvehicle_class&%24limit=5000&%24offset=0",
+      "retrieved_at": "2026-11-15T05:15:58.213Z",
+      "bytes": 519298,
+      "sha256": "054e5a0e6f6b5729670b72e101b3b0a3016d6ab90a6a8da8e8eaf905f78c9fd7",
+      "etag": "\"aW5kaWEuNzM4NTFfMV8xMzBwTDVBRjBYdVlVc0ZXTG0zUjFwWFlmc3czOFE---gziqL6Gy_msPbmEtTtawLRSzDbHwoxA--gzip--gzip\"",
+      "cache_hit": true
+    },
+    {
+      "url": "https://data.ny.gov/resource/t6yz-b64h.json?%24select=toll_date%2Chour_of_day%2Ctime_period%2Csum%28crz_entries%29+as+crz%2Csum%28excluded_roadway_entries%29+as+excluded%2Ccount%28*%29+as+n_rows%2Ccount%28distinct+toll_10_minute_block%29+as+n_blocks%2Ccount%28crz_entries%29+as+n_crz%2Ccount%28excluded_roadway_entries%29+as+n_excluded&%24where=toll_date+%3E%3D+%272025-09-01T00%3A00%3A00%27+and+toll_date+%3C+%272025-10-01T00%3A00%3A00%27&%24group=toll_date%2Chour_of_day%2Ctime_period&%24order=toll_date%2Chour_of_day%2Ctime_period&%24limit=5000&%24offset=0",
+      "retrieved_at": "2026-11-15T05:15:58.797Z",
+      "bytes": 127555,
+      "sha256": "3c72554f73871b1014527c5e3c3dc71bb8776f439c82223dbf879cb67f78274c",
+      "etag": "\"aW5kaWEuNzM4NTFfMV8xMzBCNlF0TnAwRm4yNThrdXV1eGVEX25MRkxzNzQ---gzioT5EYnIfrGIgC2qAB3mnLLYyGX1A--gzip--gzip\"",
+      "cache_hit": true
+    },
+    {
+      "url": "https://data.ny.gov/resource/t6yz-b64h.json?%24select=toll_date%2Cdetection_group%2Cdetection_region%2Cvehicle_class%2Csum%28crz_entries%29+as+crz%2Csum%28excluded_roadway_entries%29+as+excluded%2Ccount%28*%29+as+n_rows%2Ccount%28distinct+toll_10_minute_block%29+as+n_blocks%2Ccount%28crz_entries%29+as+n_crz%2Ccount%28excluded_roadway_entries%29+as+n_excluded&%24where=toll_date+%3E%3D+%272025-10-01T00%3A00%3A00%27+and+toll_date+%3C+%272025-11-01T00%3A00%3A00%27&%24group=toll_date%2Cdetection_group%2Cdetection_region%2Cvehicle_class&%24order=toll_date%2Cdetection_group%2Cdetection_region%2Cvehicle_class&%24limit=5000&%24offset=0",
+      "retrieved_at": "2026-11-15T05:16:00.094Z",
+      "bytes": 536574,
+      "sha256": "846c6b8e6d3bb26349dd30376c548bd600ca0152ac84e7b37880bd8d51a6ef7d",
+      "etag": "\"aW5kaWEuNzM4NTFfMV8xMzBDaDJNSDRUc3FuUVJQYVRnZV8xcG1uUWV3VDA---gziomFjN5JgVqmkxp8YEXNHGlQuRmIg--gzip--gzip\"",
+      "cache_hit": true
+    },
+    {
+      "url": "https://data.ny.gov/resource/t6yz-b64h.json?%24select=toll_date%2Chour_of_day%2Ctime_period%2Csum%28crz_entries%29+as+crz%2Csum%28excluded_roadway_entries%29+as+excluded%2Ccount%28*%29+as+n_rows%2Ccount%28distinct+toll_10_minute_block%29+as+n_blocks%2Ccount%28crz_entries%29+as+n_crz%2Ccount%28excluded_roadway_entries%29+as+n_excluded&%24where=toll_date+%3E%3D+%272025-10-01T00%3A00%3A00%27+and+toll_date+%3C+%272025-11-01T00%3A00%3A00%27&%24group=toll_date%2Chour_of_day%2Ctime_period&%24order=toll_date%2Chour_of_day%2Ctime_period&%24limit=5000&%24offset=0",
+      "retrieved_at": "2026-11-15T05:16:00.641Z",
+      "bytes": 131798,
+      "sha256": "f5f0cb259668e85457780b48862ebb2af1d3bb75bff34b889dbae8fbb260b7f8",
+      "etag": "\"aW5kaWEuNzM4NTFfMV8xMzBfZXFoSENrNlRQdGFZekFPNjZ2eVpFYzZ0Q1U---gziodKlXHLKEfYSumCnEeFFmeSuZ8fw--gzip--gzip\"",
+      "cache_hit": true
+    },
+    {
+      "url": "https://data.ny.gov/resource/t6yz-b64h.json?%24select=toll_date%2Cdetection_group%2Cdetection_region%2Cvehicle_class%2Csum%28crz_entries%29+as+crz%2Csum%28excluded_roadway_entries%29+as+excluded%2Ccount%28*%29+as+n_rows%2Ccount%28distinct+toll_10_minute_block%29+as+n_blocks%2Ccount%28crz_entries%29+as+n_crz%2Ccount%28excluded_roadway_entries%29+as+n_excluded&%24where=toll_date+%3E%3D+%272025-11-01T00%3A00%3A00%27+and+toll_date+%3C+%272025-12-01T00%3A00%3A00%27&%24group=toll_date%2Cdetection_group%2Cdetection_region%2Cvehicle_class&%24order=toll_date%2Cdetection_group%2Cdetection_region%2Cvehicle_class&%24limit=5000&%24offset=0",
+      "retrieved_at": "2026-11-15T05:16:02.115Z",
+      "bytes": 519054,
+      "sha256": "c6474662c3f442e8d83f08bb35b424be4ab78aa8072539c337ca5606775428d4",
+      "etag": "\"aW5kaWEuNzM4NTFfMV8xMzBwbnBpTDk5aU9aLXNlUkgxRnhBbjRndmozbVE---gzirIZQqKiTkaWaKG9STzB1wAddyJUA--gzip--gzip\"",
+      "cache_hit": true
+    },
+    {
+      "url": "https://data.ny.gov/resource/t6yz-b64h.json?%24select=toll_date%2Chour_of_day%2Ctime_period%2Csum%28crz_entries%29+as+crz%2Csum%28excluded_roadway_entries%29+as+excluded%2Ccount%28*%29+as+n_rows%2Ccount%28distinct+toll_10_minute_block%29+as+n_blocks%2Ccount%28crz_entries%29+as+n_crz%2Ccount%28excluded_roadway_entries%29+as+n_excluded&%24where=toll_date+%3E%3D+%272025-11-01T00%3A00%3A00%27+and+toll_date+%3C+%272025-12-01T00%3A00%3A00%27&%24group=toll_date%2Chour_of_day%2Ctime_period&%24order=toll_date%2Chour_of_day%2Ctime_period&%24limit=5000&%24offset=0",
+      "retrieved_at": "2026-11-15T05:16:02.613Z",
+      "bytes": 127587,
+      "sha256": "dc6a26a31d1a0986739f7b3698a423adcd286540724d21f4819dc25a3109eed8",
+      "etag": "\"aW5kaWEuNzM4NTFfMV8xMzBBM1F4M0llM0VhenZLUnJlZ0JSNzlFRk4tUVE---gzirObKLtG_7e4stfF0GaIhk0SsjdSw--gzip--gzip\"",
+      "cache_hit": true
+    },
+    {
+      "url": "https://data.ny.gov/resource/t6yz-b64h.json?%24select=toll_date%2Cdetection_group%2Cdetection_region%2Cvehicle_class%2Csum%28crz_entries%29+as+crz%2Csum%28excluded_roadway_entries%29+as+excluded%2Ccount%28*%29+as+n_rows%2Ccount%28distinct+toll_10_minute_block%29+as+n_blocks%2Ccount%28crz_entries%29+as+n_crz%2Ccount%28excluded_roadway_entries%29+as+n_excluded&%24where=toll_date+%3E%3D+%272025-12-01T00%3A00%3A00%27+and+toll_date+%3C+%272026-01-01T00%3A00%3A00%27&%24group=toll_date%2Cdetection_group%2Cdetection_region%2Cvehicle_class&%24order=toll_date%2Cdetection_group%2Cdetection_region%2Cvehicle_class&%24limit=5000&%24offset=0",
+      "retrieved_at": "2026-11-15T05:16:03.974Z",
+      "bytes": 536172,
+      "sha256": "165cc499a0ff09eadc5e4ec47725a3c573095a3561f1707b5067ccabf39ae187",
+      "etag": "\"aW5kaWEuNzM4NTFfMV8xMzB1eFRpLWZjbVdoZDk0R2dGWEZ5cnVwZGdUM00---gziqjjNVbJylVDhX07XSaDk1_5xKQ9Q--gzip--gzip\"",
+      "cache_hit": true
+    },
+    {
+      "url": "https://data.ny.gov/resource/t6yz-b64h.json?%24select=toll_date%2Chour_of_day%2Ctime_period%2Csum%28crz_entries%29+as+crz%2Csum%28excluded_roadway_entries%29+as+excluded%2Ccount%28*%29+as+n_rows%2Ccount%28distinct+toll_10_minute_block%29+as+n_blocks%2Ccount%28crz_entries%29+as+n_crz%2Ccount%28excluded_roadway_entries%29+as+n_excluded&%24where=toll_date+%3E%3D+%272025-12-01T00%3A00%3A00%27+and+toll_date+%3C+%272026-01-01T00%3A00%3A00%27&%24group=toll_date%2Chour_of_day%2Ctime_period&%24order=toll_date%2Chour_of_day%2Ctime_period&%24limit=5000&%24offset=0",
+      "retrieved_at": "2026-11-15T05:16:04.555Z",
+      "bytes": 131774,
+      "sha256": "da81e26fa7dab0ab52f5aec6f193307f67b7f10d6ac7a00a6e88415dd3b2373d",
+      "etag": "\"aW5kaWEuNzM4NTFfMV8xMzBQdHVFb0ZwQWh3N3NvVXVFVEk0TW5BVmlPYmc---gzipn_CNCu-1sPothRNwQ9quQXsp17A--gzip--gzip\"",
+      "cache_hit": true
+    },
+    {
+      "url": "https://data.ny.gov/resource/t6yz-b64h.json?%24select=toll_date%2Cdetection_group%2Cdetection_region%2Cvehicle_class%2Csum%28crz_entries%29+as+crz%2Csum%28excluded_roadway_entries%29+as+excluded%2Ccount%28*%29+as+n_rows%2Ccount%28distinct+toll_10_minute_block%29+as+n_blocks%2Ccount%28crz_entries%29+as+n_crz%2Ccount%28excluded_roadway_entries%29+as+n_excluded&%24where=toll_date+%3E%3D+%272026-01-01T00%3A00%3A00%27+and+toll_date+%3C+%272026-02-01T00%3A00%3A00%27&%24group=toll_date%2Cdetection_group%2Cdetection_region%2Cvehicle_class&%24order=toll_date%2Cdetection_group%2Cdetection_region%2Cvehicle_class&%24limit=5000&%24offset=0",
+      "retrieved_at": "2026-11-15T05:16:05.980Z",
+      "bytes": 536015,
+      "sha256": "29d681069691936bfb20a658801140b1c7b9869be91ae7c8f4b5beebed6de5b2",
+      "etag": "\"aW5kaWEuNzM4NTFfMV8xMzBYSjdRdnREVWJDQXFKZHdLTEZ2RmREY21tUGs---gzipN23iN3-naMw3VG9Gn0U1yq1Lvaw--gzip--gzip\"",
+      "cache_hit": true
+    },
+    {
+      "url": "https://data.ny.gov/resource/t6yz-b64h.json?%24select=toll_date%2Chour_of_day%2Ctime_period%2Csum%28crz_entries%29+as+crz%2Csum%28excluded_roadway_entries%29+as+excluded%2Ccount%28*%29+as+n_rows%2Ccount%28distinct+toll_10_minute_block%29+as+n_blocks%2Ccount%28crz_entries%29+as+n_crz%2Ccount%28excluded_roadway_entries%29+as+n_excluded&%24where=toll_date+%3E%3D+%272026-01-01T00%3A00%3A00%27+and+toll_date+%3C+%272026-02-01T00%3A00%3A00%27&%24group=toll_date%2Chour_of_day%2Ctime_period&%24order=toll_date%2Chour_of_day%2Ctime_period&%24limit=5000&%24offset=0",
+      "retrieved_at": "2026-11-15T05:16:06.562Z",
+      "bytes": 131727,
+      "sha256": "cfdb41e945ee0301d661df9338ef734741b95fa179ab913bf385d80e8342807f",
+      "etag": "\"aW5kaWEuNzM4NTFfMV8xMzBPOW5QUktfNFF3d1p6NXZ2a1pRTWxtU2EwWmM---gziqhBlsL0Gw0sSykgKhvvsd2vkEtVg--gzip--gzip\"",
+      "cache_hit": true
+    },
+    {
+      "url": "https://data.ny.gov/resource/t6yz-b64h.json?%24select=toll_date%2Cdetection_group%2Cdetection_region%2Cvehicle_class%2Csum%28crz_entries%29+as+crz%2Csum%28excluded_roadway_entries%29+as+excluded%2Ccount%28*%29+as+n_rows%2Ccount%28distinct+toll_10_minute_block%29+as+n_blocks%2Ccount%28crz_entries%29+as+n_crz%2Ccount%28excluded_roadway_entries%29+as+n_excluded&%24where=toll_date+%3E%3D+%272026-02-01T00%3A00%3A00%27+and+toll_date+%3C+%272026-03-01T00%3A00%3A00%27&%24group=toll_date%2Cdetection_group%2Cdetection_region%2Cvehicle_class&%24order=toll_date%2Cdetection_group%2Cdetection_region%2Cvehicle_class&%24limit=5000&%24offset=0",
+      "retrieved_at": "2026-11-15T05:16:07.789Z",
+      "bytes": 484164,
+      "sha256": "5b2beb2b8b73e208fb3cc7ae4159a7e256e6db6341efe1d4802f0d6b8e720898",
+      "etag": "\"aW5kaWEuNzM4NTFfMV8xMzAwMW9zS2VaOFF0S2RRQnIwcDkza0VGYzlPWTg---gziqyd6nGZ9FAxkCHHQo66dGHlsnASw--gzip--gzip\"",
+      "cache_hit": true
+    },
+    {
+      "url": "https://data.ny.gov/resource/t6yz-b64h.json?%24select=toll_date%2Chour_of_day%2Ctime_period%2Csum%28crz_entries%29+as+crz%2Csum%28excluded_roadway_entries%29+as+excluded%2Ccount%28*%29+as+n_rows%2Ccount%28distinct+toll_10_minute_block%29+as+n_blocks%2Ccount%28crz_entries%29+as+n_crz%2Ccount%28excluded_roadway_entries%29+as+n_excluded&%24where=toll_date+%3E%3D+%272026-02-01T00%3A00%3A00%27+and+toll_date+%3C+%272026-03-01T00%3A00%3A00%27&%24group=toll_date%2Chour_of_day%2Ctime_period&%24order=toll_date%2Chour_of_day%2Ctime_period&%24limit=5000&%24offset=0",
+      "retrieved_at": "2026-11-15T05:16:08.205Z",
+      "bytes": 118964,
+      "sha256": "4f3586ab4ee66cccc4e171db7834b98de1e98695f92e26d3c256a0fbc4a0a04c",
+      "etag": "\"aW5kaWEuNzM4NTFfMV8xMzBrSVhmN1BFQ3djemdxUmlxaUFzU1R2M0R5bWs---gzipHNGDGinjKOkQKin1h6VrHLRZuvg--gzip--gzip\"",
+      "cache_hit": true
+    },
+    {
+      "url": "https://data.ny.gov/resource/t6yz-b64h.json?%24select=toll_date%2Cdetection_group%2Cdetection_region%2Cvehicle_class%2Csum%28crz_entries%29+as+crz%2Csum%28excluded_roadway_entries%29+as+excluded%2Ccount%28*%29+as+n_rows%2Ccount%28distinct+toll_10_minute_block%29+as+n_blocks%2Ccount%28crz_entries%29+as+n_crz%2Ccount%28excluded_roadway_entries%29+as+n_excluded&%24where=toll_date+%3E%3D+%272026-03-01T00%3A00%3A00%27+and+toll_date+%3C+%272026-04-01T00%3A00%3A00%27&%24group=toll_date%2Cdetection_group%2Cdetection_region%2Cvehicle_class&%24order=toll_date%2Cdetection_group%2Cdetection_region%2Cvehicle_class&%24limit=5000&%24offset=0",
+      "retrieved_at": "2026-11-15T05:16:09.564Z",
+      "bytes": 536344,
+      "sha256": "18d8383641eb2986688ffcb1e71102aa3d9965e42d1a4dbbbd569f8a7d955537",
+      "etag": "\"aW5kaWEuNzM4NTFfMV8xMzBJNml3MUI0WWk2Q0w5YnFoM1JzRlgtRWNuX00---gzipuG2BO3P58Z_lvJRUyQxvVIVcaqw--gzip--gzip\"",
+      "cache_hit": true
+    },
+    {
+      "url": "https://data.ny.gov/resource/t6yz-b64h.json?%24select=toll_date%2Chour_of_day%2Ctime_period%2Csum%28crz_entries%29+as+crz%2Csum%28excluded_roadway_entries%29+as+excluded%2Ccount%28*%29+as+n_rows%2Ccount%28distinct+toll_10_minute_block%29+as+n_blocks%2Ccount%28crz_entries%29+as+n_crz%2Ccount%28excluded_roadway_entries%29+as+n_excluded&%24where=toll_date+%3E%3D+%272026-03-01T00%3A00%3A00%27+and+toll_date+%3C+%272026-04-01T00%3A00%3A00%27&%24group=toll_date%2Chour_of_day%2Ctime_period&%24order=toll_date%2Chour_of_day%2Ctime_period&%24limit=5000&%24offset=0",
+      "retrieved_at": "2026-11-15T05:16:10.164Z",
+      "bytes": 131628,
+      "sha256": "7951baddd21d02f7ed058a0ba34cfe4f9f3e4222b88f9d2060f156601ab10489",
+      "etag": "\"aW5kaWEuNzM4NTFfMV8xMzBKUzJfb2ZYd09ZVGttNDFMQmlPYWhlRVBWa0E---gziqvY7yfJxBowrxg-3P5AiUW4WKFkw--gzip--gzip\"",
+      "cache_hit": true
+    },
+    {
+      "url": "https://data.ny.gov/resource/t6yz-b64h.json?%24select=toll_date%2Cdetection_group%2Cdetection_region%2Cvehicle_class%2Csum%28crz_entries%29+as+crz%2Csum%28excluded_roadway_entries%29+as+excluded%2Ccount%28*%29+as+n_rows%2Ccount%28distinct+toll_10_minute_block%29+as+n_blocks%2Ccount%28crz_entries%29+as+n_crz%2Ccount%28excluded_roadway_entries%29+as+n_excluded&%24where=toll_date+%3E%3D+%272026-04-01T00%3A00%3A00%27+and+toll_date+%3C+%272026-05-01T00%3A00%3A00%27&%24group=toll_date%2Cdetection_group%2Cdetection_region%2Cvehicle_class&%24order=toll_date%2Cdetection_group%2Cdetection_region%2Cvehicle_class&%24limit=5000&%24offset=0",
+      "retrieved_at": "2026-11-15T05:16:11.728Z",
+      "bytes": 519175,
+      "sha256": "722ace56d7c7388b5ec43b1cc7352f64fa8f2c60bf4803fd871c53a3425673a1",
+      "etag": "\"aW5kaWEuNzM4NTFfMV8xMzBZTjA3a1pDNnlpSXpHUEVfMGdRSldLOGlnTlE---gziomElZ5voam6ywUYc3zWLbuG051lg--gzip--gzip\"",
+      "cache_hit": true
+    },
+    {
+      "url": "https://data.ny.gov/resource/t6yz-b64h.json?%24select=toll_date%2Chour_of_day%2Ctime_period%2Csum%28crz_entries%29+as+crz%2Csum%28excluded_roadway_entries%29+as+excluded%2Ccount%28*%29+as+n_rows%2Ccount%28distinct+toll_10_minute_block%29+as+n_blocks%2Ccount%28crz_entries%29+as+n_crz%2Ccount%28excluded_roadway_entries%29+as+n_excluded&%24where=toll_date+%3E%3D+%272026-04-01T00%3A00%3A00%27+and+toll_date+%3C+%272026-05-01T00%3A00%3A00%27&%24group=toll_date%2Chour_of_day%2Ctime_period&%24order=toll_date%2Chour_of_day%2Ctime_period&%24limit=5000&%24offset=0",
+      "retrieved_at": "2026-11-15T05:16:12.413Z",
+      "bytes": 127538,
+      "sha256": "c595d82b896fcc7b838e9c529d9a6efe2d44d3c1e1a58e3dad78e0ed8d848ceb",
+      "etag": "\"aW5kaWEuNzM4NTFfMV8xMzBkbmcwMUV3Q1BqQ3hUcmkxMkpiNEgtU1hZNFU---gzipv2pVAIG8q7b2L8r9XazTf2uZa_A--gzip--gzip\"",
+      "cache_hit": true
+    },
+    {
+      "url": "https://data.ny.gov/resource/t6yz-b64h.json?%24select=toll_date%2Cdetection_group%2Cdetection_region%2Cvehicle_class%2Csum%28crz_entries%29+as+crz%2Csum%28excluded_roadway_entries%29+as+excluded%2Ccount%28*%29+as+n_rows%2Ccount%28distinct+toll_10_minute_block%29+as+n_blocks%2Ccount%28crz_entries%29+as+n_crz%2Ccount%28excluded_roadway_entries%29+as+n_excluded&%24where=toll_date+%3E%3D+%272026-05-01T00%3A00%3A00%27+and+toll_date+%3C+%272026-06-01T00%3A00%3A00%27&%24group=toll_date%2Cdetection_group%2Cdetection_region%2Cvehicle_class&%24order=toll_date%2Cdetection_group%2Cdetection_region%2Cvehicle_class&%24limit=5000&%24offset=0",
+      "retrieved_at": "2026-11-15T05:16:13.878Z",
+      "bytes": 536510,
+      "sha256": "9e8b0b8c0cf9a6da3b1246e3ad20b1314e085ccd219af6bb0d17404019b3575b",
+      "etag": "\"aW5kaWEuNzM4NTFfMV8xMzBjLWNZYkZ2U3BoQ2t3NFBuMGQ3U1cxQnFtYVE---gzipWEpFOL7If3UdaryF-ySMvL7i-PQ--gzip--gzip\"",
+      "cache_hit": true
+    },
+    {
+      "url": "https://data.ny.gov/resource/t6yz-b64h.json?%24select=toll_date%2Chour_of_day%2Ctime_period%2Csum%28crz_entries%29+as+crz%2Csum%28excluded_roadway_entries%29+as+excluded%2Ccount%28*%29+as+n_rows%2Ccount%28distinct+toll_10_minute_block%29+as+n_blocks%2Ccount%28crz_entries%29+as+n_crz%2Ccount%28excluded_roadway_entries%29+as+n_excluded&%24where=toll_date+%3E%3D+%272026-05-01T00%3A00%3A00%27+and+toll_date+%3C+%272026-06-01T00%3A00%3A00%27&%24group=toll_date%2Chour_of_day%2Ctime_period&%24order=toll_date%2Chour_of_day%2Ctime_period&%24limit=5000&%24offset=0",
+      "retrieved_at": "2026-11-15T05:16:14.382Z",
+      "bytes": 131842,
+      "sha256": "790225301cdec89ada1382a77a7a4803d515361b55856247d13f513157658962",
+      "etag": "\"aW5kaWEuNzM4NTFfMV8xMzBHdzZUMGJ2dGdXTWZLbW8tTjhadkFhOGR5NWs---gziowNRASsZoLrdOMXAIakc3PU0YLNQ--gzip--gzip\"",
+      "cache_hit": true
+    },
+    {
+      "url": "https://data.ny.gov/resource/t6yz-b64h.json?%24select=toll_date%2Cdetection_group%2Cdetection_region%2Cvehicle_class%2Csum%28crz_entries%29+as+crz%2Csum%28excluded_roadway_entries%29+as+excluded%2Ccount%28*%29+as+n_rows%2Ccount%28distinct+toll_10_minute_block%29+as+n_blocks%2Ccount%28crz_entries%29+as+n_crz%2Ccount%28excluded_roadway_entries%29+as+n_excluded&%24where=toll_date+%3E%3D+%272026-06-01T00%3A00%3A00%27+and+toll_date+%3C+%272026-07-01T00%3A00%3A00%27&%24group=toll_date%2Cdetection_group%2Cdetection_region%2Cvehicle_class&%24order=toll_date%2Cdetection_group%2Cdetection_region%2Cvehicle_class&%24limit=5000&%24offset=0",
+      "retrieved_at": "2026-11-15T05:16:15.938Z",
+      "bytes": 519304,
+      "sha256": "a088848feac14a770c7bd0fbfcb474a47c699f9eef0ad0f92f9c8ca2ff0fcfac",
+      "etag": "\"aW5kaWEuNzM4NTFfMV8xMzBRTzc0OXRRQzBJdWpfeHpDRGFzU2YtWVNnVTg---gzip4h8BJPUBx_0AsSYJbOz2kSr2Y3g--gzip--gzip\"",
+      "cache_hit": true
+    },
+    {
+      "url": "https://data.ny.gov/resource/t6yz-b64h.json?%24select=toll_date%2Chour_of_day%2Ctime_period%2Csum%28crz_entries%29+as+crz%2Csum%28excluded_roadway_entries%29+as+excluded%2Ccount%28*%29+as+n_rows%2Ccount%28distinct+toll_10_minute_block%29+as+n_blocks%2Ccount%28crz_entries%29+as+n_crz%2Ccount%28excluded_roadway_entries%29+as+n_excluded&%24where=toll_date+%3E%3D+%272026-06-01T00%3A00%3A00%27+and+toll_date+%3C+%272026-07-01T00%3A00%3A00%27&%24group=toll_date%2Chour_of_day%2Ctime_period&%24order=toll_date%2Chour_of_day%2Ctime_period&%24limit=5000&%24offset=0",
+      "retrieved_at": "2026-11-15T05:16:16.526Z",
+      "bytes": 127580,
+      "sha256": "04001458ca7c49f203a073b360c13e85f520237720710423231b3596297afabf",
+      "etag": "\"aW5kaWEuNzM4NTFfMV8xMzA2MkNCX1pkMlRzOWZrcTdRSTc5RTgxeWdJdXc---gziplJ75n1tlJi9u8-veVxg8BCdRM4Q--gzip--gzip\"",
+      "cache_hit": true
+    },
+    {
+      "url": "https://data.ny.gov/resource/t6yz-b64h.json?%24select=toll_date%2Cdetection_group%2Cdetection_region%2Cvehicle_class%2Csum%28crz_entries%29+as+crz%2Csum%28excluded_roadway_entries%29+as+excluded%2Ccount%28*%29+as+n_rows%2Ccount%28distinct+toll_10_minute_block%29+as+n_blocks%2Ccount%28crz_entries%29+as+n_crz%2Ccount%28excluded_roadway_entries%29+as+n_excluded&%24where=toll_date+%3E%3D+%272026-07-01T00%3A00%3A00%27+and+toll_date+%3C+%272026-08-01T00%3A00%3A00%27&%24group=toll_date%2Cdetection_group%2Cdetection_region%2Cvehicle_class&%24order=toll_date%2Cdetection_group%2Cdetection_region%2Cvehicle_class&%24limit=5000&%24offset=0",
+      "retrieved_at": "2026-11-15T05:16:18.466Z",
+      "bytes": 536490,
+      "sha256": "eb63ec6670a190df879f6bc4380d8af6e4c7737d5b35f9a6175e94963ed0f07b",
+      "etag": "\"aW5kaWEuNzM4NTFfMV8xMzBSbmF5TlA2amQxeFl4ZG1MVVFqdVo3aXRNZHc---gziqr1gI_12Xm6W6H7AecSp83dKZJ0w--gzip--gzip\"",
+      "cache_hit": true
+    },
+    {
+      "url": "https://data.ny.gov/resource/t6yz-b64h.json?%24select=toll_date%2Chour_of_day%2Ctime_period%2Csum%28crz_entries%29+as+crz%2Csum%28excluded_roadway_entries%29+as+excluded%2Ccount%28*%29+as+n_rows%2Ccount%28distinct+toll_10_minute_block%29+as+n_blocks%2Ccount%28crz_entries%29+as+n_crz%2Ccount%28excluded_roadway_entries%29+as+n_excluded&%24where=toll_date+%3E%3D+%272026-07-01T00%3A00%3A00%27+and+toll_date+%3C+%272026-08-01T00%3A00%3A00%27&%24group=toll_date%2Chour_of_day%2Ctime_period&%24order=toll_date%2Chour_of_day%2Ctime_period&%24limit=5000&%24offset=0",
+      "retrieved_at": "2026-11-15T05:16:19.176Z",
+      "bytes": 131794,
+      "sha256": "ef5fa83b7718fdf6e752ac6d79f9a7f23cb8920a22f09b2fe4efa3ca77c019c4",
+      "etag": "\"aW5kaWEuNzM4NTFfMV8xMzBzLUhza2ZDOEV5dmtqZm1DN3EtUjNzZjAybUk---gzirwEvSF9JTu6T5T-7l-uLg_U6r_Ag--gzip--gzip\"",
+      "cache_hit": true
+    },
+    {
+      "url": "https://data.ny.gov/resource/t6yz-b64h.json?%24select=toll_date%2Cdetection_group%2Cdetection_region%2Cvehicle_class%2Csum%28crz_entries%29+as+crz%2Csum%28excluded_roadway_entries%29+as+excluded%2Ccount%28*%29+as+n_rows%2Ccount%28distinct+toll_10_minute_block%29+as+n_blocks%2Ccount%28crz_entries%29+as+n_crz%2Ccount%28excluded_roadway_entries%29+as+n_excluded&%24where=toll_date+%3E%3D+%272026-08-01T00%3A00%3A00%27+and+toll_date+%3C+%272026-09-01T00%3A00%3A00%27&%24group=toll_date%2Cdetection_group%2Cdetection_region%2Cvehicle_class&%24order=toll_date%2Cdetection_group%2Cdetection_region%2Cvehicle_class&%24limit=5000&%24offset=0",
+      "retrieved_at": "2026-11-15T05:16:20.418Z",
+      "bytes": 536444,
+      "sha256": "46c40cd321519e845494ce58e55d09a458ebee802f589b13533e311d1a9bbede",
+      "etag": "\"aW5kaWEuNzM4NTFfMV8xMzBNcFp4TTdRZmRfUmNVVnlyQVRtSk9pZUxhV0E---gziq9qxWWDFkLFkqO_4qX0hcFJ274Kg--gzip--gzip\"",
+      "cache_hit": true
+    },
+    {
+      "url": "https://data.ny.gov/resource/t6yz-b64h.json?%24select=toll_date%2Chour_of_day%2Ctime_period%2Csum%28crz_entries%29+as+crz%2Csum%28excluded_roadway_entries%29+as+excluded%2Ccount%28*%29+as+n_rows%2Ccount%28distinct+toll_10_minute_block%29+as+n_blocks%2Ccount%28crz_entries%29+as+n_crz%2Ccount%28excluded_roadway_entries%29+as+n_excluded&%24where=toll_date+%3E%3D+%272026-08-01T00%3A00%3A00%27+and+toll_date+%3C+%272026-09-01T00%3A00%3A00%27&%24group=toll_date%2Chour_of_day%2Ctime_period&%24order=toll_date%2Chour_of_day%2Ctime_period&%24limit=5000&%24offset=0",
+      "retrieved_at": "2026-11-15T05:16:21.244Z",
+      "bytes": 131845,
+      "sha256": "1866f382c553f5de51fc50852ac26c12d79f1b9f799a768cf7fab3f2a3c68f96",
+      "etag": "\"aW5kaWEuNzM4NTFfMV8xMzBxMk8zQVJTQUZrSnktZXFHemxNTk90NHBPQzA---gziqssCJOHshPd3toIDyfHRaMOh_EDg--gzip--gzip\"",
+      "cache_hit": true
+    },
+    {
+      "url": "https://data.ny.gov/resource/t6yz-b64h.json?%24select=toll_date%2Cdetection_group%2Cdetection_region%2Cvehicle_class%2Csum%28crz_entries%29+as+crz%2Csum%28excluded_roadway_entries%29+as+excluded%2Ccount%28*%29+as+n_rows%2Ccount%28distinct+toll_10_minute_block%29+as+n_blocks%2Ccount%28crz_entries%29+as+n_crz%2Ccount%28excluded_roadway_entries%29+as+n_excluded&%24where=toll_date+%3E%3D+%272026-09-01T00%3A00%3A00%27+and+toll_date+%3C+%272026-10-01T00%3A00%3A00%27&%24group=toll_date%2Cdetection_group%2Cdetection_region%2Cvehicle_class&%24order=toll_date%2Cdetection_group%2Cdetection_region%2Cvehicle_class&%24limit=5000&%24offset=0",
+      "retrieved_at": "2026-11-15T05:16:22.655Z",
+      "bytes": 519163,
+      "sha256": "e8c0914a2c5fc90741e0da61efd0d5b7615fd4ba07443f8ff05dece945d7eb81",
+      "etag": "\"aW5kaWEuNzM4NTFfMV8xMzBCRXRsckpoX2N4dHdlRlVEOWZ6YWRLU3FkZGc---gzipKYC6vyBpSBppL1EmcU5Ih71CRvg--gzip--gzip\"",
+      "cache_hit": true
+    },
+    {
+      "url": "https://data.ny.gov/resource/t6yz-b64h.json?%24select=toll_date%2Chour_of_day%2Ctime_period%2Csum%28crz_entries%29+as+crz%2Csum%28excluded_roadway_entries%29+as+excluded%2Ccount%28*%29+as+n_rows%2Ccount%28distinct+toll_10_minute_block%29+as+n_blocks%2Ccount%28crz_entries%29+as+n_crz%2Ccount%28excluded_roadway_entries%29+as+n_excluded&%24where=toll_date+%3E%3D+%272026-09-01T00%3A00%3A00%27+and+toll_date+%3C+%272026-10-01T00%3A00%3A00%27&%24group=toll_date%2Chour_of_day%2Ctime_period&%24order=toll_date%2Chour_of_day%2Ctime_period&%24limit=5000&%24offset=0",
+      "retrieved_at": "2026-11-15T05:16:23.144Z",
+      "bytes": 127564,
+      "sha256": "9fd6eb49e50e13e3189c119fa2bcdbdc3899b1eac8f5a8d2d3c49980efaa3d9c",
+      "etag": "\"aW5kaWEuNzM4NTFfMV8xMzBkcVN4bXJHZHhPMUVHLXB3bGpLc1BlWmstaTg---gzipfO8Kko3ma2W69IyGcdnO6vTupkw--gzip--gzip\"",
+      "cache_hit": true
+    },
+    {
+      "url": "https://data.ny.gov/resource/t6yz-b64h.json?%24select=toll_date%2Cdetection_group%2Cdetection_region%2Cvehicle_class%2Csum%28crz_entries%29+as+crz%2Csum%28excluded_roadway_entries%29+as+excluded%2Ccount%28*%29+as+n_rows%2Ccount%28distinct+toll_10_minute_block%29+as+n_blocks%2Ccount%28crz_entries%29+as+n_crz%2Ccount%28excluded_roadway_entries%29+as+n_excluded&%24where=toll_date+%3E%3D+%272026-10-01T00%3A00%3A00%27+and+toll_date+%3C+%272026-11-01T00%3A00%3A00%27&%24group=toll_date%2Cdetection_group%2Cdetection_region%2Cvehicle_class&%24order=toll_date%2Cdetection_group%2Cdetection_region%2Cvehicle_class&%24limit=5000&%24offset=0",
+      "retrieved_at": "2026-11-15T05:16:24.415Z",
+      "bytes": 536552,
+      "sha256": "ad2daef36afe23a64ae6a4a9b796dcd120b996b1ae1b35d699aa15b751fd89a0",
+      "etag": "\"aW5kaWEuNzM4NTFfMV8xMzBJa3N0cDNnc3FLOTFVVkNQVGc3cFVfS0NFUGs---gzirSApvsGK7XVQvOJpLtjiHkpG0Akg--gzip--gzip\"",
+      "cache_hit": true
+    },
+    {
+      "url": "https://data.ny.gov/resource/t6yz-b64h.json?%24select=toll_date%2Chour_of_day%2Ctime_period%2Csum%28crz_entries%29+as+crz%2Csum%28excluded_roadway_entries%29+as+excluded%2Ccount%28*%29+as+n_rows%2Ccount%28distinct+toll_10_minute_block%29+as+n_blocks%2Ccount%28crz_entries%29+as+n_crz%2Ccount%28excluded_roadway_entries%29+as+n_excluded&%24where=toll_date+%3E%3D+%272026-10-01T00%3A00%3A00%27+and+toll_date+%3C+%272026-11-01T00%3A00%3A00%27&%24group=toll_date%2Chour_of_day%2Ctime_period&%24order=toll_date%2Chour_of_day%2Ctime_period&%24limit=5000&%24offset=0",
+      "retrieved_at": "2026-11-15T05:16:25.119Z",
+      "bytes": 131847,
+      "sha256": "349d4fc272e12142d873b6ea7f592c198818e83af4a5cde22850a2a2d8e45ee4",
+      "etag": "\"aW5kaWEuNzM4NTFfMV8xMzBNUFdKa3BRZ2RZYk4zMUhoeUJ1X2cxa2ZPb0E---gziotGrazox08V5d5953GIMM_KDv83g--gzip--gzip\"",
+      "cache_hit": true
+    },
+    {
+      "url": "https://data.ny.gov/resource/t6yz-b64h.json?%24select=toll_date%2Cdetection_group%2Cdetection_region%2Cvehicle_class%2Csum%28crz_entries%29+as+crz%2Csum%28excluded_roadway_entries%29+as+excluded%2Ccount%28*%29+as+n_rows%2Ccount%28distinct+toll_10_minute_block%29+as+n_blocks%2Ccount%28crz_entries%29+as+n_crz%2Ccount%28excluded_roadway_entries%29+as+n_excluded&%24where=toll_date+%3E%3D+%272026-11-01T00%3A00%3A00%27+and+toll_date+%3C+%272026-11-08T00%3A00%3A00%27&%24group=toll_date%2Cdetection_group%2Cdetection_region%2Cvehicle_class&%24order=toll_date%2Cdetection_group%2Cdetection_region%2Cvehicle_class&%24limit=5000&%24offset=0",
+      "retrieved_at": "2026-11-15T05:16:25.553Z",
+      "bytes": 121132,
+      "sha256": "54da2ee7dab5be6c24a406b973f7b8154cd4038528c6c3c16556888ba83863d5",
+      "etag": "\"aW5kaWEuNzM4NTFfMV8xMzBzQjVxaUJGTXN6Vll6Tkl2UjZTblJKWF9IczQ---gzipGYtoPKUbWvARHkb7QOt4oF9PXfA--gzip--gzip\"",
+      "cache_hit": true
+    },
+    {
+      "url": "https://data.ny.gov/resource/t6yz-b64h.json?%24select=toll_date%2Chour_of_day%2Ctime_period%2Csum%28crz_entries%29+as+crz%2Csum%28excluded_roadway_entries%29+as+excluded%2Ccount%28*%29+as+n_rows%2Ccount%28distinct+toll_10_minute_block%29+as+n_blocks%2Ccount%28crz_entries%29+as+n_crz%2Ccount%28excluded_roadway_entries%29+as+n_excluded&%24where=toll_date+%3E%3D+%272026-11-01T00%3A00%3A00%27+and+toll_date+%3C+%272026-11-08T00%3A00%3A00%27&%24group=toll_date%2Chour_of_day%2Ctime_period&%24order=toll_date%2Chour_of_day%2Ctime_period&%24limit=5000&%24offset=0",
+      "retrieved_at": "2026-11-15T05:16:25.758Z",
+      "bytes": 29773,
+      "sha256": "10833ec323ca3ce6cff66686994ba855950ec748d2fa7338143c2fadca016403",
+      "etag": "\"aW5kaWEuNzM4NTFfMV8xMzBlWXdidGkxeWloSmtLbFlJWWxNRjZFaEdnWGs---gzios-DHvdS5m0FSN_OdYBrQwAA-Uog--gzip--gzip\"",
+      "cache_hit": true
+    },
+    {
+      "url": "https://data.ny.gov/resource/t6yz-b64h.json?%24select=toll_date%2Csum%28crz_entries%29+as+crz%2Csum%28excluded_roadway_entries%29+as+excluded%2Ccount%28*%29+as+n_rows&%24where=toll_date+%3E%3D+%272025-01-05T00%3A00%3A00%27+and+toll_date+%3C+%272026-11-08T00%3A00%3A00%27&%24group=toll_date&%24order=toll_date&%24limit=5000&%24offset=0",
+      "retrieved_at": "2026-11-15T05:16:32.048Z",
+      "bytes": 61821,
+      "sha256": "50b0b2f53f57b71aa88dee9d01f4550bb51d0408bbaeec93e32fffb1abff6ab1",
+      "etag": "\"aW5kaWEuNzM4NTFfMV8xMzBfSEZHRWJkN3dUMXlHZFhVU2FiUTBNMUVYVkE---gzioUuisuGDMsrvTkIXpdpQfTwHXNVw--gzip--gzip\"",
+      "cache_hit": true
+    },
+    {
+      "url": "https://data.ny.gov/resource/t6yz-b64h.json?%24where=toll_date+%3E%3D+%272025-01-05T00%3A00%3A00%27+and+toll_date+%3C+%272025-01-06T00%3A00%3A00%27+and+hour_of_day%3D5&%24order=toll_10_minute_block%2Cdetection_group%2Cvehicle_class&%24limit=5000&%24offset=0",
+      "retrieved_at": "2026-11-15T05:18:51.625Z",
+      "bytes": 186865,
+      "sha256": "fefa85dbf267dacf53e3eec84d947ab7ff0ce9b6016226cc07c58eed130188be",
+      "etag": "\"aW5kaWEuNzM4NTFfMV8xMzA1bG1aZTVXOWNTSjhOTUV1TnJkaFgzUTBlNzQ---gziqytDlqJ8VhmZnNhqYFbfrDVauJ6w--gzip--gzip\"",
+      "cache_hit": true
+    },
+    {
+      "url": "https://data.ny.gov/api/views/t6yz-b64h.json",
+      "retrieved_at": "2026-11-15T05:18:56.263Z",
+      "bytes": 27540,
+      "sha256": "538f2477a1816f752a51d51096031bab3164c83613e09d9dfe8061894470e5a4",
+      "etag": null,
+      "cache_hit": true
+    }
+  ]
+}

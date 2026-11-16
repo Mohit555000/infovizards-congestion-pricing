@@ -1,0 +1,16 @@
+{
+  "checked_at": "2026-11-15",
+  "command": "PATH=/usr/local/bin:/usr/bin:/bin npm run check",
+  "tests": 35,
+  "passed": 35,
+  "failed": 0,
+  "visual_test_performed": false,
+  "source_archives_crc_and_sha256_checked": true,
+  "geography_snapshot_hashes_checked": 8,
+  "unresolved": [
+    "adjacency group rules proposed for review",
+    "station identity100m operational only",
+    "NJ jurisdiction and station opening histories unverified",
+    "provider timezone not explicitly documented"
+  ]
+}

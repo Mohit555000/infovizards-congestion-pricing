@@ -1,0 +1,266 @@
+LocationID,zone,borough,official_cbd_member,zone_group,rule_version,classification_status,crz_area_fraction,polygon_relation,shared_boundary_ft,distance_to_cbd_m,point_vs_zone_warning
+1,Newark Airport,EWR,false,outside,1.0.0-review,outside_operational_groups,0,outside_geofence,0,11301.417740937475,false
+2,Jamaica Bay,Queens,false,outside,1.0.0-review,outside_operational_groups,0,outside_geofence,0,13012.218079424749,false
+3,Allerton/Pelham Gardens,Bronx,false,outside,1.0.0-review,outside_operational_groups,0,outside_geofence,0,14043.615952619426,false
+4,Alphabet City,Manhattan,true,inside,1.0.0-review,official_taxi_zone_classification,0.9219035092783335,partial_intersection,4259.764500647563,0,true
+5,Arden Heights,Staten Island,false,outside,1.0.0-review,outside_operational_groups,0,outside_geofence,0,20334.485972582985,false
+6,Arrochar/Fort Wadsworth,Staten Island,false,outside,1.0.0-review,outside_operational_groups,0,outside_geofence,0,10836.154480301706,false
+7,Astoria,Queens,false,outside,1.0.0-review,outside_operational_groups,0,outside_geofence,0,1865.2015422246861,false
+8,Astoria Park,Queens,false,outside,1.0.0-review,outside_operational_groups,0,outside_geofence,0,3303.126250147644,false
+9,Auburndale,Queens,false,outside,1.0.0-review,outside_operational_groups,0,outside_geofence,0,13671.994960888358,false
+10,Baisley Park,Queens,false,outside,1.0.0-review,outside_operational_groups,0,outside_geofence,0,14723.5341023048,false
+11,Bath Beach,Brooklyn,false,outside,1.0.0-review,outside_operational_groups,0,outside_geofence,0,9538.962210906382,false
+12,Battery Park,Manhattan,true,inside,1.0.0-review,official_taxi_zone_classification,0.092172071807074,partial_intersection,3371.7801856154892,0,true
+13,Battery Park City,Manhattan,true,inside,1.0.0-review,official_taxi_zone_classification,0.8355901604527902,partial_intersection,12695.019396623842,0,true
+14,Bay Ridge,Brooklyn,false,outside,1.0.0-review,outside_operational_groups,0,outside_geofence,0,6408.6333170480775,false
+15,Bay Terrace/Fort Totten,Queens,false,outside,1.0.0-review,outside_operational_groups,0,outside_geofence,0,13226.591587311177,false
+16,Bayside,Queens,false,outside,1.0.0-review,outside_operational_groups,0,outside_geofence,0,13869.901208385152,false
+17,Bedford,Brooklyn,false,outside,1.0.0-review,outside_operational_groups,0,outside_geofence,0,1967.2119051492837,false
+18,Bedford Park,Bronx,false,outside,1.0.0-review,outside_operational_groups,0,outside_geofence,0,12265.197451558264,false
+19,Bellerose,Queens,false,outside,1.0.0-review,outside_operational_groups,0,outside_geofence,0,18137.43635829767,false
+20,Belmont,Bronx,false,outside,1.0.0-review,outside_operational_groups,0,outside_geofence,0,11854.907989975192,false
+21,Bensonhurst East,Brooklyn,false,outside,1.0.0-review,outside_operational_groups,0,outside_geofence,0,9750.720462340727,false
+22,Bensonhurst West,Brooklyn,false,outside,1.0.0-review,outside_operational_groups,0,outside_geofence,0,8216.563677920225,false
+23,Bloomfield/Emerson Hill,Staten Island,false,outside,1.0.0-review,outside_operational_groups,0,outside_geofence,0,13308.293285111693,false
+24,Bloomingdale,Manhattan,false,outside,1.0.0-review,outside_operational_groups,0,outside_geofence,0,3806.373429064928,false
+25,Boerum Hill,Brooklyn,false,outside,1.0.0-review,outside_operational_groups,0,outside_geofence,0,1761.7421964271905,false
+26,Borough Park,Brooklyn,false,outside,1.0.0-review,outside_operational_groups,0,outside_geofence,0,6449.4348859416905,false
+27,Breezy Point/Fort Tilden/Riis Beach,Queens,false,outside,1.0.0-review,outside_operational_groups,0,outside_geofence,0,16938.93125355792,false
+28,Briarwood/Jamaica Hills,Queens,false,outside,1.0.0-review,outside_operational_groups,0,outside_geofence,0,12164.946553568847,false
+29,Brighton Beach,Brooklyn,false,outside,1.0.0-review,outside_operational_groups,0,outside_geofence,0,12698.293704356158,false
+30,Broad Channel,Queens,false,outside,1.0.0-review,outside_operational_groups,0,outside_geofence,0,16941.76273757909,false
+31,Bronx Park,Bronx,false,outside,1.0.0-review,outside_operational_groups,0,outside_geofence,0,11576.629916126272,false
+32,Bronxdale,Bronx,false,outside,1.0.0-review,outside_operational_groups,0,outside_geofence,0,13256.521567032309,false
+33,Brooklyn Heights,Brooklyn,false,adjacent_across_river,1.0.0-review,proposed_operational_adjacency,0,outside_geofence,0,431.49397573685735,false
+34,Brooklyn Navy Yard,Brooklyn,false,adjacent_across_river,1.0.0-review,proposed_operational_adjacency,0,outside_geofence,0,418.6724696354964,false
+35,Brownsville,Brooklyn,false,outside,1.0.0-review,outside_operational_groups,0,outside_geofence,0,6635.019460419739,false
+36,Bushwick North,Brooklyn,false,outside,1.0.0-review,outside_operational_groups,0,outside_geofence,0,3557.757790281663,false
+37,Bushwick South,Brooklyn,false,outside,1.0.0-review,outside_operational_groups,0,outside_geofence,0,2652.3057746843474,false
+38,Cambria Heights,Queens,false,outside,1.0.0-review,outside_operational_groups,0,outside_geofence,0,18983.986396735738,false
+39,Canarsie,Brooklyn,false,outside,1.0.0-review,outside_operational_groups,0,outside_geofence,0,8746.361727347094,false
+40,Carroll Gardens,Brooklyn,false,outside,1.0.0-review,outside_operational_groups,0,outside_geofence,0,1827.6193461429025,false
+41,Central Harlem,Manhattan,false,outside,1.0.0-review,outside_operational_groups,0,outside_geofence,0,4126.090843465787,false
+42,Central Harlem North,Manhattan,false,outside,1.0.0-review,outside_operational_groups,0,outside_geofence,0,5431.848181499168,false
+43,Central Park,Manhattan,false,ambiguous_central_park,1.0.0-review,ambiguous,0.009248547978108996,partial_intersection,2650.9885785318156,0,true
+44,Charleston/Tottenville,Staten Island,false,outside,1.0.0-review,outside_operational_groups,0,outside_geofence,0,22539.879318340012,false
+45,Chinatown,Manhattan,true,inside,1.0.0-review,official_taxi_zone_classification,0.9009411755272656,partial_intersection,2823.3698659879806,0,true
+46,City Island,Bronx,false,outside,1.0.0-review,outside_operational_groups,0,outside_geofence,0,16617.265230598492,false
+47,Claremont/Bathgate,Bronx,false,outside,1.0.0-review,outside_operational_groups,0,outside_geofence,0,9013.591851806383,false
+48,Clinton East,Manhattan,true,inside,1.0.0-review,official_taxi_zone_classification,0.9999999999999998,fully_inside_geofence,3630.0205629423704,0,false
+49,Clinton Hill,Brooklyn,false,outside,1.0.0-review,outside_operational_groups,0,outside_geofence,0,1764.7356774969196,false
+50,Clinton West,Manhattan,true,inside,1.0.0-review,official_taxi_zone_classification,0.8615283355004781,partial_intersection,23565.067220357436,0,true
+51,Co-Op City,Bronx,false,outside,1.0.0-review,outside_operational_groups,0,outside_geofence,0,15779.231062719915,false
+52,Cobble Hill,Brooklyn,false,outside,1.0.0-review,outside_operational_groups,0,outside_geofence,0,1380.8131473779777,false
+53,College Point,Queens,false,outside,1.0.0-review,outside_operational_groups,0,outside_geofence,0,8161.407184996429,false
+54,Columbia Street,Brooklyn,false,outside,1.0.0-review,outside_operational_groups,0,outside_geofence,0,842.4811414908662,false
+55,Coney Island,Brooklyn,false,outside,1.0.0-review,outside_operational_groups,0,outside_geofence,0,12971.846380883979,false
+56,Corona,Queens,false,outside,1.0.0-review,outside_operational_groups,0,outside_geofence,0,7815.4406974341755,false
+57,Corona,Queens,false,outside,1.0.0-review,outside_operational_groups,0,outside_geofence,0,8706.502630432742,false
+58,Country Club,Bronx,false,outside,1.0.0-review,outside_operational_groups,0,outside_geofence,0,14010.81384846206,false
+59,Crotona Park,Bronx,false,outside,1.0.0-review,outside_operational_groups,0,outside_geofence,0,9847.715810188105,false
+60,Crotona Park East,Bronx,false,outside,1.0.0-review,outside_operational_groups,0,outside_geofence,0,9329.796479749135,false
+61,Crown Heights North,Brooklyn,false,outside,1.0.0-review,outside_operational_groups,0,outside_geofence,0,3626.243129692362,false
+62,Crown Heights South,Brooklyn,false,outside,1.0.0-review,outside_operational_groups,0,outside_geofence,0,4505.263691229364,false
+63,Cypress Hills,Brooklyn,false,outside,1.0.0-review,outside_operational_groups,0,outside_geofence,0,7112.661971991301,false
+64,Douglaston,Queens,false,outside,1.0.0-review,outside_operational_groups,0,outside_geofence,0,16863.86616772356,false
+65,Downtown Brooklyn/MetroTech,Brooklyn,false,outside,1.0.0-review,outside_operational_groups,0,outside_geofence,0,935.1714281998073,false
+66,DUMBO/Vinegar Hill,Brooklyn,false,adjacent_across_river,1.0.0-review,proposed_operational_adjacency,0,outside_geofence,0,434.4004016364025,false
+67,Dyker Heights,Brooklyn,false,outside,1.0.0-review,outside_operational_groups,0,outside_geofence,0,7392.4563991783625,false
+68,East Chelsea,Manhattan,true,inside,1.0.0-review,official_taxi_zone_classification,1.0000000000000002,fully_inside_geofence,2392.388477845932,0,false
+69,East Concourse/Concourse Village,Bronx,false,outside,1.0.0-review,outside_operational_groups,0,outside_geofence,0,7143.576978299182,false
+70,East Elmhurst,Queens,false,outside,1.0.0-review,outside_operational_groups,0,outside_geofence,0,6997.441214225821,false
+71,East Flatbush/Farragut,Brooklyn,false,outside,1.0.0-review,outside_operational_groups,0,outside_geofence,0,6637.194084795625,false
+72,East Flatbush/Remsen Village,Brooklyn,false,outside,1.0.0-review,outside_operational_groups,0,outside_geofence,0,6568.542862836627,false
+73,East Flushing,Queens,false,outside,1.0.0-review,outside_operational_groups,0,outside_geofence,0,11665.052102186271,false
+74,East Harlem North,Manhattan,false,outside,1.0.0-review,outside_operational_groups,0,outside_geofence,0,4055.6353998470336,false
+75,East Harlem South,Manhattan,false,outside,1.0.0-review,outside_operational_groups,0,outside_geofence,0,2998.835235362441,false
+76,East New York,Brooklyn,false,outside,1.0.0-review,outside_operational_groups,0,outside_geofence,0,7535.430997066957,false
+77,East New York/Pennsylvania Avenue,Brooklyn,false,outside,1.0.0-review,outside_operational_groups,0,outside_geofence,0,7370.745123585555,false
+78,East Tremont,Bronx,false,outside,1.0.0-review,outside_operational_groups,0,outside_geofence,0,10745.9514551129,false
+79,East Village,Manhattan,true,inside,1.0.0-review,official_taxi_zone_classification,0.9999999999999998,fully_inside_geofence,1514.6957616576085,0,false
+80,East Williamsburg,Brooklyn,false,outside,1.0.0-review,outside_operational_groups,0,outside_geofence,0,1769.119838997238,false
+81,Eastchester,Bronx,false,outside,1.0.0-review,outside_operational_groups,0,outside_geofence,0,15551.974785482027,false
+82,Elmhurst,Queens,false,outside,1.0.0-review,outside_operational_groups,0,outside_geofence,0,5801.659805241544,false
+83,Elmhurst/Maspeth,Queens,false,outside,1.0.0-review,outside_operational_groups,0,outside_geofence,0,4750.267939522058,false
+84,Eltingville/Annadale/Prince's Bay,Staten Island,false,outside,1.0.0-review,outside_operational_groups,0,outside_geofence,0,20259.61474745406,false
+85,Erasmus,Brooklyn,false,outside,1.0.0-review,outside_operational_groups,0,outside_geofence,0,6561.974010341112,false
+86,Far Rockaway,Queens,false,outside,1.0.0-review,outside_operational_groups,0,outside_geofence,0,20336.827341060267,false
+87,Financial District North,Manhattan,true,inside,1.0.0-review,official_taxi_zone_classification,0.9254179860058743,partial_intersection,9744.375651385675,0,true
+88,Financial District South,Manhattan,true,inside,1.0.0-review,official_taxi_zone_classification,0.7877840631346817,partial_intersection,7976.279777194818,0,true
+89,Flatbush/Ditmas Park,Brooklyn,false,outside,1.0.0-review,outside_operational_groups,0,outside_geofence,0,6282.9979566787315,false
+90,Flatiron,Manhattan,true,inside,1.0.0-review,official_taxi_zone_classification,1.0000000000000002,fully_inside_geofence,518.8621127264319,0,false
+91,Flatlands,Brooklyn,false,outside,1.0.0-review,outside_operational_groups,0,outside_geofence,0,8780.497147412125,false
+92,Flushing,Queens,false,outside,1.0.0-review,outside_operational_groups,0,outside_geofence,0,10106.45241818957,false
+93,Flushing Meadows-Corona Park,Queens,false,outside,1.0.0-review,outside_operational_groups,0,outside_geofence,0,8269.685402710262,false
+94,Fordham South,Bronx,false,outside,1.0.0-review,outside_operational_groups,0,outside_geofence,0,11634.394758246648,false
+95,Forest Hills,Queens,false,outside,1.0.0-review,outside_operational_groups,0,outside_geofence,0,8813.703508927567,false
+96,Forest Park/Highland Park,Queens,false,outside,1.0.0-review,outside_operational_groups,0,outside_geofence,0,6727.0127515302465,false
+97,Fort Greene,Brooklyn,false,outside,1.0.0-review,outside_operational_groups,0,outside_geofence,0,1282.7753810560062,false
+98,Fresh Meadows,Queens,false,outside,1.0.0-review,outside_operational_groups,0,outside_geofence,0,13888.348754777064,false
+99,Freshkills Park,Staten Island,false,outside,1.0.0-review,outside_operational_groups,0,outside_geofence,0,16868.359018209358,false
+100,Garment District,Manhattan,true,inside,1.0.0-review,official_taxi_zone_classification,0.9999999999999999,fully_inside_geofence,900.1398553088118,0,false
+101,Glen Oaks,Queens,false,outside,1.0.0-review,outside_operational_groups,0,outside_geofence,0,19443.42018312236,false
+102,Glendale,Queens,false,outside,1.0.0-review,outside_operational_groups,0,outside_geofence,0,6767.552235544818,false
+103,Governor's Island/Ellis Island/Liberty Island,Manhattan,false,outside,1.0.0-review,outside_operational_groups,0,outside_geofence,0,2570.8044465845983,false
+104,Governor's Island/Ellis Island/Liberty Island,Manhattan,false,outside,1.0.0-review,outside_operational_groups,0,outside_geofence,0,1698.259722926705,false
+105,Governor's Island/Ellis Island/Liberty Island,Manhattan,false,outside,1.0.0-review,outside_operational_groups,0,outside_geofence,0,743.2915125465263,false
+106,Gowanus,Brooklyn,false,outside,1.0.0-review,outside_operational_groups,0,outside_geofence,0,2813.4723524956253,false
+107,Gramercy,Manhattan,true,inside,1.0.0-review,official_taxi_zone_classification,1.0000000000000002,fully_inside_geofence,1088.0734882198335,0,false
+108,Gravesend,Brooklyn,false,outside,1.0.0-review,outside_operational_groups,0,outside_geofence,0,11830.201214687913,false
+109,Great Kills,Staten Island,false,outside,1.0.0-review,outside_operational_groups,0,outside_geofence,0,18019.842186671623,false
+110,Great Kills Park,Staten Island,false,outside,1.0.0-review,outside_operational_groups,0,outside_geofence,0,18504.359449655396,false
+111,Green-Wood Cemetery,Brooklyn,false,outside,1.0.0-review,outside_operational_groups,0,outside_geofence,0,4680.181335998469,false
+112,Greenpoint,Brooklyn,false,outside,1.0.0-review,outside_operational_groups,0,outside_geofence,0,731.4336071667411,false
+113,Greenwich Village North,Manhattan,true,inside,1.0.0-review,official_taxi_zone_classification,1,fully_inside_geofence,1469.7535167271315,0,false
+114,Greenwich Village South,Manhattan,true,inside,1.0.0-review,official_taxi_zone_classification,1.0000000000000002,fully_inside_geofence,522.967917679203,0,false
+115,Grymes Hill/Clifton,Staten Island,false,outside,1.0.0-review,outside_operational_groups,0,outside_geofence,0,9471.11068942144,false
+116,Hamilton Heights,Manhattan,false,outside,1.0.0-review,outside_operational_groups,0,outside_geofence,0,6328.0164585534685,false
+117,Hammels/Arverne,Queens,false,outside,1.0.0-review,outside_operational_groups,0,outside_geofence,0,19106.774114413944,false
+118,Heartland Village/Todt Hill,Staten Island,false,outside,1.0.0-review,outside_operational_groups,0,outside_geofence,0,11969.507609733088,false
+119,Highbridge,Bronx,false,outside,1.0.0-review,outside_operational_groups,0,outside_geofence,0,7834.230895519547,false
+120,Highbridge Park,Manhattan,false,outside,1.0.0-review,outside_operational_groups,0,outside_geofence,0,7767.15653875161,false
+121,Hillcrest/Pomonok,Queens,false,outside,1.0.0-review,outside_operational_groups,0,outside_geofence,0,12326.65755488042,false
+122,Hollis,Queens,false,outside,1.0.0-review,outside_operational_groups,0,outside_geofence,0,16476.74619887771,false
+123,Homecrest,Brooklyn,false,outside,1.0.0-review,outside_operational_groups,0,outside_geofence,0,10474.80975046533,false
+124,Howard Beach,Queens,false,outside,1.0.0-review,outside_operational_groups,0,outside_geofence,0,10556.573007955834,false
+125,Hudson Sq,Manhattan,true,inside,1.0.0-review,official_taxi_zone_classification,0.9170459111116155,partial_intersection,4904.7310698231895,0,true
+126,Hunts Point,Bronx,false,outside,1.0.0-review,outside_operational_groups,0,outside_geofence,0,7041.1312522632725,false
+127,Inwood,Manhattan,false,outside,1.0.0-review,outside_operational_groups,0,outside_geofence,0,10952.634848642809,false
+128,Inwood Hill Park,Manhattan,false,outside,1.0.0-review,outside_operational_groups,0,outside_geofence,0,11777.066897065873,false
+129,Jackson Heights,Queens,false,outside,1.0.0-review,outside_operational_groups,0,outside_geofence,0,4976.1906512231435,false
+130,Jamaica,Queens,false,outside,1.0.0-review,outside_operational_groups,0,outside_geofence,0,13382.093193517288,false
+131,Jamaica Estates,Queens,false,outside,1.0.0-review,outside_operational_groups,0,outside_geofence,0,14561.793720976191,false
+132,JFK Airport,Queens,false,outside,1.0.0-review,outside_operational_groups,0,outside_geofence,0,13200.866275300741,false
+133,Kensington,Brooklyn,false,outside,1.0.0-review,outside_operational_groups,0,outside_geofence,0,6351.090427514618,false
+134,Kew Gardens,Queens,false,outside,1.0.0-review,outside_operational_groups,0,outside_geofence,0,11023.033039773176,false
+135,Kew Gardens Hills,Queens,false,outside,1.0.0-review,outside_operational_groups,0,outside_geofence,0,10440.88753977032,false
+136,Kingsbridge Heights,Bronx,false,outside,1.0.0-review,outside_operational_groups,0,outside_geofence,0,11606.852374588416,false
+137,Kips Bay,Manhattan,true,inside,1.0.0-review,official_taxi_zone_classification,0.9054154142991496,partial_intersection,6818.645606462373,0,true
+138,LaGuardia Airport,Queens,false,outside,1.0.0-review,outside_operational_groups,0,outside_geofence,0,5945.596852448286,false
+139,Laurelton,Queens,false,outside,1.0.0-review,outside_operational_groups,0,outside_geofence,0,18659.64520488185,false
+140,Lenox Hill East,Manhattan,false,adjacent_north,1.0.0-review,proposed_operational_adjacency,0.01583830330522881,partial_intersection,1010.6871748905023,0,true
+141,Lenox Hill West,Manhattan,false,adjacent_north,1.0.0-review,proposed_operational_adjacency,0.04975514502946263,partial_intersection,1107.9307471106997,0,true
+142,Lincoln Square East,Manhattan,false,adjacent_north,1.0.0-review,proposed_operational_adjacency,0.1413975021848033,partial_intersection,2029.173568645806,0,true
+143,Lincoln Square West,Manhattan,false,adjacent_north,1.0.0-review,proposed_operational_adjacency,0.12593454773376714,partial_intersection,2166.1644671175623,0,true
+144,Little Italy/NoLiTa,Manhattan,true,inside,1.0.0-review,official_taxi_zone_classification,1,fully_inside_geofence,1035.6474296103015,0,false
+145,Long Island City/Hunters Point,Queens,false,adjacent_across_river,1.0.0-review,proposed_operational_adjacency,0,outside_geofence,0,406.7548520854447,false
+146,Long Island City/Queens Plaza,Queens,false,outside,1.0.0-review,outside_operational_groups,0,outside_geofence,0,1408.5242756920125,false
+147,Longwood,Bronx,false,outside,1.0.0-review,outside_operational_groups,0,outside_geofence,0,7413.113262585728,false
+148,Lower East Side,Manhattan,true,inside,1.0.0-review,official_taxi_zone_classification,1.0000000000000002,fully_inside_geofence,1168.3342054780228,0,false
+149,Madison,Brooklyn,false,outside,1.0.0-review,outside_operational_groups,0,outside_geofence,0,10811.81362180568,false
+150,Manhattan Beach,Brooklyn,false,outside,1.0.0-review,outside_operational_groups,0,outside_geofence,0,13464.959394444457,false
+151,Manhattan Valley,Manhattan,false,outside,1.0.0-review,outside_operational_groups,0,outside_geofence,0,3085.8071671852804,false
+152,Manhattanville,Manhattan,false,outside,1.0.0-review,outside_operational_groups,0,outside_geofence,0,5435.843756873928,false
+153,Marble Hill,Manhattan,false,outside,1.0.0-review,outside_operational_groups,0,outside_geofence,0,13097.500652860756,false
+154,Marine Park/Floyd Bennett Field,Brooklyn,false,outside,1.0.0-review,outside_operational_groups,0,outside_geofence,0,11767.355223297118,false
+155,Marine Park/Mill Basin,Brooklyn,false,outside,1.0.0-review,outside_operational_groups,0,outside_geofence,0,10056.929674245788,false
+156,Mariners Harbor,Staten Island,false,outside,1.0.0-review,outside_operational_groups,0,outside_geofence,0,12743.773939432553,false
+157,Maspeth,Queens,false,outside,1.0.0-review,outside_operational_groups,0,outside_geofence,0,4172.363781586269,false
+158,Meatpacking/West Village West,Manhattan,true,inside,1.0.0-review,official_taxi_zone_classification,0.8007625831461884,partial_intersection,14726.442085848817,0,true
+159,Melrose South,Bronx,false,outside,1.0.0-review,outside_operational_groups,0,outside_geofence,0,6934.911071925981,false
+160,Middle Village,Queens,false,outside,1.0.0-review,outside_operational_groups,0,outside_geofence,0,5826.221052545439,false
+161,Midtown Center,Manhattan,true,inside,1.0.0-review,official_taxi_zone_classification,1.0000000000000002,fully_inside_geofence,1592.5900535863607,0,false
+162,Midtown East,Manhattan,true,inside,1.0.0-review,official_taxi_zone_classification,1,fully_inside_geofence,2355.000281094034,0,false
+163,Midtown North,Manhattan,true,inside,1.0.0-review,official_taxi_zone_classification,0.9999999999999993,fully_inside_geofence,4046.600651905382,0,false
+164,Midtown South,Manhattan,true,inside,1.0.0-review,official_taxi_zone_classification,1.0000000000000004,fully_inside_geofence,1080.6846358740358,0,false
+165,Midwood,Brooklyn,false,outside,1.0.0-review,outside_operational_groups,0,outside_geofence,0,8554.696000451106,false
+166,Morningside Heights,Manhattan,false,outside,1.0.0-review,outside_operational_groups,0,outside_geofence,0,4122.234137070688,false
+167,Morrisania/Melrose,Bronx,false,outside,1.0.0-review,outside_operational_groups,0,outside_geofence,0,8073.5265685444665,false
+168,Mott Haven/Port Morris,Bronx,false,outside,1.0.0-review,outside_operational_groups,0,outside_geofence,0,5589.61597289892,false
+169,Mount Hope,Bronx,false,outside,1.0.0-review,outside_operational_groups,0,outside_geofence,0,10141.42878141718,false
+170,Murray Hill,Manhattan,true,inside,1.0.0-review,official_taxi_zone_classification,0.9999999999999997,fully_inside_geofence,1596.2617134547334,0,false
+171,Murray Hill-Queens,Queens,false,outside,1.0.0-review,outside_operational_groups,0,outside_geofence,0,11241.315582403802,false
+172,New Dorp/Midland Beach,Staten Island,false,outside,1.0.0-review,outside_operational_groups,0,outside_geofence,0,14818.154945238975,false
+173,North Corona,Queens,false,outside,1.0.0-review,outside_operational_groups,0,outside_geofence,0,7189.644157945676,false
+174,Norwood,Bronx,false,outside,1.0.0-review,outside_operational_groups,0,outside_geofence,0,13616.297312370583,false
+175,Oakland Gardens,Queens,false,outside,1.0.0-review,outside_operational_groups,0,outside_geofence,0,16193.441610483196,false
+176,Oakwood,Staten Island,false,outside,1.0.0-review,outside_operational_groups,0,outside_geofence,0,16562.25666544688,false
+177,Ocean Hill,Brooklyn,false,outside,1.0.0-review,outside_operational_groups,0,outside_geofence,0,5644.757575288741,false
+178,Ocean Parkway South,Brooklyn,false,outside,1.0.0-review,outside_operational_groups,0,outside_geofence,0,8708.72050343615,false
+179,Old Astoria,Queens,false,outside,1.0.0-review,outside_operational_groups,0,outside_geofence,0,2175.7716297049315,false
+180,Ozone Park,Queens,false,outside,1.0.0-review,outside_operational_groups,0,outside_geofence,0,10216.18280057946,false
+181,Park Slope,Brooklyn,false,outside,1.0.0-review,outside_operational_groups,0,outside_geofence,0,2784.4703564042866,false
+182,Parkchester,Bronx,false,outside,1.0.0-review,outside_operational_groups,0,outside_geofence,0,11600.972346956889,false
+183,Pelham Bay,Bronx,false,outside,1.0.0-review,outside_operational_groups,0,outside_geofence,0,13968.39165911605,false
+184,Pelham Bay Park,Bronx,false,outside,1.0.0-review,outside_operational_groups,0,outside_geofence,0,14615.421002665084,false
+185,Pelham Parkway,Bronx,false,outside,1.0.0-review,outside_operational_groups,0,outside_geofence,0,12887.381141500751,false
+186,Penn Station/Madison Sq West,Manhattan,true,inside,1.0.0-review,official_taxi_zone_classification,1.0000000000000002,fully_inside_geofence,0,0,false
+187,Port Richmond,Staten Island,false,outside,1.0.0-review,outside_operational_groups,0,outside_geofence,0,11082.626014846004,false
+188,Prospect-Lefferts Gardens,Brooklyn,false,outside,1.0.0-review,outside_operational_groups,0,outside_geofence,0,5368.690151610283,false
+189,Prospect Heights,Brooklyn,false,outside,1.0.0-review,outside_operational_groups,0,outside_geofence,0,3041.356321584637,false
+190,Prospect Park,Brooklyn,false,outside,1.0.0-review,outside_operational_groups,0,outside_geofence,0,4222.624335123119,false
+191,Queens Village,Queens,false,outside,1.0.0-review,outside_operational_groups,0,outside_geofence,0,17435.008965110752,false
+192,Queensboro Hill,Queens,false,outside,1.0.0-review,outside_operational_groups,0,outside_geofence,0,10497.765658254784,false
+193,Queensbridge/Ravenswood,Queens,false,outside,1.0.0-review,outside_operational_groups,0,outside_geofence,0,751.3330244264482,false
+194,Randalls Island,Manhattan,false,outside,1.0.0-review,outside_operational_groups,0,outside_geofence,0,3401.0535358255074,false
+195,Red Hook,Brooklyn,false,outside,1.0.0-review,outside_operational_groups,0,outside_geofence,0,1558.975254746283,false
+196,Rego Park,Queens,false,outside,1.0.0-review,outside_operational_groups,0,outside_geofence,0,7703.967325756359,false
+197,Richmond Hill,Queens,false,outside,1.0.0-review,outside_operational_groups,0,outside_geofence,0,10726.422225323746,false
+198,Ridgewood,Queens,false,outside,1.0.0-review,outside_operational_groups,0,outside_geofence,0,4201.571822784415,false
+199,Rikers Island,Bronx,false,outside,1.0.0-review,outside_operational_groups,0,outside_geofence,0,6657.504985799732,false
+200,Riverdale/North Riverdale/Fieldston,Bronx,false,outside,1.0.0-review,outside_operational_groups,0,outside_geofence,0,14019.92674289793,false
+201,Rockaway Park,Queens,false,outside,1.0.0-review,outside_operational_groups,0,outside_geofence,0,17820.429700153152,false
+202,Roosevelt Island,Manhattan,false,outside,1.0.0-review,outside_operational_groups,0,outside_geofence,0,276.61844794743746,false
+203,Rosedale,Queens,false,outside,1.0.0-review,outside_operational_groups,0,outside_geofence,0,19052.19792693786,false
+204,Rossville/Woodrow,Staten Island,false,outside,1.0.0-review,outside_operational_groups,0,outside_geofence,0,22578.934248232912,false
+205,Saint Albans,Queens,false,outside,1.0.0-review,outside_operational_groups,0,outside_geofence,0,16389.39673023094,false
+206,Saint George/New Brighton,Staten Island,false,outside,1.0.0-review,outside_operational_groups,0,outside_geofence,0,7783.356438734404,false
+207,Saint Michaels Cemetery/Woodside,Queens,false,outside,1.0.0-review,outside_operational_groups,0,outside_geofence,0,4735.676047561944,false
+208,Schuylerville/Edgewater Park,Bronx,false,outside,1.0.0-review,outside_operational_groups,0,outside_geofence,0,11539.147939154396,false
+209,Seaport,Manhattan,true,inside,1.0.0-review,official_taxi_zone_classification,0.8058379444171411,partial_intersection,4666.239328739945,0,true
+210,Sheepshead Bay,Brooklyn,false,outside,1.0.0-review,outside_operational_groups,0,outside_geofence,0,12342.618620799516,false
+211,SoHo,Manhattan,true,inside,1.0.0-review,official_taxi_zone_classification,1,fully_inside_geofence,0,0,false
+212,Soundview/Bruckner,Bronx,false,outside,1.0.0-review,outside_operational_groups,0,outside_geofence,0,9540.602630556908,false
+213,Soundview/Castle Hill,Bronx,false,outside,1.0.0-review,outside_operational_groups,0,outside_geofence,0,9348.197464914563,false
+214,South Beach/Dongan Hills,Staten Island,false,outside,1.0.0-review,outside_operational_groups,0,outside_geofence,0,12311.409260498307,false
+215,South Jamaica,Queens,false,outside,1.0.0-review,outside_operational_groups,0,outside_geofence,0,14081.920412588619,false
+216,South Ozone Park,Queens,false,outside,1.0.0-review,outside_operational_groups,0,outside_geofence,0,11998.357635919208,false
+217,South Williamsburg,Brooklyn,false,outside,1.0.0-review,outside_operational_groups,0,outside_geofence,0,875.9305251945865,false
+218,Springfield Gardens North,Queens,false,outside,1.0.0-review,outside_operational_groups,0,outside_geofence,0,16464.552993736143,false
+219,Springfield Gardens South,Queens,false,outside,1.0.0-review,outside_operational_groups,0,outside_geofence,0,15603.810352683522,false
+220,Spuyten Duyvil/Kingsbridge,Bronx,false,outside,1.0.0-review,outside_operational_groups,0,outside_geofence,0,13073.996516869256,false
+221,Stapleton,Staten Island,false,outside,1.0.0-review,outside_operational_groups,0,outside_geofence,0,8408.677274343447,false
+222,Starrett City,Brooklyn,false,outside,1.0.0-review,outside_operational_groups,0,outside_geofence,0,9930.904178377752,false
+223,Steinway,Queens,false,outside,1.0.0-review,outside_operational_groups,0,outside_geofence,0,3453.3370831915704,false
+224,Stuy Town/Peter Cooper Village,Manhattan,true,inside,1.0.0-review,official_taxi_zone_classification,0.8819727913285242,partial_intersection,4494.1810561195825,0,true
+225,Stuyvesant Heights,Brooklyn,false,outside,1.0.0-review,outside_operational_groups,0,outside_geofence,0,3137.2195436586167,false
+226,Sunnyside,Queens,false,outside,1.0.0-review,outside_operational_groups,0,outside_geofence,0,1735.7418852498568,false
+227,Sunset Park East,Brooklyn,false,outside,1.0.0-review,outside_operational_groups,0,outside_geofence,0,5280.126989977136,false
+228,Sunset Park West,Brooklyn,false,outside,1.0.0-review,outside_operational_groups,0,outside_geofence,0,3299.663644975057,false
+229,Sutton Place/Turtle Bay North,Manhattan,true,inside,1.0.0-review,official_taxi_zone_classification,0.9119457356455608,partial_intersection,5675.363683690898,0,true
+230,Times Sq/Theatre District,Manhattan,true,inside,1.0.0-review,official_taxi_zone_classification,0.9999999999999997,fully_inside_geofence,2462.1091584668043,0,false
+231,TriBeCa/Civic Center,Manhattan,true,inside,1.0.0-review,official_taxi_zone_classification,0.9200848720865883,partial_intersection,5953.853400982876,0,true
+232,Two Bridges/Seward Park,Manhattan,true,inside,1.0.0-review,official_taxi_zone_classification,0.9017918976994945,partial_intersection,8152.660953823977,0,true
+233,UN/Turtle Bay South,Manhattan,true,inside,1.0.0-review,official_taxi_zone_classification,0.8600234729236111,partial_intersection,5088.901554303289,0,true
+234,Union Sq,Manhattan,true,inside,1.0.0-review,official_taxi_zone_classification,1.0000000000000004,fully_inside_geofence,1034.0217234737029,0,false
+235,University Heights/Morris Heights,Bronx,false,outside,1.0.0-review,outside_operational_groups,0,outside_geofence,0,9715.253709385663,false
+236,Upper East Side North,Manhattan,false,outside,1.0.0-review,outside_operational_groups,0,outside_geofence,0,1446.4226961171933,false
+237,Upper East Side South,Manhattan,false,adjacent_north,1.0.0-review,proposed_operational_adjacency,0.06896347810608713,partial_intersection,2040.1370094872489,0,true
+238,Upper West Side North,Manhattan,false,outside,1.0.0-review,outside_operational_groups,0,outside_geofence,0,2188.296528345101,false
+239,Upper West Side South,Manhattan,false,outside,1.0.0-review,outside_operational_groups,0,outside_geofence,0,1053.5023714730553,false
+240,Van Cortlandt Park,Bronx,false,outside,1.0.0-review,outside_operational_groups,0,outside_geofence,0,14869.885235187965,false
+241,Van Cortlandt Village,Bronx,false,outside,1.0.0-review,outside_operational_groups,0,outside_geofence,0,13027.586972592997,false
+242,Van Nest/Morris Park,Bronx,false,outside,1.0.0-review,outside_operational_groups,0,outside_geofence,0,11560.305769916813,false
+243,Washington Heights North,Manhattan,false,outside,1.0.0-review,outside_operational_groups,0,outside_geofence,0,9482.38044195543,false
+244,Washington Heights South,Manhattan,false,outside,1.0.0-review,outside_operational_groups,0,outside_geofence,0,7757.1163336118,false
+245,West Brighton,Staten Island,false,outside,1.0.0-review,outside_operational_groups,0,outside_geofence,0,9227.030474395331,false
+246,West Chelsea/Hudson Yards,Manhattan,true,inside,1.0.0-review,official_taxi_zone_classification,0.8345523077640793,partial_intersection,24270.615237826085,0,true
+247,West Concourse,Bronx,false,outside,1.0.0-review,outside_operational_groups,0,outside_geofence,0,6502.5256636095255,false
+248,West Farms/Bronx River,Bronx,false,outside,1.0.0-review,outside_operational_groups,0,outside_geofence,0,10024.56851696025,false
+249,West Village,Manhattan,true,inside,1.0.0-review,official_taxi_zone_classification,1,fully_inside_geofence,1365.8945668877836,0,false
+250,Westchester Village/Unionport,Bronx,false,outside,1.0.0-review,outside_operational_groups,0,outside_geofence,0,11282.304735987325,false
+251,Westerleigh,Staten Island,false,outside,1.0.0-review,outside_operational_groups,0,outside_geofence,0,11866.66944900362,false
+252,Whitestone,Queens,false,outside,1.0.0-review,outside_operational_groups,0,outside_geofence,0,10465.742678748251,false
+253,Willets Point,Queens,false,outside,1.0.0-review,outside_operational_groups,0,outside_geofence,0,9469.175064146195,false
+254,Williamsbridge/Olinville,Bronx,false,outside,1.0.0-review,outside_operational_groups,0,outside_geofence,0,14612.729259780173,false
+255,Williamsburg (North Side),Brooklyn,false,outside,1.0.0-review,outside_operational_groups,0,outside_geofence,0,522.6333648583729,false
+256,Williamsburg (South Side),Brooklyn,false,outside,1.0.0-review,outside_operational_groups,0,outside_geofence,0,551.3345014781407,false
+257,Windsor Terrace,Brooklyn,false,outside,1.0.0-review,outside_operational_groups,0,outside_geofence,0,4813.061463397076,false
+258,Woodhaven,Queens,false,outside,1.0.0-review,outside_operational_groups,0,outside_geofence,0,9269.464001586035,false
+259,Woodlawn/Wakefield,Bronx,false,outside,1.0.0-review,outside_operational_groups,0,outside_geofence,0,16660.833250620308,false
+260,Woodside,Queens,false,outside,1.0.0-review,outside_operational_groups,0,outside_geofence,0,4104.096752780018,false
+261,World Trade Center,Manhattan,true,inside,1.0.0-review,official_taxi_zone_classification,0.8235510818705993,partial_intersection,1849.6145348806972,0,true
+262,Yorkville East,Manhattan,false,outside,1.0.0-review,outside_operational_groups,0,outside_geofence,0,1615.3173232233653,false
+263,Yorkville West,Manhattan,false,outside,1.0.0-review,outside_operational_groups,0,outside_geofence,0,1615.3167463596023,false
+264,N/A,Unknown,,nonspatial,1.0.0-review,no_polygon,,,,,
+265,Outside of NYC,N/A,,nonspatial,1.0.0-review,no_polygon,,,,,

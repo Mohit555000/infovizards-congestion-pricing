@@ -1,0 +1,225 @@
+{
+  "schema_version": "1.0.0-review",
+  "processed_at": "2026-11-15T14:30:27.792Z",
+  "runs": [
+    {
+      "year": 2024,
+      "coverage": {
+        "first_start": "2024-05-01 00:00:00.321",
+        "last_start": "2024-05-31 23:57:37.555",
+        "observed_start_dates": "31"
+      },
+      "source": {
+        "url": "https://s3.amazonaws.com/tripdata/202405-citibike-tripdata.zip",
+        "bytes": 809097529,
+        "sha256": "7c557c96b10b12de4391b97963cda166c46dc75a6a2293714c4ba740af740866",
+        "csv_members": [
+          "202405-citibike-tripdata_3.csv",
+          "202405-citibike-tripdata_2.csv",
+          "202405-citibike-tripdata_1.csv",
+          "202405-citibike-tripdata_5.csv",
+          "202405-citibike-tripdata_4.csv"
+        ]
+      },
+      "raw_rows": 4133961,
+      "exact_duplicates_removed": 0,
+      "exclusions": [
+        {
+          "exclusion_reason": null,
+          "rides": "4133708"
+        },
+        {
+          "exclusion_reason": "outside_window",
+          "rides": "253"
+        }
+      ],
+      "retained": 4133708,
+      "diagnostic": {
+        "under60": "42",
+        "over3hours": "8626",
+        "missing_station": "1687",
+        "invalid_coordinates": "1687",
+        "unknown_bike": "0",
+        "unknown_rider": "0"
+      },
+      "spatial_matches": [
+        {
+          "match_status": "invalid_coordinates",
+          "rides": "1687"
+        },
+        {
+          "match_status": "unique_polygon_match",
+          "rides": "4131985"
+        },
+        {
+          "match_status": "unmatched_not_assumed_NJ",
+          "rides": "36"
+        }
+      ],
+      "runtime_seconds": 14.784
+    },
+    {
+      "year": 2025,
+      "coverage": {
+        "first_start": "2025-05-01 00:00:03.841",
+        "last_start": "2025-05-31 23:58:06.793",
+        "observed_start_dates": "31"
+      },
+      "source": {
+        "url": "https://s3.amazonaws.com/tripdata/202505-citibike-tripdata.zip",
+        "bytes": 844446636,
+        "sha256": "0f5edc46361c4581c614a19cb697271b6f04143f6648b56da8fc18f7310ab103",
+        "csv_members": [
+          "202505-citibike-tripdata_4.csv",
+          "202505-citibike-tripdata_5.csv",
+          "202505-citibike-tripdata_1.csv",
+          "202505-citibike-tripdata_2.csv",
+          "202505-citibike-tripdata_3.csv"
+        ]
+      },
+      "raw_rows": 4325553,
+      "exact_duplicates_removed": 0,
+      "exclusions": [
+        {
+          "exclusion_reason": null,
+          "rides": "4325011"
+        },
+        {
+          "exclusion_reason": "outside_window",
+          "rides": "542"
+        }
+      ],
+      "retained": 4325011,
+      "diagnostic": {
+        "under60": "0",
+        "over3hours": "5325",
+        "missing_station": "1689",
+        "invalid_coordinates": "1689",
+        "unknown_bike": "0",
+        "unknown_rider": "0"
+      },
+      "spatial_matches": [
+        {
+          "match_status": "invalid_coordinates",
+          "rides": "1689"
+        },
+        {
+          "match_status": "unique_polygon_match",
+          "rides": "4323322"
+        }
+      ],
+      "runtime_seconds": 16.85
+    },
+    {
+      "year": 2026,
+      "coverage": {
+        "first_start": "2026-05-01 00:00:04.276",
+        "last_start": "2026-05-31 23:58:10.888",
+        "observed_start_dates": "31"
+      },
+      "source": {
+        "url": "https://s3.amazonaws.com/tripdata/202605-citibike-tripdata.zip",
+        "bytes": 916981226,
+        "sha256": "b9461221fb7ce806d5274b046b4de46414a1d1116ba2bc46c6a870b7bda71adf",
+        "csv_members": [
+          "202605-citibike-tripdata_3.csv",
+          "202605-citibike-tripdata_2.csv",
+          "202605-citibike-tripdata_1.csv",
+          "202605-citibike-tripdata_5.csv",
+          "202605-citibike-tripdata_4.csv"
+        ]
+      },
+      "raw_rows": 4694878,
+      "exact_duplicates_removed": 0,
+      "exclusions": [
+        {
+          "exclusion_reason": null,
+          "rides": "4694366"
+        },
+        {
+          "exclusion_reason": "outside_window",
+          "rides": "512"
+        }
+      ],
+      "retained": 4694366,
+      "diagnostic": {
+        "under60": "0",
+        "over3hours": "5220",
+        "missing_station": "2442",
+        "invalid_coordinates": "2442",
+        "unknown_bike": "0",
+        "unknown_rider": "0"
+      },
+      "spatial_matches": [
+        {
+          "match_status": "invalid_coordinates",
+          "rides": "2442"
+        },
+        {
+          "match_status": "unique_polygon_match",
+          "rides": "4691924"
+        }
+      ],
+      "runtime_seconds": 40.815
+    }
+  ],
+  "files": [
+    {
+      "file": "q6_citibike_group_mix.json",
+      "bytes": 19050,
+      "sha256": "7dc037ffc8fa0ee604c290751b5b7322b8b8e9d2954ddc246656d239bf155c11",
+      "row_count": 66
+    },
+    {
+      "file": "q6_citibike_group_mix.csv",
+      "bytes": 5953,
+      "sha256": "aa0f5944c7f2b3701487c7d124bb60f41ad8b483c3c93bac5681b29e2f2d0aeb",
+      "row_count": 66
+    },
+    {
+      "file": "q6_citibike_group_growth.json",
+      "bytes": 5147,
+      "sha256": "d58e9143f5d73ee91d6fd8e31a36d76e24724998b75676f104678540f7422aa5",
+      "row_count": 12
+    },
+    {
+      "file": "q6_citibike_group_growth.csv",
+      "bytes": 1997,
+      "sha256": "6d79de6ad04446e57c3fab19ecb97e81dadb4653402a6763a7b4068bc96c9684",
+      "row_count": 12
+    },
+    {
+      "file": "q6_citibike_station_change.json",
+      "bytes": 4683104,
+      "sha256": "5e848f6d65445878e89b512f2d061f85fc89b6d26879f6d4bdcaeb593632dc7a",
+      "row_count": 4766
+    },
+    {
+      "file": "q6_citibike_station_change.csv",
+      "bytes": 1461701,
+      "sha256": "a9e0814b7277e521e62919ed1ff34feaa07b5d6582406a2e7a6e826922a85609",
+      "row_count": 4766
+    },
+    {
+      "file": "station_month_audit.json",
+      "bytes": 2492645,
+      "sha256": "c15cad37f600a7bb87364412f919eeb304fbd0d8a79a1f0341f34aa9ee8890d7",
+      "row_count": 6730
+    },
+    {
+      "file": "station_month_audit.csv",
+      "bytes": 695720,
+      "sha256": "f74588fec934890f24a95104ad0c4169e6b27e76f4f53b1a413b371e54d87262",
+      "row_count": 6730
+    }
+  ],
+  "limitations": [
+    "adjacency groups proposed for review",
+    "official CBD taxi-zone membership differs from road geofence",
+    "station identity100m threshold is operational, not proof of no station changes",
+    "missing2024 is not zero/new opening",
+    "unmatched not labeledNJ without independentNJ boundary",
+    "no separate JC archive fetched",
+    "all percentages describe cleaned observed archives, not causal shift"
+  ]
+}

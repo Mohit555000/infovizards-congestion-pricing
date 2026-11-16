@@ -1,0 +1,29 @@
+{
+  "name": "infovizards-nyc-congestion-pricing",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Preprocessing and validated data for the InfoVizards NYC congestion pricing study.",
+  "type": "module",
+  "engines": {
+    "node": "24.x",
+    "npm": ">=11"
+  },
+  "packageManager": "npm@11.6.1",
+  "scripts": {
+    "check:environment": "node scripts/validate/environment.mjs",
+    "check:git": "node scripts/validate/git-safety.mjs",
+    "process:mta": "node scripts/mta/process.mjs",
+    "process:tlc": "node scripts/tlc/process.mjs",
+    "check:mta": "node scripts/validate/mta-outputs.mjs",
+    "test": "node --test tests/dependencies.test.mjs tests/mta.test.mjs tests/geography-citibike.test.mjs tests/tlc*.test.mjs",
+    "check": "npm run check:environment && npm run check:git && npm run check:data && npm test",
+    "download:citibike": "node scripts/citibike/download.mjs",
+    "process:geography": "node scripts/citibike/geography.mjs",
+    "process:citibike": "node scripts/citibike/process.mjs",
+    "check:data": "node scripts/validate/release-data.mjs"
+  },
+  "dependencies": {
+    "@duckdb/node-api": "1.5.6-r.2",
+    "d3": "7.9.2"
+  }
+}

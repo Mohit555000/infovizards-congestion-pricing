@@ -1,0 +1,13 @@
+post_year,reference_year,compare_window,window_id,geography_version,cohort_rule,zone_group,base_rides,post_rides,abs_change,pct_change,comparison_status
+2025,2024,May,May,1.0.0-review,all_observed_archive_start_locations,adjacent_across_river,127305,138887,11582,9.097835905895291,valid_observed_archive_population
+2025,2024,May,May,1.0.0-review,all_observed_archive_start_locations,adjacent_north,185363,185486,123,0.06635628469543545,valid_observed_archive_population
+2025,2024,May,May,1.0.0-review,all_observed_archive_start_locations,ambiguous_central_park,71446,76340,4894,6.84992861741735,valid_observed_archive_population
+2025,2024,May,May,1.0.0-review,all_observed_archive_start_locations,inside,1948489,2006485,57996,2.9764602212278333,valid_observed_archive_population
+2025,2024,May,May,1.0.0-review,all_observed_archive_start_locations,outside,1799382,1916124,116742,6.48789417700077,valid_observed_archive_population
+2025,2024,May,May,1.0.0-review,all_observed_archive_start_locations,unmatched,1723,1689,-34,-1.9733023795705165,valid_observed_archive_population
+2026,2024,May,May,1.0.0-review,all_observed_archive_start_locations,adjacent_across_river,127305,151335,24030,18.87592788971368,valid_observed_archive_population
+2026,2024,May,May,1.0.0-review,all_observed_archive_start_locations,adjacent_north,185363,202083,16720,9.02013886266407,valid_observed_archive_population
+2026,2024,May,May,1.0.0-review,all_observed_archive_start_locations,ambiguous_central_park,71446,73074,1628,2.27864401086135,valid_observed_archive_population
+2026,2024,May,May,1.0.0-review,all_observed_archive_start_locations,inside,1948489,2150097,201608,10.346889307560884,valid_observed_archive_population
+2026,2024,May,May,1.0.0-review,all_observed_archive_start_locations,outside,1799382,2115335,315953,17.55897302518309,valid_observed_archive_population
+2026,2024,May,May,1.0.0-review,all_observed_archive_start_locations,unmatched,1723,2442,719,41.729541497388276,valid_observed_archive_population

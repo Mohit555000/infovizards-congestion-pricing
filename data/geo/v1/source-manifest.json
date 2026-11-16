@@ -1,0 +1,51 @@
+{
+  "date": "2026-11-15",
+  "snapshot_files": [
+    {
+      "path": ".cache/geo/zones.zip",
+      "bytes": 1022574,
+      "sha256": "f6d711917bb4340f8f644d5366c51665489eb2d426dd1a4a55677721ae5adf17"
+    },
+    {
+      "path": ".cache/geo/lookup.csv",
+      "bytes": 12331,
+      "sha256": "1a99e105092230f8620f301edcca7f80d3080642ff404d28ed957d3fa222c8ed"
+    },
+    {
+      "path": ".cache/geo/geofence.json",
+      "bytes": 7726,
+      "sha256": "4eafaf98ba6ca53f7271777dc948d7d2e8c93eb3f3fcb9838bf169db8a659768"
+    },
+    {
+      "path": ".cache/geo/geofence-meta.json",
+      "bytes": 5010,
+      "sha256": "137c4c3c14b06e47cef406796e3238120feb89ea53b4d59f0c8790e908fa57e0"
+    },
+    {
+      "path": ".cache/geo/cbd-meta.json",
+      "bytes": 6758,
+      "sha256": "c5905852ce04de6b74060829be96facc594ff5e318a7ed08c444b9ec5596a47a"
+    },
+    {
+      "path": ".cache/geo/cbd-zones.json",
+      "bytes": 150495,
+      "sha256": "dbca67b87be78f77628f6252de6954dd1918b985783205ee6b600a9a5a063094"
+    },
+    {
+      "path": ".cache/geo/cbd-overview.pdf",
+      "bytes": 110238,
+      "sha256": "46ba359843c3ae587a570f7073f1de9c77d6e80c961f55e36a1cc6b869cbea96"
+    },
+    {
+      "path": ".cache/geo/geofence-overview.pdf",
+      "bytes": 107600,
+      "sha256": "eeb54a4565166a5b3fc5ab21eba50ea5d5502d051a2ebc14d7c3fe17176ef69c"
+    }
+  ],
+  "rule_version": "1.0.0-review",
+  "sources": {
+    "tlc": "https://www.nyc.gov/site/tlc/about/tlc-trip-record-data.page",
+    "cbd": "https://data.ny.gov/d/yfdc-w5jh",
+    "geofence": "https://data.ny.gov/d/srxy-5nxn"
+  }
+}

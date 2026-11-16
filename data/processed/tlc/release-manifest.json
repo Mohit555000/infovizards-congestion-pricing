@@ -1,0 +1,1742 @@
+{
+  "schema_version": "2.0.0",
+  "run_id": "2026-11-15T17-25-00-825Z",
+  "target_event_months": [
+    "03",
+    "04",
+    "05"
+  ],
+  "years": [
+    2024,
+    2025,
+    2026
+  ],
+  "source_months": [
+    "02",
+    "03",
+    "04",
+    "05"
+  ],
+  "timezone": "America/New_York wall-clock interpretation; source TIMESTAMP is naive; no timezone conversion",
+  "files": [
+    {
+      "name": "q1_tlc_crz_daily",
+      "format": "json",
+      "path": "q1_tlc_crz_daily.json",
+      "rows": 1104,
+      "sha256": "935062f60c390ac8659a93a47fd1b59c935b5e8d48f354943ff5b1fba75b4225"
+    },
+    {
+      "name": "q1_tlc_crz_daily",
+      "format": "csv",
+      "path": "q1_tlc_crz_daily.csv",
+      "rows": 1104,
+      "sha256": "dab9d7d9f9271c113f25ba47998c41b7e04f71e666285fa8562f5d0d29b439d2"
+    },
+    {
+      "name": "q2_tlc_hour_profile",
+      "format": "json",
+      "path": "q2_tlc_hour_profile.json",
+      "rows": 9072,
+      "sha256": "3471cbb77297a24207921cdf8eec76031e028cf2049f1b5e1aaf9aa183f08208"
+    },
+    {
+      "name": "q2_tlc_hour_profile",
+      "format": "csv",
+      "path": "q2_tlc_hour_profile.csv",
+      "rows": 9072,
+      "sha256": "c9fca18c8bf621efb3bfae69836004a03b55a0190bfabb766f9db4930a388063"
+    },
+    {
+      "name": "q4_tlc_zone_change",
+      "format": "json",
+      "path": "q4_tlc_zone_change.json",
+      "rows": 19224,
+      "sha256": "2d176232a7b7f51770cf4d8310b556618a1f58e3f2f4268a00c7f2c483b5b8e9"
+    },
+    {
+      "name": "q4_tlc_zone_change",
+      "format": "csv",
+      "path": "q4_tlc_zone_change.csv",
+      "rows": 19224,
+      "sha256": "856d98dbe1539d3ea47936f5cc16b5a2e589ab5e620aa95337e7a8a92720e0fb"
+    },
+    {
+      "name": "q5_tlc_zone_group",
+      "format": "json",
+      "path": "q5_tlc_zone_group.json",
+      "rows": 432,
+      "sha256": "07de12168bb8a39229be6c921a3ad5d1fd823e385993b40e5825e553eb0b3ac1"
+    },
+    {
+      "name": "q5_tlc_zone_group",
+      "format": "csv",
+      "path": "q5_tlc_zone_group.csv",
+      "rows": 432,
+      "sha256": "fa871035e06892f3d533aca400cf4a8d721ac60d5e9c788992f7f235d75d6ebd"
+    },
+    {
+      "name": "q7_tlc_origin_borough",
+      "format": "json",
+      "path": "q7_tlc_origin_borough.json",
+      "rows": 360,
+      "sha256": "bc027665384203de4f7a8a1e7c0684e746555d54cf711783d6b5ede733b1be08"
+    },
+    {
+      "name": "q7_tlc_origin_borough",
+      "format": "csv",
+      "path": "q7_tlc_origin_borough.csv",
+      "rows": 360,
+      "sha256": "2ab254f9a77842786c616a7fb961a166304d7a3da8d442f49a1eb2cf4ae019f5"
+    }
+  ],
+  "coverage_definition": "Complete approved February-May source files and target event-date coverage; published-source endpoint counts, not a certified vendor census or unique real-world trip census",
+  "geography_sha256": "146a7046f21d621aeb74633cb8763cf6f8a6e30281a7c1ccab024a0a62a29570",
+  "code": [
+    {
+      "file": "scripts/tlc/process.mjs",
+      "sha256": "7f007efead340875dcf8d3d00813763fe7f2690cf6e407f89276414af71ed19f"
+    },
+    {
+      "file": "src/tlc/methods.mjs",
+      "sha256": "bef75311109e09da12978bc95b349d72017c81a24462f11fc87ba091e3173f9c"
+    },
+    {
+      "file": "src/tlc/source.mjs",
+      "sha256": "21cc9461cecf659263059074b8085f67b83e7af7a23c95e37654a1bb20beeb55"
+    },
+    {
+      "file": "src/tlc/processing.mjs",
+      "sha256": "e05aec52d2c5d782350e4c04af3de87b5c7a0ab0a85e06b317a35991f997008f"
+    },
+    {
+      "file": "src/tlc/outputs.mjs",
+      "sha256": "8bf5f62650e428b96370d53f77d22faa062a052427143c4a56d445355e14375c"
+    },
+    {
+      "file": "src/tlc/validation.mjs",
+      "sha256": "d80948710b1de92b5eba79087bb8f859b1a2d67bf0c96c14458bf1eae57c3851"
+    },
+    {
+      "file": "src/tlc/geography.mjs",
+      "sha256": "d4aacd610553a3eb2cfe9daf306441af818b1add4d444ad97079d12c7774aa86"
+    }
+  ],
+  "sources": [
+    {
+      "service": "yellow",
+      "month": "2024-02",
+      "url": "https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2024-02.parquet",
+      "etag": "\"7337741e6032c0652369749781534e79-3\"",
+      "source_bytes": 50349284,
+      "retrieved_at": "2026-11-15T16:38:05.630Z",
+      "normalized_sha256": "3b3ded5a6f2cbfc3c02da06819d9ac82c321c256b7fdc1151bc6c7f9eb55de07",
+      "profile": {
+        "source_rows": "3007526",
+        "distinct_ingestion_rows": "3007526",
+        "first_pickup": "2008-12-31 22:52:49",
+        "last_pickup": "2024-03-01 00:01:37",
+        "first_dropoff": "2008-12-31 23:04:09",
+        "last_dropoff": "2024-03-01 23:24:42",
+        "null_pickup_time": "0",
+        "null_dropoff_time": "0",
+        "null_pickup_id": "0",
+        "null_dropoff_id": "0",
+        "invalid_pickup_id": "0",
+        "invalid_dropoff_id": "0",
+        "nonspatial_pickup_id": "11094",
+        "nonspatial_dropoff_id": "25911",
+        "zero_distance": "68225",
+        "negative_distance": "0",
+        "null_distance": "0",
+        "nonpositive_fare": "41499",
+        "null_fare": "0",
+        "nonpositive_duration": "803",
+        "over_three_hours": "1948",
+        "unknown_duration": "0",
+        "reported_duration_disagrees": "0",
+        "pickup_outside_file_month": "15",
+        "dropoff_outside_file_month": "1262"
+      },
+      "event_exclusions": [
+        {
+          "metric": "dropoff",
+          "input_events": "3007526",
+          "excluded_null_timestamp": "0",
+          "excluded_outside_approved_window": "3006266",
+          "retained_events": "1260"
+        },
+        {
+          "metric": "pickup",
+          "input_events": "3007526",
+          "excluded_null_timestamp": "0",
+          "excluded_outside_approved_window": "3007524",
+          "retained_events": "2"
+        }
+      ],
+      "boundary_contributions": [
+        {
+          "metric": "dropoff",
+          "event_month": "2024-03",
+          "trips": "1260"
+        },
+        {
+          "metric": "pickup",
+          "event_month": "2024-03",
+          "trips": "2"
+        }
+      ],
+      "dst_anomalies": [],
+      "global_trip_exclusions": 0,
+      "duplicates_removed": 0,
+      "source_scan_count": 1
+    },
+    {
+      "service": "yellow",
+      "month": "2024-03",
+      "url": "https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2024-03.parquet",
+      "etag": "\"7a8994a37b02c8200aac7bcf9c3a2c69-4\"",
+      "source_bytes": 60078280,
+      "retrieved_at": "2026-11-15T05:35:39.130Z",
+      "normalized_sha256": "2f9c30196b9aec2573a13ad233c004f8b53309b9d8fac041114731f5f48a7816",
+      "profile": {
+        "source_rows": "3582628",
+        "distinct_ingestion_rows": "3582628",
+        "first_pickup": "2002-12-31 22:17:10",
+        "last_pickup": "2024-04-01 00:34:55",
+        "first_dropoff": "2002-12-31 22:42:24",
+        "last_dropoff": "2024-04-02 18:08:46",
+        "null_pickup_time": "0",
+        "null_dropoff_time": "0",
+        "null_pickup_id": "0",
+        "null_dropoff_id": "0",
+        "invalid_pickup_id": "0",
+        "invalid_dropoff_id": "0",
+        "nonspatial_pickup_id": "13648",
+        "nonspatial_dropoff_id": "30885",
+        "zero_distance": "87168",
+        "negative_distance": "0",
+        "null_distance": "0",
+        "nonpositive_fare": "59756",
+        "null_fare": "0",
+        "nonpositive_duration": "1128",
+        "over_three_hours": "2172",
+        "unknown_duration": "0",
+        "reported_duration_disagrees": "0",
+        "pickup_outside_file_month": "23",
+        "dropoff_outside_file_month": "636"
+      },
+      "event_exclusions": [
+        {
+          "metric": "dropoff",
+          "input_events": "3582628",
+          "excluded_null_timestamp": "0",
+          "excluded_outside_approved_window": "5",
+          "retained_events": "3582623"
+        },
+        {
+          "metric": "pickup",
+          "input_events": "3582628",
+          "excluded_null_timestamp": "0",
+          "excluded_outside_approved_window": "21",
+          "retained_events": "3582607"
+        }
+      ],
+      "boundary_contributions": [
+        {
+          "metric": "dropoff",
+          "event_month": "2024-04",
+          "trips": "631"
+        },
+        {
+          "metric": "pickup",
+          "event_month": "2024-04",
+          "trips": "2"
+        }
+      ],
+      "dst_anomalies": [
+        {
+          "metric": "dropoff",
+          "date": "2024-03-10",
+          "hour": 2,
+          "temporal_quality": "spring_gap",
+          "trips": "3"
+        }
+      ],
+      "global_trip_exclusions": 0,
+      "duplicates_removed": 0,
+      "source_scan_count": 1
+    },
+    {
+      "service": "yellow",
+      "month": "2024-04",
+      "url": "https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2024-04.parquet",
+      "etag": "\"e67ba6e0a21daa942fb9c10aafa2a354-4\"",
+      "source_bytes": 59133625,
+      "retrieved_at": "2026-11-15T05:37:53.276Z",
+      "normalized_sha256": "84e607f75bc72200cf6497c8ed46d2fa9191581a427fc0183bf6d88ce24b2193",
+      "profile": {
+        "source_rows": "3514289",
+        "distinct_ingestion_rows": "3514289",
+        "first_pickup": "2002-12-31 22:10:04",
+        "last_pickup": "2024-05-01 00:02:36",
+        "first_dropoff": "2002-12-31 22:14:22",
+        "last_dropoff": "2024-05-01 23:22:35",
+        "null_pickup_time": "0",
+        "null_dropoff_time": "0",
+        "null_pickup_id": "0",
+        "null_dropoff_id": "0",
+        "invalid_pickup_id": "0",
+        "invalid_dropoff_id": "0",
+        "nonspatial_pickup_id": "12848",
+        "nonspatial_dropoff_id": "30774",
+        "zero_distance": "45813",
+        "negative_distance": "0",
+        "null_distance": "0",
+        "nonpositive_fare": "58876",
+        "null_fare": "0",
+        "nonpositive_duration": "1089",
+        "over_three_hours": "2263",
+        "unknown_duration": "0",
+        "reported_duration_disagrees": "0",
+        "pickup_outside_file_month": "9",
+        "dropoff_outside_file_month": "744"
+      },
+      "event_exclusions": [
+        {
+          "metric": "dropoff",
+          "input_events": "3514289",
+          "excluded_null_timestamp": "0",
+          "excluded_outside_approved_window": "4",
+          "retained_events": "3514285"
+        },
+        {
+          "metric": "pickup",
+          "input_events": "3514289",
+          "excluded_null_timestamp": "0",
+          "excluded_outside_approved_window": "4",
+          "retained_events": "3514285"
+        }
+      ],
+      "boundary_contributions": [
+        {
+          "metric": "dropoff",
+          "event_month": "2024-03",
+          "trips": "1"
+        },
+        {
+          "metric": "dropoff",
+          "event_month": "2024-05",
+          "trips": "739"
+        },
+        {
+          "metric": "pickup",
+          "event_month": "2024-03",
+          "trips": "4"
+        },
+        {
+          "metric": "pickup",
+          "event_month": "2024-05",
+          "trips": "1"
+        }
+      ],
+      "dst_anomalies": [],
+      "global_trip_exclusions": 0,
+      "duplicates_removed": 0,
+      "source_scan_count": 1
+    },
+    {
+      "service": "yellow",
+      "month": "2024-05",
+      "url": "https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2024-05.parquet",
+      "etag": "\"e7dbcee49593af9a20818857f421e7be-4\"",
+      "source_bytes": 62553128,
+      "retrieved_at": "2026-11-15T05:37:56.254Z",
+      "normalized_sha256": "fe243c7fce454c67e996a9440c7ebef37674f7560a1dd4f0fcea59665ed0274f",
+      "profile": {
+        "source_rows": "3723833",
+        "distinct_ingestion_rows": "3723833",
+        "first_pickup": "2002-12-31 16:46:07",
+        "last_pickup": "2024-06-01 23:54:14",
+        "first_dropoff": "2002-12-31 17:24:07",
+        "last_dropoff": "2024-06-02 00:18:18",
+        "null_pickup_time": "0",
+        "null_dropoff_time": "0",
+        "null_pickup_id": "0",
+        "null_dropoff_id": "0",
+        "invalid_pickup_id": "0",
+        "invalid_dropoff_id": "0",
+        "nonspatial_pickup_id": "13863",
+        "nonspatial_dropoff_id": "33261",
+        "zero_distance": "49791",
+        "negative_distance": "0",
+        "null_distance": "0",
+        "nonpositive_fare": "62565",
+        "null_fare": "0",
+        "nonpositive_duration": "1147",
+        "over_three_hours": "2303",
+        "unknown_duration": "0",
+        "reported_duration_disagrees": "0",
+        "pickup_outside_file_month": "33",
+        "dropoff_outside_file_month": "1999"
+      },
+      "event_exclusions": [
+        {
+          "metric": "dropoff",
+          "input_events": "3723833",
+          "excluded_null_timestamp": "0",
+          "excluded_outside_approved_window": "1999",
+          "retained_events": "3721834"
+        },
+        {
+          "metric": "pickup",
+          "input_events": "3723833",
+          "excluded_null_timestamp": "0",
+          "excluded_outside_approved_window": "20",
+          "retained_events": "3723813"
+        }
+      ],
+      "boundary_contributions": [
+        {
+          "metric": "pickup",
+          "event_month": "2024-04",
+          "trips": "13"
+        }
+      ],
+      "dst_anomalies": [],
+      "global_trip_exclusions": 0,
+      "duplicates_removed": 0,
+      "source_scan_count": 1
+    },
+    {
+      "service": "yellow",
+      "month": "2025-02",
+      "url": "https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2025-02.parquet",
+      "etag": "\"d19a36ff5f2728d5fb856785ff055bda-12\"",
+      "source_bytes": 60343086,
+      "retrieved_at": "2026-11-15T16:38:10.462Z",
+      "normalized_sha256": "4710b9481e8658773380f15ea9c6ea10bf15eb7b80ffc21f65dcf6fefff52021",
+      "profile": {
+        "source_rows": "3577543",
+        "distinct_ingestion_rows": "3577543",
+        "first_pickup": "2025-01-31 22:22:53",
+        "last_pickup": "2025-03-01 00:06:32",
+        "first_dropoff": "2025-01-31 22:30:00",
+        "last_dropoff": "2025-03-01 23:13:42",
+        "null_pickup_time": "0",
+        "null_dropoff_time": "0",
+        "null_pickup_id": "0",
+        "null_dropoff_id": "0",
+        "invalid_pickup_id": "0",
+        "invalid_dropoff_id": "0",
+        "nonspatial_pickup_id": "8635",
+        "nonspatial_dropoff_id": "21285",
+        "zero_distance": "99771",
+        "negative_distance": "0",
+        "null_distance": "0",
+        "nonpositive_fare": "184096",
+        "null_fare": "0",
+        "nonpositive_duration": "5164",
+        "over_three_hours": "1301",
+        "unknown_duration": "0",
+        "reported_duration_disagrees": "0",
+        "pickup_outside_file_month": "31",
+        "dropoff_outside_file_month": "2406"
+      },
+      "event_exclusions": [
+        {
+          "metric": "dropoff",
+          "input_events": "3577543",
+          "excluded_null_timestamp": "0",
+          "excluded_outside_approved_window": "3575148",
+          "retained_events": "2395"
+        },
+        {
+          "metric": "pickup",
+          "input_events": "3577543",
+          "excluded_null_timestamp": "0",
+          "excluded_outside_approved_window": "3577542",
+          "retained_events": "1"
+        }
+      ],
+      "boundary_contributions": [
+        {
+          "metric": "dropoff",
+          "event_month": "2025-03",
+          "trips": "2395"
+        },
+        {
+          "metric": "pickup",
+          "event_month": "2025-03",
+          "trips": "1"
+        }
+      ],
+      "dst_anomalies": [],
+      "global_trip_exclusions": 0,
+      "duplicates_removed": 0,
+      "source_scan_count": 1
+    },
+    {
+      "service": "yellow",
+      "month": "2025-03",
+      "url": "https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2025-03.parquet",
+      "etag": "\"5a7b279b75549fe3c5270e995a5b8c02-14\"",
+      "source_bytes": 69964745,
+      "retrieved_at": "2026-11-15T05:38:00.296Z",
+      "normalized_sha256": "d6f1f97f03951dcb418a658e6ee4e192a8da2b76a556da7c916fcabe311eb24a",
+      "profile": {
+        "source_rows": "4145257",
+        "distinct_ingestion_rows": "4145257",
+        "first_pickup": "2007-12-05 18:45:00",
+        "last_pickup": "2025-04-01 00:00:17",
+        "first_dropoff": "2007-12-05 19:02:00",
+        "last_dropoff": "2025-04-03 14:07:50",
+        "null_pickup_time": "0",
+        "null_dropoff_time": "0",
+        "null_pickup_id": "0",
+        "null_dropoff_id": "0",
+        "invalid_pickup_id": "0",
+        "invalid_dropoff_id": "0",
+        "nonspatial_pickup_id": "9235",
+        "nonspatial_dropoff_id": "24190",
+        "zero_distance": "103722",
+        "negative_distance": "0",
+        "null_distance": "0",
+        "nonpositive_fare": "210378",
+        "null_fare": "0",
+        "nonpositive_duration": "22280",
+        "over_three_hours": "1574",
+        "unknown_duration": "0",
+        "reported_duration_disagrees": "0",
+        "pickup_outside_file_month": "33",
+        "dropoff_outside_file_month": "989"
+      },
+      "event_exclusions": [
+        {
+          "metric": "dropoff",
+          "input_events": "4145257",
+          "excluded_null_timestamp": "0",
+          "excluded_outside_approved_window": "12",
+          "retained_events": "4145245"
+        },
+        {
+          "metric": "pickup",
+          "input_events": "4145257",
+          "excluded_null_timestamp": "0",
+          "excluded_outside_approved_window": "31",
+          "retained_events": "4145226"
+        }
+      ],
+      "boundary_contributions": [
+        {
+          "metric": "dropoff",
+          "event_month": "2025-04",
+          "trips": "977"
+        },
+        {
+          "metric": "pickup",
+          "event_month": "2025-04",
+          "trips": "2"
+        }
+      ],
+      "dst_anomalies": [],
+      "global_trip_exclusions": 0,
+      "duplicates_removed": 0,
+      "source_scan_count": 1
+    },
+    {
+      "service": "yellow",
+      "month": "2025-04",
+      "url": "https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2025-04.parquet",
+      "etag": "\"6cb85e58a1a6db7ef4610209de63c7ff-13\"",
+      "source_bytes": 67352824,
+      "retrieved_at": "2026-11-15T05:38:03.414Z",
+      "normalized_sha256": "8082b04da69d13dfb4dc258083bc5b4b9da7bd17556f888625d5ef4a4cc30104",
+      "profile": {
+        "source_rows": "3970553",
+        "distinct_ingestion_rows": "3970553",
+        "first_pickup": "2025-03-31 23:45:01",
+        "last_pickup": "2025-05-01 00:48:13",
+        "first_dropoff": "2025-03-31 23:54:54",
+        "last_dropoff": "2025-05-01 21:42:14",
+        "null_pickup_time": "0",
+        "null_dropoff_time": "0",
+        "null_pickup_id": "0",
+        "null_dropoff_id": "0",
+        "invalid_pickup_id": "0",
+        "invalid_dropoff_id": "0",
+        "nonspatial_pickup_id": "8991",
+        "nonspatial_dropoff_id": "24892",
+        "zero_distance": "91439",
+        "negative_distance": "0",
+        "null_distance": "0",
+        "nonpositive_fare": "188171",
+        "null_fare": "0",
+        "nonpositive_duration": "34769",
+        "over_three_hours": "1593",
+        "unknown_duration": "0",
+        "reported_duration_disagrees": "0",
+        "pickup_outside_file_month": "7",
+        "dropoff_outside_file_month": "1103"
+      },
+      "event_exclusions": [
+        {
+          "metric": "dropoff",
+          "input_events": "3970553",
+          "excluded_null_timestamp": "0",
+          "excluded_outside_approved_window": "0",
+          "retained_events": "3970553"
+        },
+        {
+          "metric": "pickup",
+          "input_events": "3970553",
+          "excluded_null_timestamp": "0",
+          "excluded_outside_approved_window": "0",
+          "retained_events": "3970553"
+        }
+      ],
+      "boundary_contributions": [
+        {
+          "metric": "dropoff",
+          "event_month": "2025-03",
+          "trips": "1"
+        },
+        {
+          "metric": "dropoff",
+          "event_month": "2025-05",
+          "trips": "1102"
+        },
+        {
+          "metric": "pickup",
+          "event_month": "2025-03",
+          "trips": "4"
+        },
+        {
+          "metric": "pickup",
+          "event_month": "2025-05",
+          "trips": "3"
+        }
+      ],
+      "dst_anomalies": [],
+      "global_trip_exclusions": 0,
+      "duplicates_removed": 0,
+      "source_scan_count": 1
+    },
+    {
+      "service": "yellow",
+      "month": "2025-05",
+      "url": "https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2025-05.parquet",
+      "etag": "\"82ed0af5930f3035156cb5f8cb248725-15\"",
+      "source_bytes": 77837865,
+      "retrieved_at": "2026-11-15T05:38:07.919Z",
+      "normalized_sha256": "d7ec97f4f7f0ea51a7a9ce87d5817acdaa5ce16e3caa4f9d4111111cce6bd2df",
+      "profile": {
+        "source_rows": "4591845",
+        "distinct_ingestion_rows": "4591845",
+        "first_pickup": "2009-01-01 00:20:39",
+        "last_pickup": "2025-06-01 00:04:31",
+        "first_dropoff": "2009-01-01 00:20:49",
+        "last_dropoff": "2025-06-04 11:17:10",
+        "null_pickup_time": "0",
+        "null_dropoff_time": "0",
+        "null_pickup_id": "0",
+        "null_dropoff_id": "0",
+        "invalid_pickup_id": "0",
+        "invalid_dropoff_id": "0",
+        "nonspatial_pickup_id": "9687",
+        "nonspatial_dropoff_id": "30290",
+        "zero_distance": "141121",
+        "negative_distance": "0",
+        "null_distance": "0",
+        "nonpositive_fare": "327375",
+        "null_fare": "0",
+        "nonpositive_duration": "64272",
+        "over_three_hours": "1530",
+        "unknown_duration": "0",
+        "reported_duration_disagrees": "0",
+        "pickup_outside_file_month": "24",
+        "dropoff_outside_file_month": "2939"
+      },
+      "event_exclusions": [
+        {
+          "metric": "dropoff",
+          "input_events": "4591845",
+          "excluded_null_timestamp": "0",
+          "excluded_outside_approved_window": "2931",
+          "retained_events": "4588914"
+        },
+        {
+          "metric": "pickup",
+          "input_events": "4591845",
+          "excluded_null_timestamp": "0",
+          "excluded_outside_approved_window": "4",
+          "retained_events": "4591841"
+        }
+      ],
+      "boundary_contributions": [
+        {
+          "metric": "dropoff",
+          "event_month": "2025-04",
+          "trips": "8"
+        },
+        {
+          "metric": "pickup",
+          "event_month": "2025-04",
+          "trips": "20"
+        }
+      ],
+      "dst_anomalies": [],
+      "global_trip_exclusions": 0,
+      "duplicates_removed": 0,
+      "source_scan_count": 1
+    },
+    {
+      "service": "yellow",
+      "month": "2026-02",
+      "url": "https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2026-02.parquet",
+      "etag": "\"41497120d17df99f437634b60f5b9d75-12\"",
+      "source_bytes": 58683353,
+      "retrieved_at": "2026-11-15T16:38:15.569Z",
+      "normalized_sha256": "35a09bf4d19adab5ce61df9a4307eb658bf910c942040a6ffe1cd58d0e250634",
+      "profile": {
+        "source_rows": "3399866",
+        "distinct_ingestion_rows": "3399866",
+        "first_pickup": "2026-01-31 23:31:23",
+        "last_pickup": "2026-03-01 00:51:48",
+        "first_dropoff": "2026-01-31 23:36:52",
+        "last_dropoff": "2026-03-01 23:11:29",
+        "null_pickup_time": "0",
+        "null_dropoff_time": "0",
+        "null_pickup_id": "0",
+        "null_dropoff_id": "0",
+        "invalid_pickup_id": "0",
+        "invalid_dropoff_id": "0",
+        "nonspatial_pickup_id": "5022",
+        "nonspatial_dropoff_id": "19347",
+        "zero_distance": "123250",
+        "negative_distance": "0",
+        "null_distance": "0",
+        "nonpositive_fare": "29100",
+        "null_fare": "0",
+        "nonpositive_duration": "40598",
+        "over_three_hours": "1528",
+        "unknown_duration": "0",
+        "reported_duration_disagrees": "0",
+        "pickup_outside_file_month": "16",
+        "dropoff_outside_file_month": "2338"
+      },
+      "event_exclusions": [
+        {
+          "metric": "dropoff",
+          "input_events": "3399866",
+          "excluded_null_timestamp": "0",
+          "excluded_outside_approved_window": "3397530",
+          "retained_events": "2336"
+        },
+        {
+          "metric": "pickup",
+          "input_events": "3399866",
+          "excluded_null_timestamp": "0",
+          "excluded_outside_approved_window": "3399862",
+          "retained_events": "4"
+        }
+      ],
+      "boundary_contributions": [
+        {
+          "metric": "dropoff",
+          "event_month": "2026-03",
+          "trips": "2336"
+        },
+        {
+          "metric": "pickup",
+          "event_month": "2026-03",
+          "trips": "4"
+        }
+      ],
+      "dst_anomalies": [],
+      "global_trip_exclusions": 0,
+      "duplicates_removed": 0,
+      "source_scan_count": 1
+    },
+    {
+      "service": "yellow",
+      "month": "2026-03",
+      "url": "https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2026-03.parquet",
+      "etag": "\"7c9bd1bcac249e15858f8b1731c2039c-4\"",
+      "source_bytes": 67891249,
+      "retrieved_at": "2026-11-15T05:38:11.961Z",
+      "normalized_sha256": "685a0ee55c79159d14d18a72ddbd64c3a2984dace4319043cc5393833c639a81",
+      "profile": {
+        "source_rows": "3952451",
+        "distinct_ingestion_rows": "3952451",
+        "first_pickup": "2008-12-31 23:03:20",
+        "last_pickup": "2026-04-01 00:06:25",
+        "first_dropoff": "2009-01-01 00:07:36",
+        "last_dropoff": "2026-04-02 16:03:47",
+        "null_pickup_time": "0",
+        "null_dropoff_time": "0",
+        "null_pickup_id": "0",
+        "null_dropoff_id": "0",
+        "invalid_pickup_id": "0",
+        "invalid_dropoff_id": "0",
+        "nonspatial_pickup_id": "6249",
+        "nonspatial_dropoff_id": "20880",
+        "zero_distance": "121210",
+        "negative_distance": "0",
+        "null_distance": "0",
+        "nonpositive_fare": "23719",
+        "null_fare": "0",
+        "nonpositive_duration": "49133",
+        "over_three_hours": "1181",
+        "unknown_duration": "0",
+        "reported_duration_disagrees": "0",
+        "pickup_outside_file_month": "19",
+        "dropoff_outside_file_month": "850"
+      },
+      "event_exclusions": [
+        {
+          "metric": "dropoff",
+          "input_events": "3952451",
+          "excluded_null_timestamp": "0",
+          "excluded_outside_approved_window": "5",
+          "retained_events": "3952446"
+        },
+        {
+          "metric": "pickup",
+          "input_events": "3952451",
+          "excluded_null_timestamp": "0",
+          "excluded_outside_approved_window": "17",
+          "retained_events": "3952434"
+        }
+      ],
+      "boundary_contributions": [
+        {
+          "metric": "dropoff",
+          "event_month": "2026-04",
+          "trips": "845"
+        },
+        {
+          "metric": "pickup",
+          "event_month": "2026-04",
+          "trips": "2"
+        }
+      ],
+      "dst_anomalies": [
+        {
+          "metric": "dropoff",
+          "date": "2026-03-08",
+          "hour": 2,
+          "temporal_quality": "spring_gap",
+          "trips": "2"
+        }
+      ],
+      "global_trip_exclusions": 0,
+      "duplicates_removed": 0,
+      "source_scan_count": 1
+    },
+    {
+      "service": "yellow",
+      "month": "2026-04",
+      "url": "https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2026-04.parquet",
+      "etag": "\"39887281adfc4e33d959ff78c7cab632-4\"",
+      "source_bytes": 64818115,
+      "retrieved_at": "2026-11-15T05:38:15.709Z",
+      "normalized_sha256": "9783d98ae0223cc1402fddf9c63a779c6ec32007675d475bf263ce232b46ce06",
+      "profile": {
+        "source_rows": "3831240",
+        "distinct_ingestion_rows": "3831240",
+        "first_pickup": "2001-01-01 09:23:58",
+        "last_pickup": "2026-05-01 00:01:28",
+        "first_dropoff": "2001-01-01 16:09:38",
+        "last_dropoff": "2026-05-02 12:06:09",
+        "null_pickup_time": "0",
+        "null_dropoff_time": "0",
+        "null_pickup_id": "0",
+        "null_dropoff_id": "0",
+        "invalid_pickup_id": "0",
+        "invalid_dropoff_id": "0",
+        "nonspatial_pickup_id": "6032",
+        "nonspatial_dropoff_id": "20470",
+        "zero_distance": "93515",
+        "negative_distance": "0",
+        "null_distance": "0",
+        "nonpositive_fare": "17230",
+        "null_fare": "0",
+        "nonpositive_duration": "49511",
+        "over_three_hours": "1251",
+        "unknown_duration": "0",
+        "reported_duration_disagrees": "0",
+        "pickup_outside_file_month": "12",
+        "dropoff_outside_file_month": "1426"
+      },
+      "event_exclusions": [
+        {
+          "metric": "dropoff",
+          "input_events": "3831240",
+          "excluded_null_timestamp": "0",
+          "excluded_outside_approved_window": "4",
+          "retained_events": "3831236"
+        },
+        {
+          "metric": "pickup",
+          "input_events": "3831240",
+          "excluded_null_timestamp": "0",
+          "excluded_outside_approved_window": "4",
+          "retained_events": "3831236"
+        }
+      ],
+      "boundary_contributions": [
+        {
+          "metric": "dropoff",
+          "event_month": "2026-05",
+          "trips": "1422"
+        },
+        {
+          "metric": "pickup",
+          "event_month": "2026-03",
+          "trips": "7"
+        },
+        {
+          "metric": "pickup",
+          "event_month": "2026-05",
+          "trips": "1"
+        }
+      ],
+      "dst_anomalies": [],
+      "global_trip_exclusions": 0,
+      "duplicates_removed": 0,
+      "source_scan_count": 1
+    },
+    {
+      "service": "yellow",
+      "month": "2026-05",
+      "url": "https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2026-05.parquet",
+      "etag": "\"88babcd4eea8fabf135efb5b2b8cfc5c-5\"",
+      "source_bytes": 69699174,
+      "retrieved_at": "2026-11-15T05:38:19.429Z",
+      "normalized_sha256": "dfcbf0a6df64a7864584f2996c41808a7ab3a7554641364834bf434f0da1e015",
+      "profile": {
+        "source_rows": "4090836",
+        "distinct_ingestion_rows": "4090836",
+        "first_pickup": "2008-12-31 23:05:53",
+        "last_pickup": "2026-06-01 00:20:35",
+        "first_dropoff": "2009-01-01 17:08:07",
+        "last_dropoff": "2026-06-02 12:53:42",
+        "null_pickup_time": "0",
+        "null_dropoff_time": "0",
+        "null_pickup_id": "0",
+        "null_dropoff_id": "0",
+        "invalid_pickup_id": "0",
+        "invalid_dropoff_id": "0",
+        "nonspatial_pickup_id": "6486",
+        "nonspatial_dropoff_id": "21726",
+        "zero_distance": "113031",
+        "negative_distance": "0",
+        "null_distance": "0",
+        "nonpositive_fare": "17182",
+        "null_fare": "0",
+        "nonpositive_duration": "52063",
+        "over_three_hours": "1430",
+        "unknown_duration": "0",
+        "reported_duration_disagrees": "0",
+        "pickup_outside_file_month": "14",
+        "dropoff_outside_file_month": "791"
+      },
+      "event_exclusions": [
+        {
+          "metric": "dropoff",
+          "input_events": "4090836",
+          "excluded_null_timestamp": "0",
+          "excluded_outside_approved_window": "788",
+          "retained_events": "4090048"
+        },
+        {
+          "metric": "pickup",
+          "input_events": "4090836",
+          "excluded_null_timestamp": "0",
+          "excluded_outside_approved_window": "3",
+          "retained_events": "4090833"
+        }
+      ],
+      "boundary_contributions": [
+        {
+          "metric": "dropoff",
+          "event_month": "2026-04",
+          "trips": "3"
+        },
+        {
+          "metric": "pickup",
+          "event_month": "2026-04",
+          "trips": "11"
+        }
+      ],
+      "dst_anomalies": [],
+      "global_trip_exclusions": 0,
+      "duplicates_removed": 0,
+      "source_scan_count": 1
+    },
+    {
+      "service": "fhvhv",
+      "month": "2024-02",
+      "url": "https://d37ci6vzurychx.cloudfront.net/trip-data/fhvhv_tripdata_2024-02.parquet",
+      "etag": "\"e55a4112377004059be5102baa4eecb7-27\"",
+      "source_bytes": 462475428,
+      "retrieved_at": "2026-11-15T16:38:25.473Z",
+      "normalized_sha256": "71da5fe08180255902e786ff51f80a39e75ef7905f320ea8b2f39527a213c0ab",
+      "profile": {
+        "source_rows": "19359148",
+        "distinct_ingestion_rows": "19359148",
+        "first_pickup": "2024-02-01 00:00:00",
+        "last_pickup": "2024-02-29 23:59:59",
+        "first_dropoff": "2024-02-01 00:02:32",
+        "last_dropoff": "2024-03-01 03:15:38",
+        "null_pickup_time": "0",
+        "null_dropoff_time": "0",
+        "null_pickup_id": "0",
+        "null_dropoff_id": "0",
+        "invalid_pickup_id": "0",
+        "invalid_dropoff_id": "0",
+        "nonspatial_pickup_id": "737",
+        "nonspatial_dropoff_id": "753506",
+        "zero_distance": "3082",
+        "negative_distance": "0",
+        "null_distance": "0",
+        "nonpositive_fare": "8588",
+        "null_fare": "0",
+        "nonpositive_duration": "3",
+        "over_three_hours": "624",
+        "unknown_duration": "0",
+        "reported_duration_disagrees": "0",
+        "pickup_outside_file_month": "0",
+        "dropoff_outside_file_month": "9782"
+      },
+      "event_exclusions": [
+        {
+          "metric": "dropoff",
+          "input_events": "19359148",
+          "excluded_null_timestamp": "0",
+          "excluded_outside_approved_window": "19349366",
+          "retained_events": "9782"
+        },
+        {
+          "metric": "pickup",
+          "input_events": "19359148",
+          "excluded_null_timestamp": "0",
+          "excluded_outside_approved_window": "19359148",
+          "retained_events": "0"
+        }
+      ],
+      "boundary_contributions": [
+        {
+          "metric": "dropoff",
+          "event_month": "2024-03",
+          "trips": "9782"
+        }
+      ],
+      "dst_anomalies": [],
+      "global_trip_exclusions": 0,
+      "duplicates_removed": 0,
+      "source_scan_count": 1
+    },
+    {
+      "service": "fhvhv",
+      "month": "2024-03",
+      "url": "https://d37ci6vzurychx.cloudfront.net/trip-data/fhvhv_tripdata_2024-03.parquet",
+      "etag": "\"fafe7a2cea32d82b462e38708a7ba8ad-30\"",
+      "source_bytes": 507940560,
+      "retrieved_at": "2026-11-15T05:38:26.927Z",
+      "normalized_sha256": "8bcd2b43d33f690e68851cd0ad7df99e0b8f54f2d382dba7ae0ec19329630492",
+      "profile": {
+        "source_rows": "21280788",
+        "distinct_ingestion_rows": "21280788",
+        "first_pickup": "2024-03-01 00:00:00",
+        "last_pickup": "2024-03-31 23:59:59",
+        "first_dropoff": "2024-03-01 00:03:21",
+        "last_dropoff": "2024-04-01 04:06:57",
+        "null_pickup_time": "0",
+        "null_dropoff_time": "0",
+        "null_pickup_id": "0",
+        "null_dropoff_id": "0",
+        "invalid_pickup_id": "0",
+        "invalid_dropoff_id": "0",
+        "nonspatial_pickup_id": "796",
+        "nonspatial_dropoff_id": "832957",
+        "zero_distance": "2954",
+        "negative_distance": "0",
+        "null_distance": "0",
+        "nonpositive_fare": "1183",
+        "null_fare": "0",
+        "nonpositive_duration": "2",
+        "over_three_hours": "692",
+        "unknown_duration": "0",
+        "reported_duration_disagrees": "8594",
+        "pickup_outside_file_month": "0",
+        "dropoff_outside_file_month": "6205"
+      },
+      "event_exclusions": [
+        {
+          "metric": "dropoff",
+          "input_events": "21280788",
+          "excluded_null_timestamp": "0",
+          "excluded_outside_approved_window": "0",
+          "retained_events": "21280788"
+        },
+        {
+          "metric": "pickup",
+          "input_events": "21280788",
+          "excluded_null_timestamp": "0",
+          "excluded_outside_approved_window": "0",
+          "retained_events": "21280788"
+        }
+      ],
+      "boundary_contributions": [
+        {
+          "metric": "dropoff",
+          "event_month": "2024-04",
+          "trips": "6205"
+        }
+      ],
+      "dst_anomalies": [
+        {
+          "metric": "pickup",
+          "date": "2024-03-10",
+          "hour": 2,
+          "temporal_quality": "spring_gap",
+          "trips": "79"
+        }
+      ],
+      "global_trip_exclusions": 0,
+      "duplicates_removed": 0,
+      "source_scan_count": 1
+    },
+    {
+      "service": "fhvhv",
+      "month": "2024-04",
+      "url": "https://d37ci6vzurychx.cloudfront.net/trip-data/fhvhv_tripdata_2024-04.parquet",
+      "etag": "\"3075f550e829d26dc1b66e5610d17cc3-28\"",
+      "source_bytes": 476115643,
+      "retrieved_at": "2026-11-15T05:38:41.161Z",
+      "normalized_sha256": "71bdcf20fe59c606d2ce61f1e2a8a1906bf55eac91e585f03c8196fe4f3e0a34",
+      "profile": {
+        "source_rows": "19733038",
+        "distinct_ingestion_rows": "19733038",
+        "first_pickup": "2024-04-01 00:00:00",
+        "last_pickup": "2024-04-30 23:59:59",
+        "first_dropoff": "2024-04-01 00:02:44",
+        "last_dropoff": "2024-05-01 02:23:11",
+        "null_pickup_time": "0",
+        "null_dropoff_time": "0",
+        "null_pickup_id": "0",
+        "null_dropoff_id": "0",
+        "invalid_pickup_id": "0",
+        "invalid_dropoff_id": "0",
+        "nonspatial_pickup_id": "769",
+        "nonspatial_dropoff_id": "805538",
+        "zero_distance": "2508",
+        "negative_distance": "0",
+        "null_distance": "0",
+        "nonpositive_fare": "765",
+        "null_fare": "0",
+        "nonpositive_duration": "1",
+        "over_three_hours": "746",
+        "unknown_duration": "0",
+        "reported_duration_disagrees": "0",
+        "pickup_outside_file_month": "0",
+        "dropoff_outside_file_month": "6941"
+      },
+      "event_exclusions": [
+        {
+          "metric": "dropoff",
+          "input_events": "19733038",
+          "excluded_null_timestamp": "0",
+          "excluded_outside_approved_window": "0",
+          "retained_events": "19733038"
+        },
+        {
+          "metric": "pickup",
+          "input_events": "19733038",
+          "excluded_null_timestamp": "0",
+          "excluded_outside_approved_window": "0",
+          "retained_events": "19733038"
+        }
+      ],
+      "boundary_contributions": [
+        {
+          "metric": "dropoff",
+          "event_month": "2024-05",
+          "trips": "6941"
+        }
+      ],
+      "dst_anomalies": [],
+      "global_trip_exclusions": 0,
+      "duplicates_removed": 0,
+      "source_scan_count": 1
+    },
+    {
+      "service": "fhvhv",
+      "month": "2024-05",
+      "url": "https://d37ci6vzurychx.cloudfront.net/trip-data/fhvhv_tripdata_2024-05.parquet",
+      "etag": "\"699d35ba8357d7a1f19090aed680a401-30\"",
+      "source_bytes": 498575918,
+      "retrieved_at": "2026-11-15T16:38:47.235Z",
+      "normalized_sha256": "af2b234b74932ca9b743068f3e65552600de84df7af624d792bc292d57b9bc54",
+      "profile": {
+        "source_rows": "20704538",
+        "distinct_ingestion_rows": "20704538",
+        "first_pickup": "2024-05-01 00:00:00",
+        "last_pickup": "2024-05-31 23:59:59",
+        "first_dropoff": "2024-05-01 00:02:47",
+        "last_dropoff": "2024-06-01 02:58:52",
+        "null_pickup_time": "0",
+        "null_dropoff_time": "0",
+        "null_pickup_id": "0",
+        "null_dropoff_id": "0",
+        "invalid_pickup_id": "0",
+        "invalid_dropoff_id": "0",
+        "nonspatial_pickup_id": "841",
+        "nonspatial_dropoff_id": "872697",
+        "zero_distance": "2510",
+        "negative_distance": "0",
+        "null_distance": "0",
+        "nonpositive_fare": "398",
+        "null_fare": "0",
+        "nonpositive_duration": "1",
+        "over_three_hours": "1381",
+        "unknown_duration": "0",
+        "reported_duration_disagrees": "0",
+        "pickup_outside_file_month": "0",
+        "dropoff_outside_file_month": "15150"
+      },
+      "event_exclusions": [
+        {
+          "metric": "dropoff",
+          "input_events": "20704538",
+          "excluded_null_timestamp": "0",
+          "excluded_outside_approved_window": "15150",
+          "retained_events": "20689388"
+        },
+        {
+          "metric": "pickup",
+          "input_events": "20704538",
+          "excluded_null_timestamp": "0",
+          "excluded_outside_approved_window": "0",
+          "retained_events": "20704538"
+        }
+      ],
+      "boundary_contributions": [],
+      "dst_anomalies": [],
+      "global_trip_exclusions": 0,
+      "duplicates_removed": 0,
+      "source_scan_count": 1
+    },
+    {
+      "service": "fhvhv",
+      "month": "2025-02",
+      "url": "https://d37ci6vzurychx.cloudfront.net/trip-data/fhvhv_tripdata_2025-02.parquet",
+      "etag": "\"6ad601bae7260d0da1101f1f16cb981b-89\"",
+      "source_bytes": 461632254,
+      "retrieved_at": "2026-11-15T16:38:58.857Z",
+      "normalized_sha256": "5dcfe4c43f68e60937f0468f8a09b86308e68211a39bd1d4aaaa626f068a3779",
+      "profile": {
+        "source_rows": "19339461",
+        "distinct_ingestion_rows": "19339461",
+        "first_pickup": "2025-02-01 00:00:00",
+        "last_pickup": "2025-02-28 23:59:59",
+        "first_dropoff": "2025-02-01 00:02:45",
+        "last_dropoff": "2025-03-01 02:46:18",
+        "null_pickup_time": "0",
+        "null_dropoff_time": "0",
+        "null_pickup_id": "0",
+        "null_dropoff_id": "0",
+        "invalid_pickup_id": "0",
+        "invalid_dropoff_id": "0",
+        "nonspatial_pickup_id": "709",
+        "nonspatial_dropoff_id": "804430",
+        "zero_distance": "2469",
+        "negative_distance": "0",
+        "null_distance": "0",
+        "nonpositive_fare": "1708",
+        "null_fare": "0",
+        "nonpositive_duration": "4",
+        "over_three_hours": "411",
+        "unknown_duration": "0",
+        "reported_duration_disagrees": "410",
+        "pickup_outside_file_month": "0",
+        "dropoff_outside_file_month": "12539"
+      },
+      "event_exclusions": [
+        {
+          "metric": "dropoff",
+          "input_events": "19339461",
+          "excluded_null_timestamp": "0",
+          "excluded_outside_approved_window": "19326922",
+          "retained_events": "12539"
+        },
+        {
+          "metric": "pickup",
+          "input_events": "19339461",
+          "excluded_null_timestamp": "0",
+          "excluded_outside_approved_window": "19339461",
+          "retained_events": "0"
+        }
+      ],
+      "boundary_contributions": [
+        {
+          "metric": "dropoff",
+          "event_month": "2025-03",
+          "trips": "12539"
+        }
+      ],
+      "dst_anomalies": [],
+      "global_trip_exclusions": 0,
+      "duplicates_removed": 0,
+      "source_scan_count": 1
+    },
+    {
+      "service": "fhvhv",
+      "month": "2025-03",
+      "url": "https://d37ci6vzurychx.cloudfront.net/trip-data/fhvhv_tripdata_2025-03.parquet",
+      "etag": "\"24a1dc72b007131d1f5cd0e5f76b1c22-96\"",
+      "source_bytes": 501783767,
+      "retrieved_at": "2026-11-15T16:39:14.538Z",
+      "normalized_sha256": "f2c4dc76dd229762cf031bbd72144c0be3848dc36e5e5f59dfb1e57ad60de309",
+      "profile": {
+        "source_rows": "20536879",
+        "distinct_ingestion_rows": "20536879",
+        "first_pickup": "2025-03-01 00:00:00",
+        "last_pickup": "2025-03-31 23:59:58",
+        "first_dropoff": "2025-03-01 00:02:19",
+        "last_dropoff": "2025-04-01 01:40:23",
+        "null_pickup_time": "0",
+        "null_dropoff_time": "0",
+        "null_pickup_id": "0",
+        "null_dropoff_id": "0",
+        "invalid_pickup_id": "0",
+        "invalid_dropoff_id": "0",
+        "nonspatial_pickup_id": "805",
+        "nonspatial_dropoff_id": "907738",
+        "zero_distance": "2185",
+        "negative_distance": "0",
+        "null_distance": "0",
+        "nonpositive_fare": "64210",
+        "null_fare": "0",
+        "nonpositive_duration": "4",
+        "over_three_hours": "449",
+        "unknown_duration": "0",
+        "reported_duration_disagrees": "10179",
+        "pickup_outside_file_month": "0",
+        "dropoff_outside_file_month": "5426"
+      },
+      "event_exclusions": [
+        {
+          "metric": "dropoff",
+          "input_events": "20536879",
+          "excluded_null_timestamp": "0",
+          "excluded_outside_approved_window": "0",
+          "retained_events": "20536879"
+        },
+        {
+          "metric": "pickup",
+          "input_events": "20536879",
+          "excluded_null_timestamp": "0",
+          "excluded_outside_approved_window": "0",
+          "retained_events": "20536879"
+        }
+      ],
+      "boundary_contributions": [
+        {
+          "metric": "dropoff",
+          "event_month": "2025-04",
+          "trips": "5426"
+        }
+      ],
+      "dst_anomalies": [
+        {
+          "metric": "pickup",
+          "date": "2025-03-09",
+          "hour": 2,
+          "temporal_quality": "spring_gap",
+          "trips": "85"
+        }
+      ],
+      "global_trip_exclusions": 0,
+      "duplicates_removed": 0,
+      "source_scan_count": 1
+    },
+    {
+      "service": "fhvhv",
+      "month": "2025-04",
+      "url": "https://d37ci6vzurychx.cloudfront.net/trip-data/fhvhv_tripdata_2025-04.parquet",
+      "etag": "\"a31d229854f50716c582baee7b938851-93\"",
+      "source_bytes": 487219586,
+      "retrieved_at": "2026-11-15T16:39:29.312Z",
+      "normalized_sha256": "6e1d5f576a1a7288fe31ffd7fe801ce80940d119b54c62135c26b053c3f683f2",
+      "profile": {
+        "source_rows": "19753983",
+        "distinct_ingestion_rows": "19753983",
+        "first_pickup": "2025-04-01 00:00:00",
+        "last_pickup": "2025-04-30 23:59:59",
+        "first_dropoff": "2025-04-01 00:02:40",
+        "last_dropoff": "2025-05-01 02:21:09",
+        "null_pickup_time": "0",
+        "null_dropoff_time": "0",
+        "null_pickup_id": "0",
+        "null_dropoff_id": "0",
+        "invalid_pickup_id": "0",
+        "invalid_dropoff_id": "0",
+        "nonspatial_pickup_id": "846",
+        "nonspatial_dropoff_id": "876211",
+        "zero_distance": "2327",
+        "negative_distance": "0",
+        "null_distance": "0",
+        "nonpositive_fare": "14233",
+        "null_fare": "0",
+        "nonpositive_duration": "3",
+        "over_three_hours": "595",
+        "unknown_duration": "0",
+        "reported_duration_disagrees": "1679",
+        "pickup_outside_file_month": "0",
+        "dropoff_outside_file_month": "8278"
+      },
+      "event_exclusions": [
+        {
+          "metric": "dropoff",
+          "input_events": "19753983",
+          "excluded_null_timestamp": "0",
+          "excluded_outside_approved_window": "0",
+          "retained_events": "19753983"
+        },
+        {
+          "metric": "pickup",
+          "input_events": "19753983",
+          "excluded_null_timestamp": "0",
+          "excluded_outside_approved_window": "0",
+          "retained_events": "19753983"
+        }
+      ],
+      "boundary_contributions": [
+        {
+          "metric": "dropoff",
+          "event_month": "2025-05",
+          "trips": "8278"
+        }
+      ],
+      "dst_anomalies": [],
+      "global_trip_exclusions": 0,
+      "duplicates_removed": 0,
+      "source_scan_count": 1
+    },
+    {
+      "service": "fhvhv",
+      "month": "2025-05",
+      "url": "https://d37ci6vzurychx.cloudfront.net/trip-data/fhvhv_tripdata_2025-05.parquet",
+      "etag": "\"7558c45a1a6ffed1a9024fc76faac3e1-99\"",
+      "source_bytes": 517386544,
+      "retrieved_at": "2026-11-15T16:46:35.184Z",
+      "normalized_sha256": "474c3d58236e979ffa93df694b41f8f80e03151ede638d034eebe371eeff5079",
+      "profile": {
+        "source_rows": "21091193",
+        "distinct_ingestion_rows": "21091193",
+        "first_pickup": "2025-05-01 00:00:00",
+        "last_pickup": "2025-05-31 23:59:59",
+        "first_dropoff": "2025-05-01 00:03:01",
+        "last_dropoff": "2025-06-01 03:19:25",
+        "null_pickup_time": "0",
+        "null_dropoff_time": "0",
+        "null_pickup_id": "0",
+        "null_dropoff_id": "0",
+        "invalid_pickup_id": "0",
+        "invalid_dropoff_id": "0",
+        "nonspatial_pickup_id": "862",
+        "nonspatial_dropoff_id": "973618",
+        "zero_distance": "2785",
+        "negative_distance": "0",
+        "null_distance": "0",
+        "nonpositive_fare": "462",
+        "null_fare": "0",
+        "nonpositive_duration": "5",
+        "over_three_hours": "1526",
+        "unknown_duration": "0",
+        "reported_duration_disagrees": "1919",
+        "pickup_outside_file_month": "0",
+        "dropoff_outside_file_month": "15405"
+      },
+      "event_exclusions": [
+        {
+          "metric": "dropoff",
+          "input_events": "21091193",
+          "excluded_null_timestamp": "0",
+          "excluded_outside_approved_window": "15405",
+          "retained_events": "21075788"
+        },
+        {
+          "metric": "pickup",
+          "input_events": "21091193",
+          "excluded_null_timestamp": "0",
+          "excluded_outside_approved_window": "0",
+          "retained_events": "21091193"
+        }
+      ],
+      "boundary_contributions": [],
+      "dst_anomalies": [],
+      "global_trip_exclusions": 0,
+      "duplicates_removed": 0,
+      "source_scan_count": 1
+    },
+    {
+      "service": "fhvhv",
+      "month": "2026-02",
+      "url": "https://d37ci6vzurychx.cloudfront.net/trip-data/fhvhv_tripdata_2026-02.parquet",
+      "etag": "\"8a1b9b3dfa504cb705e64d169bb01d25-91\"",
+      "source_bytes": 476780037,
+      "retrieved_at": "2026-11-15T16:47:03.518Z",
+      "normalized_sha256": "a0d87dec239f8fb3771efb3dfdac44fa56f7d768ca963c1acc0b875947750d4e",
+      "profile": {
+        "source_rows": "19875686",
+        "distinct_ingestion_rows": "19875686",
+        "first_pickup": "2026-02-01 00:00:00",
+        "last_pickup": "2026-02-28 23:59:59",
+        "first_dropoff": "2026-02-01 00:02:28",
+        "last_dropoff": "2026-03-01 02:40:42",
+        "null_pickup_time": "0",
+        "null_dropoff_time": "0",
+        "null_pickup_id": "0",
+        "null_dropoff_id": "0",
+        "invalid_pickup_id": "0",
+        "invalid_dropoff_id": "0",
+        "nonspatial_pickup_id": "1000",
+        "nonspatial_dropoff_id": "822234",
+        "zero_distance": "2020",
+        "negative_distance": "0",
+        "null_distance": "0",
+        "nonpositive_fare": "4946",
+        "null_fare": "0",
+        "nonpositive_duration": "0",
+        "over_three_hours": "636",
+        "unknown_duration": "0",
+        "reported_duration_disagrees": "2064",
+        "pickup_outside_file_month": "0",
+        "dropoff_outside_file_month": "14654"
+      },
+      "event_exclusions": [
+        {
+          "metric": "dropoff",
+          "input_events": "19875686",
+          "excluded_null_timestamp": "0",
+          "excluded_outside_approved_window": "19861032",
+          "retained_events": "14654"
+        },
+        {
+          "metric": "pickup",
+          "input_events": "19875686",
+          "excluded_null_timestamp": "0",
+          "excluded_outside_approved_window": "19875686",
+          "retained_events": "0"
+        }
+      ],
+      "boundary_contributions": [
+        {
+          "metric": "dropoff",
+          "event_month": "2026-03",
+          "trips": "14654"
+        }
+      ],
+      "dst_anomalies": [],
+      "global_trip_exclusions": 0,
+      "duplicates_removed": 0,
+      "source_scan_count": 1
+    },
+    {
+      "service": "fhvhv",
+      "month": "2026-03",
+      "url": "https://d37ci6vzurychx.cloudfront.net/trip-data/fhvhv_tripdata_2026-03.parquet",
+      "etag": null,
+      "source_bytes": 532615621,
+      "retrieved_at": null,
+      "normalized_sha256": "626fd5fddd424fcec35b2af79e3239a27c84d932263ecbac113ac588f1ae7afa",
+      "raw_sha256": "0f63d67cb9253b5a818cc4a1b2ddaf3a79955a6bf31c7577c53ff97fa040a262",
+      "profile": {
+        "source_rows": "22058358",
+        "distinct_ingestion_rows": "22058358",
+        "first_pickup": "2026-03-01 00:00:00",
+        "last_pickup": "2026-03-31 23:59:59",
+        "first_dropoff": "2026-03-01 00:02:36",
+        "last_dropoff": "2026-04-01 05:29:51",
+        "null_pickup_time": "0",
+        "null_dropoff_time": "0",
+        "null_pickup_id": "0",
+        "null_dropoff_id": "0",
+        "invalid_pickup_id": "0",
+        "invalid_dropoff_id": "0",
+        "nonspatial_pickup_id": "1091",
+        "nonspatial_dropoff_id": "952496",
+        "zero_distance": "2557",
+        "negative_distance": "0",
+        "null_distance": "0",
+        "nonpositive_fare": "8346",
+        "null_fare": "0",
+        "nonpositive_duration": "1",
+        "over_three_hours": "724",
+        "unknown_duration": "0",
+        "reported_duration_disagrees": "11754",
+        "pickup_outside_file_month": "0",
+        "dropoff_outside_file_month": "5784"
+      },
+      "event_exclusions": [
+        {
+          "metric": "dropoff",
+          "input_events": "22058358",
+          "excluded_null_timestamp": "0",
+          "excluded_outside_approved_window": "0",
+          "retained_events": "22058358"
+        },
+        {
+          "metric": "pickup",
+          "input_events": "22058358",
+          "excluded_null_timestamp": "0",
+          "excluded_outside_approved_window": "0",
+          "retained_events": "22058358"
+        }
+      ],
+      "boundary_contributions": [
+        {
+          "metric": "dropoff",
+          "event_month": "2026-04",
+          "trips": "5784"
+        }
+      ],
+      "dst_anomalies": [
+        {
+          "metric": "pickup",
+          "date": "2026-03-08",
+          "hour": 2,
+          "temporal_quality": "spring_gap",
+          "trips": "85"
+        }
+      ],
+      "global_trip_exclusions": 0,
+      "duplicates_removed": 0,
+      "source_scan_count": 1
+    },
+    {
+      "service": "fhvhv",
+      "month": "2026-04",
+      "url": "https://d37ci6vzurychx.cloudfront.net/trip-data/fhvhv_tripdata_2026-04.parquet",
+      "etag": "\"a856fda161d15104556f41b3d2aee48a-30\"",
+      "source_bytes": 509865567,
+      "retrieved_at": "2026-11-15T16:43:56.675Z",
+      "normalized_sha256": "b635cea2e632c8b22f6ba36f81f45e03e06f8d35f0b8d29ec3e2ca85fa161059",
+      "profile": {
+        "source_rows": "20995953",
+        "distinct_ingestion_rows": "20995953",
+        "first_pickup": "2026-04-01 00:00:00",
+        "last_pickup": "2026-04-30 23:59:59",
+        "first_dropoff": "2026-04-01 00:02:44",
+        "last_dropoff": "2026-05-01 02:40:34",
+        "null_pickup_time": "0",
+        "null_dropoff_time": "0",
+        "null_pickup_id": "0",
+        "null_dropoff_id": "0",
+        "invalid_pickup_id": "0",
+        "invalid_dropoff_id": "0",
+        "nonspatial_pickup_id": "1020",
+        "nonspatial_dropoff_id": "931102",
+        "zero_distance": "1857",
+        "negative_distance": "0",
+        "null_distance": "0",
+        "nonpositive_fare": "25604",
+        "null_fare": "0",
+        "nonpositive_duration": "0",
+        "over_three_hours": "672",
+        "unknown_duration": "0",
+        "reported_duration_disagrees": "2085",
+        "pickup_outside_file_month": "0",
+        "dropoff_outside_file_month": "10097"
+      },
+      "event_exclusions": [
+        {
+          "metric": "dropoff",
+          "input_events": "20995953",
+          "excluded_null_timestamp": "0",
+          "excluded_outside_approved_window": "0",
+          "retained_events": "20995953"
+        },
+        {
+          "metric": "pickup",
+          "input_events": "20995953",
+          "excluded_null_timestamp": "0",
+          "excluded_outside_approved_window": "0",
+          "retained_events": "20995953"
+        }
+      ],
+      "boundary_contributions": [
+        {
+          "metric": "dropoff",
+          "event_month": "2026-05",
+          "trips": "10097"
+        }
+      ],
+      "dst_anomalies": [],
+      "global_trip_exclusions": 0,
+      "duplicates_removed": 0,
+      "source_scan_count": 1
+    },
+    {
+      "service": "fhvhv",
+      "month": "2026-05",
+      "url": "https://d37ci6vzurychx.cloudfront.net/trip-data/fhvhv_tripdata_2026-05.parquet",
+      "etag": "\"e4f4ba2ae1c4bdeb5456e456dd2efda8-32\"",
+      "source_bytes": 537576484,
+      "retrieved_at": "2026-11-15T16:44:31.461Z",
+      "normalized_sha256": "9ab22c1677dd4219db30af75d0a288a8ba215601cfaa701c6c584a59e0d257da",
+      "profile": {
+        "source_rows": "22125744",
+        "distinct_ingestion_rows": "22125744",
+        "first_pickup": "2026-05-01 00:00:00",
+        "last_pickup": "2026-05-31 23:59:59",
+        "first_dropoff": "2026-05-01 00:01:15",
+        "last_dropoff": "2026-06-01 03:09:05",
+        "null_pickup_time": "0",
+        "null_dropoff_time": "0",
+        "null_pickup_id": "0",
+        "null_dropoff_id": "0",
+        "invalid_pickup_id": "0",
+        "invalid_dropoff_id": "0",
+        "nonspatial_pickup_id": "1182",
+        "nonspatial_dropoff_id": "1018965",
+        "zero_distance": "2285",
+        "negative_distance": "0",
+        "null_distance": "0",
+        "nonpositive_fare": "11921",
+        "null_fare": "0",
+        "nonpositive_duration": "0",
+        "over_three_hours": "1617",
+        "unknown_duration": "0",
+        "reported_duration_disagrees": "1936877",
+        "pickup_outside_file_month": "0",
+        "dropoff_outside_file_month": "7383"
+      },
+      "event_exclusions": [
+        {
+          "metric": "dropoff",
+          "input_events": "22125744",
+          "excluded_null_timestamp": "0",
+          "excluded_outside_approved_window": "7383",
+          "retained_events": "22118361"
+        },
+        {
+          "metric": "pickup",
+          "input_events": "22125744",
+          "excluded_null_timestamp": "0",
+          "excluded_outside_approved_window": "0",
+          "retained_events": "22125744"
+        }
+      ],
+      "boundary_contributions": [],
+      "dst_anomalies": [],
+      "global_trip_exclusions": 0,
+      "duplicates_removed": 0,
+      "source_scan_count": 1
+    }
+  ]
+}

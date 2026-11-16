@@ -1,0 +1,131 @@
+{
+  "id" : "srxy-5nxn",
+  "name" : "MTA Central Business District Geofence: Beginning June 2024",
+  "assetType" : "dataset",
+  "attribution" : "Metropolitan Transportation Authority",
+  "attributionLink" : "https://www.mta.info/open-data",
+  "averageRating" : 0,
+  "category" : "Transportation",
+  "createdAt" : 1717167127,
+  "description" : "This dataset consists of a set of 2D geofence polygons that are intended to capture the Manhattan CBD as defined by the MTA Reform and Traffic Mobility Act. That legislation defines it as the geographic area of Manhattan south of and inclusive of 60th Street, not including the Franklin D. Roosevelt (FDR) Drive and the West Side Highway/Route 9A, the Battery Park Underpass and any surface roadway portion of the Hugh L. Carey Tunnel that connects to West Street (the West Side Highway/Route 9A).",
+  "diciBackend" : false,
+  "displayType" : "table",
+  "downloadCount" : 2854,
+  "hideFromCatalog" : false,
+  "hideFromDataJson" : false,
+  "locked" : false,
+  "newBackend" : true,
+  "numberOfComments" : 0,
+  "oid" : 40594767,
+  "provenance" : "official",
+  "publicationAppendEnabled" : false,
+  "publicationDate" : 1717168113,
+  "publicationGroup" : 19536800,
+  "publicationStage" : "published",
+  "rowClass" : "",
+  "rowsUpdatedAt" : 1736522522,
+  "tableId" : 19536800,
+  "totalTimesRated" : 0,
+  "viewCount" : 7411,
+  "viewLastModified" : 1750952779,
+  "viewType" : "tabular",
+  "approvals" : [ {
+    "reviewedAt" : 1717777374,
+    "reviewedAutomatically" : true,
+    "state" : "approved",
+    "submissionId" : 6340672,
+    "submissionObject" : "public_audience_request",
+    "submissionOutcome" : "change_audience",
+    "submittedAt" : 1717777374,
+    "targetAudience" : "public",
+    "workflowId" : 2254,
+    "submissionDetails" : {
+      "permissionType" : "READ"
+    },
+    "submissionOutcomeApplication" : {
+      "endedAt" : 1717777374,
+      "failureCount" : 0,
+      "startedAt" : 1717777374,
+      "status" : "success"
+    },
+    "submitter" : {
+      "id" : "xzik-pf59",
+      "displayName" : "NY Open Data"
+    }
+  } ],
+  "clientContext" : {
+    "clientContextVariables" : [ ],
+    "inheritedVariables" : { }
+  },
+  "columns" : [ {
+    "id" : 593120437,
+    "name" : "polygon",
+    "dataTypeName" : "polygon",
+    "description" : "Polygon geometry data in the shape of the Central Business District.",
+    "fieldName" : "polygon",
+    "position" : 1,
+    "renderTypeName" : "polygon",
+    "tableColumnId" : 152801562,
+    "format" : { }
+  } ],
+  "grants" : [ {
+    "inherited" : false,
+    "type" : "viewer",
+    "flags" : [ "public" ]
+  } ],
+  "metadata" : {
+    "rdfSubject" : "0",
+    "rdfClass" : "",
+    "attachments" : [ {
+      "filename" : "MTA_CentralBusinessDistrictGeofence_Overview.pdf",
+      "assetId" : "5c248307-890b-4af2-9203-ab15d134f534",
+      "name" : "MTA_CentralBusinessDistrictGeofence_Overview.pdf"
+    }, {
+      "filename" : "MTA_CentralBusinessDistrictGeofence_DataDictionary.pdf",
+      "assetId" : "b8e9cb9e-9187-42f1-9b6e-6a5fb772c0d6",
+      "name" : "MTA_CentralBusinessDistrictGeofence_DataDictionary.pdf"
+    } ],
+    "custom_fields" : {
+      "Dataset Summary" : {
+        "Posting Frequency" : "Static - Not Updated",
+        "Organization" : "Metropolitan Transportation Authority",
+        "Contact Information" : "OpenData@mtahq.org",
+        "Time Period" : "Beginning June 2024",
+        "Coverage" : "New York City",
+        "Granularity" : "Polygon",
+        "Dataset Owner" : "Metropolitan Transportation Authority"
+      },
+      "Additional Resources" : {
+        "See Also" : "https://metrics.mta.info/"
+      },
+      "Dataset Information" : {
+        "Agency" : "Metropolitan Transportation Authority"
+      }
+    },
+    "availableDisplayTypes" : [ "table", "fatrow", "page" ]
+  },
+  "owner" : {
+    "id" : "xzik-pf59",
+    "displayName" : "NY Open Data",
+    "profileImageUrlLarge" : "/api/users/xzik-pf59/profile_images/LARGE",
+    "profileImageUrlMedium" : "/api/users/xzik-pf59/profile_images/THUMB",
+    "profileImageUrlSmall" : "/api/users/xzik-pf59/profile_images/TINY",
+    "screenName" : "NY Open Data",
+    "type" : "interactive",
+    "flags" : [ "acceptedEula", "mayBeStoriesCoOwner" ]
+  },
+  "query" : { },
+  "rights" : [ "read" ],
+  "tableAuthor" : {
+    "id" : "xzik-pf59",
+    "displayName" : "NY Open Data",
+    "profileImageUrlLarge" : "/api/users/xzik-pf59/profile_images/LARGE",
+    "profileImageUrlMedium" : "/api/users/xzik-pf59/profile_images/THUMB",
+    "profileImageUrlSmall" : "/api/users/xzik-pf59/profile_images/TINY",
+    "screenName" : "NY Open Data",
+    "type" : "interactive",
+    "flags" : [ "acceptedEula", "mayBeStoriesCoOwner" ]
+  },
+  "tags" : [ "cbdtp", "central business district tolling program", "congestion relief zone", "cbd", "central business district", "congestion", "traffic", "mta bridges & tunnels", "b&t", "bridge", "tunnel", "polygon", "geofence", "boundary" ],
+  "flags" : [ "default", "ownerMayBeContacted", "restorable", "restorePossibleForType" ]
+}

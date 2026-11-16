@@ -1,0 +1,216 @@
+{
+  "id" : "yfdc-w5jh",
+  "name" : "MTA Central Business District Taxi Zones",
+  "assetType" : "dataset",
+  "attribution" : "Metropolitan Transportation Authority",
+  "attributionLink" : "https://www.mta.info/open-data",
+  "averageRating" : 0,
+  "category" : "Transportation",
+  "createdAt" : 1718742811,
+  "description" : "This dataset consists of a set of polygons that will allow users of New York City Taxi and Limousine Commission data on trip records for taxi and for-hire vehicle trips to determine which trips originate and/or end in a Taxi Zone in the Central Business District and are thus subjected to the CBD Tolling Program. TLC trip record data is available on NYC Open Data in separate datasets each year for yellow taxis, green taxis, for-hire vehicles (FHVs) dispatched by a high-volume for-hire vehicle service (HVFHVs), and other FHVs.",
+  "diciBackend" : false,
+  "displayType" : "table",
+  "downloadCount" : 1696,
+  "hideFromCatalog" : false,
+  "hideFromDataJson" : false,
+  "locked" : false,
+  "newBackend" : true,
+  "numberOfComments" : 0,
+  "oid" : 40820171,
+  "provenance" : "official",
+  "publicationAppendEnabled" : false,
+  "publicationDate" : 1723833017,
+  "publicationGroup" : 19551770,
+  "publicationStage" : "published",
+  "rowClass" : "",
+  "rowsUpdatedAt" : 1723833005,
+  "tableId" : 19630769,
+  "totalTimesRated" : 0,
+  "viewCount" : 7620,
+  "viewLastModified" : 1725463098,
+  "viewType" : "tabular",
+  "approvals" : [ {
+    "reviewedAt" : 1723839468,
+    "reviewedAutomatically" : true,
+    "state" : "approved",
+    "submissionId" : 6517601,
+    "submissionObject" : "public_audience_request",
+    "submissionOutcome" : "change_audience",
+    "submittedAt" : 1723839468,
+    "targetAudience" : "public",
+    "workflowId" : 2254,
+    "submissionDetails" : {
+      "permissionType" : "READ"
+    },
+    "submissionOutcomeApplication" : {
+      "endedAt" : 1723839468,
+      "failureCount" : 0,
+      "startedAt" : 1723839468,
+      "status" : "success"
+    },
+    "submitter" : {
+      "id" : "28jg-4c4u",
+      "displayName" : "Open Data Administrator 1"
+    }
+  } ],
+  "clientContext" : {
+    "clientContextVariables" : [ ],
+    "inheritedVariables" : { }
+  },
+  "columns" : [ {
+    "id" : 598509833,
+    "name" : "Taxi Zone",
+    "dataTypeName" : "number",
+    "description" : "The number of the TLC taxi zone within the CBD.",
+    "fieldName" : "taxi_zone",
+    "position" : 1,
+    "renderTypeName" : "number",
+    "tableColumnId" : 153073931,
+    "cachedContents" : {
+      "non_null" : "38",
+      "largest" : "261",
+      "null" : "0",
+      "top" : [ {
+        "item" : "261",
+        "count" : "1"
+      }, {
+        "item" : "13",
+        "count" : "1"
+      }, {
+        "item" : "79",
+        "count" : "1"
+      }, {
+        "item" : "88",
+        "count" : "1"
+      }, {
+        "item" : "232",
+        "count" : "1"
+      }, {
+        "item" : "87",
+        "count" : "1"
+      }, {
+        "item" : "224",
+        "count" : "1"
+      }, {
+        "item" : "249",
+        "count" : "1"
+      }, {
+        "item" : "113",
+        "count" : "1"
+      }, {
+        "item" : "164",
+        "count" : "1"
+      }, {
+        "item" : "90",
+        "count" : "1"
+      }, {
+        "item" : "68",
+        "count" : "1"
+      }, {
+        "item" : "246",
+        "count" : "1"
+      }, {
+        "item" : "148",
+        "count" : "1"
+      }, {
+        "item" : "230",
+        "count" : "1"
+      }, {
+        "item" : "100",
+        "count" : "1"
+      }, {
+        "item" : "209",
+        "count" : "1"
+      }, {
+        "item" : "137",
+        "count" : "1"
+      }, {
+        "item" : "163",
+        "count" : "1"
+      }, {
+        "item" : "211",
+        "count" : "1"
+      } ],
+      "smallest" : "4",
+      "count" : "38",
+      "cardinality" : "38"
+    },
+    "format" : {
+      "decimalSeparator" : ".",
+      "groupSeparator" : ","
+    }
+  }, {
+    "id" : 598509835,
+    "name" : "Polygon",
+    "dataTypeName" : "polygon",
+    "description" : "  Polygon geometry data for the TLC taxi zones within the CBD.",
+    "fieldName" : "polygon",
+    "position" : 2,
+    "renderTypeName" : "polygon",
+    "tableColumnId" : 154557449,
+    "format" : { }
+  } ],
+  "grants" : [ {
+    "inherited" : false,
+    "type" : "viewer",
+    "flags" : [ "public" ]
+  } ],
+  "metadata" : {
+    "rdfClass" : "",
+    "rdfSubject" : "0",
+    "attachments" : [ {
+      "filename" : "MTA_CBDTaxiZones_Overview.pdf",
+      "assetId" : "947678d0-5074-431d-8a84-a1409722b42e",
+      "blobId" : "",
+      "name" : "MTA_CBDTaxiZones_Overview.pdf"
+    }, {
+      "filename" : "MTA_CBDTaxiZones_DataDictionary.pdf",
+      "assetId" : "3ef51d25-6efa-45b6-a6e6-bb729866a4e9",
+      "blobId" : "",
+      "name" : "MTA_CBDTaxiZones_DataDictionary.pdf"
+    } ],
+    "custom_fields" : {
+      "Dataset Summary" : {
+        "Posting Frequency" : "As needed",
+        "Organization" : "Metropolitan Transportation Authority",
+        "Contact Information" : "OpenData@mtahq.org",
+        "Time Period" : "Current",
+        "Coverage" : "New York City",
+        "Granularity" : "Taxi Zone",
+        "Dataset Owner" : "Metropolitan Transportation Authority"
+      },
+      "Additional Resources" : {
+        "See Also" : "https://metrics.mta.info/"
+      },
+      "Dataset Information" : {
+        "Agency" : "Metropolitan Transportation Authority"
+      }
+    },
+    "availableDisplayTypes" : [ "table", "fatrow", "page" ],
+    "rowLabel" : ""
+  },
+  "owner" : {
+    "id" : "xzik-pf59",
+    "displayName" : "NY Open Data",
+    "profileImageUrlLarge" : "/api/users/xzik-pf59/profile_images/LARGE",
+    "profileImageUrlMedium" : "/api/users/xzik-pf59/profile_images/THUMB",
+    "profileImageUrlSmall" : "/api/users/xzik-pf59/profile_images/TINY",
+    "screenName" : "NY Open Data",
+    "type" : "interactive",
+    "flags" : [ "acceptedEula", "mayBeStoriesCoOwner" ]
+  },
+  "query" : { },
+  "rights" : [ "read" ],
+  "tableAuthor" : {
+    "id" : "xzik-pf59",
+    "displayName" : "NY Open Data",
+    "profileImageUrlLarge" : "/api/users/xzik-pf59/profile_images/LARGE",
+    "profileImageUrlMedium" : "/api/users/xzik-pf59/profile_images/THUMB",
+    "profileImageUrlSmall" : "/api/users/xzik-pf59/profile_images/TINY",
+    "screenName" : "NY Open Data",
+    "type" : "interactive",
+    "flags" : [ "acceptedEula", "mayBeStoriesCoOwner" ]
+  },
+  "tags" : [ "cbdtp", "central business district tolling program", "congestion relief zone", "cbd", "central business district", "congestion", "traffic", "trips", "taxi", "for-hire vehicle", "fhv", "new york city taxi and limousine commission", "tlc", "congestion pricing", "mta bridges & tunnels", "b&t", "polygon" ],
+  "flags" : [ "default", "ownerMayBeContacted", "restorable", "restorePossibleForType" ]
+}

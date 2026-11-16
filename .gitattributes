@@ -1,0 +1,4 @@
+# These snapshots and attachments are verified byte for byte.
+data/** -text
+notebooks/files/** -text
+data/source/geography/lookup.csv whitespace=cr-at-eol

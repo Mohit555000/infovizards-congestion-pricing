@@ -1,0 +1,102 @@
+{
+  "notebook": "https://observablehq.com/@swati-singh/nyc-congestion-pricing-infovizards",
+  "version": 178,
+  "files": [
+    {
+      "path": "notebooks/files/q1_mta_daily.json",
+      "source": "data/processed/mta/2025-01-05_2026-11-07/q1_mta_daily.json",
+      "bytes": 457181,
+      "sha256": "26a4fa6eb560309142012e28edb17e11d254a75d6d197667275f43f9d5fcf43e"
+    },
+    {
+      "path": "notebooks/files/q1_tlc_crz_daily.json",
+      "source": "data/processed/tlc/q1_tlc_crz_daily.json",
+      "bytes": 1084474,
+      "sha256": "935062f60c390ac8659a93a47fd1b59c935b5e8d48f354943ff5b1fba75b4225"
+    },
+    {
+      "path": "notebooks/files/q2_tlc_hour_profile.json",
+      "source": "data/processed/tlc/q2_tlc_hour_profile.json",
+      "bytes": 10134734,
+      "sha256": "3471cbb77297a24207921cdf8eec76031e028cf2049f1b5e1aaf9aa183f08208"
+    },
+    {
+      "path": "notebooks/files/q2_mta_hour_weekday.json",
+      "source": "data/processed/mta/2025-01-05_2026-11-07/q2_mta_hour_weekday.json",
+      "bytes": 2762575,
+      "sha256": "8bd438bad561ef5dca3230a96c21a51b1512e636debcb989685f5be699f3a5cc"
+    },
+    {
+      "path": "notebooks/files/q3_mta_weekly_crossing_class.json",
+      "source": "data/processed/mta/2025-01-05_2026-11-07/q3_mta_weekly_crossing_class.json",
+      "bytes": 9333337,
+      "sha256": "5b32ac9e06310887d5f2c0ea0e098372b2ecad71ba468774457a972e07cacaca"
+    },
+    {
+      "path": "notebooks/files/q4_zone_mapping.json",
+      "source": "data/geo/v1/zone-groups.json",
+      "bytes": 114285,
+      "sha256": "146a7046f21d621aeb74633cb8763cf6f8a6e30281a7c1ccab024a0a62a29570"
+    },
+    {
+      "path": "notebooks/files/q4_taxi_zones.geojson",
+      "source": "data/geo/v1/taxi-zones-d3.geojson",
+      "bytes": 3947233,
+      "sha256": "563965da07d9617efd074cafe2d761c0dc7c0c0391730d552b9786c368f4407e"
+    },
+    {
+      "path": "notebooks/files/q4_crz_boundary.geojson",
+      "source": "data/geo/v1/official-crz-geofence.geojson",
+      "bytes": 7711,
+      "sha256": "f0f96555ce39e412ce00de9726aaad5b317d357783b7e7f6ec6aa8a250fa6470"
+    },
+    {
+      "path": "notebooks/files/q4_tlc_zone_change.csv",
+      "source": "data/processed/tlc/q4_tlc_zone_change.csv",
+      "bytes": 11618813,
+      "sha256": "856d98dbe1539d3ea47936f5cc16b5a2e589ab5e620aa95337e7a8a92720e0fb"
+    },
+    {
+      "path": "notebooks/files/q5_tlc_zone_group.json",
+      "source": "data/processed/tlc/q5_tlc_zone_group.json",
+      "bytes": 609732,
+      "sha256": "07de12168bb8a39229be6c921a3ad5d1fd823e385993b40e5825e553eb0b3ac1"
+    },
+    {
+      "path": "notebooks/files/q5_geography_status.json",
+      "source": "data/processed/tlc/geography-status.json",
+      "bytes": 4378,
+      "sha256": "a0e7498f707d1d9e9d0864a7043572dfe26d88530a8469474494f909d1b0365b"
+    },
+    {
+      "path": "notebooks/files/q6_citibike_group_growth.json",
+      "source": "data/processed/citibike/q6_citibike_group_growth.json",
+      "bytes": 5147,
+      "sha256": "d58e9143f5d73ee91d6fd8e31a36d76e24724998b75676f104678540f7422aa5"
+    },
+    {
+      "path": "notebooks/files/q6_citibike_group_mix.json",
+      "source": "data/processed/citibike/q6_citibike_group_mix.json",
+      "bytes": 19050,
+      "sha256": "7dc037ffc8fa0ee604c290751b5b7322b8b8e9d2954ddc246656d239bf155c11"
+    },
+    {
+      "path": "notebooks/files/q6_citibike_station_change.json",
+      "source": "data/processed/citibike/q6_citibike_station_change.json",
+      "bytes": 4683104,
+      "sha256": "5e848f6d65445878e89b512f2d061f85fc89b6d26879f6d4bdcaeb593632dc7a"
+    },
+    {
+      "path": "notebooks/files/q7_mta_region_month.json",
+      "source": "data/processed/mta/2025-01-05_2026-11-07/q7_mta_region_month.json",
+      "bytes": 219147,
+      "sha256": "fbd9f82e4084f0b964ec0574171a8d185c8ad70972d60b45ee2e51033f8633da"
+    },
+    {
+      "path": "notebooks/files/q7_tlc_origin_borough.json",
+      "source": "data/processed/tlc/q7_tlc_origin_borough.json",
+      "bytes": 474605,
+      "sha256": "bc027665384203de4f7a8a1e7c0684e746555d54cf711783d6b5ede733b1be08"
+    }
+  ]
+}
