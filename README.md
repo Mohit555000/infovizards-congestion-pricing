@@ -134,4 +134,4 @@ The large Citi Bike archives are external. The source policy permits use in nonc
 
 ## AI Assistance
 
-The team used OpenAI Codex to draft and edit project prose, implement and debug preprocessing and Observable code, write tests and validation scripts, and summarize checked results. The reported measurements come from the cited datasets and the validated outputs.
+We used OpenAI Codex to implement and debug preprocessing and Observable code, write tests and validation scripts.
