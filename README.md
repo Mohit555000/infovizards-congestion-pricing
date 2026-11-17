@@ -132,6 +132,11 @@ The 24 TLC trip files are retrieved from the TLC source page or the official `ht
 
 The large Citi Bike archives are external. The source policy permits use in noncommercial studies and restricts redistribution as a standalone dataset. The downloader retrieves [May 2024](https://s3.amazonaws.com/tripdata/202405-citibike-tripdata.zip), [May 2025](https://s3.amazonaws.com/tripdata/202505-citibike-tripdata.zip), and [May 2026](https://s3.amazonaws.com/tripdata/202605-citibike-tripdata.zip). MTA observations are retrieved by the bounded Socrata extractor, which uses only the source columns and aggregations needed for the study. See the [Citi Bike data use policy](https://www.citibikenyc.com/data-sharing-policy), [NYC Open Data policies](https://cityofnewyork.github.io/opendatatsm/publicpolicies.html), and [Open NY terms](https://data.ny.gov/d/77gx-ii52) for source terms.
 
+## Milestone Reports
+
+- [Milestone 2 — Data Analysis and Visualization Sketches](milestones/M2/InfoVizards_Milestone2_Report.pdf)
+- [Milestone 3 — First Working Draft](milestones/M3/InfoVizards_Milestone3_Report.pdf)
+
 ## AI Assistance
 
 We used OpenAI Codex to implement and debug preprocessing and Observable code, write tests and validation scripts.
